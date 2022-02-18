@@ -1,0 +1,6 @@
+node_modules
+server/config/auth_config.js
+server/config/obsdb_config.json
+server/config/userdb_config.json
+server/validation/allowed_values/dimensions_units.json
+server/validation/json_schema/protocols-schemax.json
