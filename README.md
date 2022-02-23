@@ -13,9 +13,9 @@ For the documentation of the user input validation [click here](./docs/README.md
 
 # Running the database locally
 ## Requirements
-node.js
-npm
-mysql
+- node.js
+- npm
+- mysql
 
 1. Install node, npm and postman (https://www.postman.com/).
 2. In server/db create a folder 'config' and in it a 'config.json' and 'userdb_config.json' files.
@@ -28,7 +28,7 @@ mysql
        "database": "db_name",
        "user": "user_name",
        "password": "user_password",
-       "port": 3306 // default port
+       "port": 3306
      }
    }
    ```
@@ -48,7 +48,7 @@ mysql
      "username": "username",
      "password": "password",
      "email": "email",
-     "roles": ["user", "admin", "moderator"] // choose the user roles
+     "roles": ["user", "admin", "moderator"]
    }
    ```
 7. To login, create a POST-request to 'localhost:3000/api/auth/signin', the body should contain:

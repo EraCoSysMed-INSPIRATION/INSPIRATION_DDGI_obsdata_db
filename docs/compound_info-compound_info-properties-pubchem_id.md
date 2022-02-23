@@ -1,4 +1,4 @@
-# Untitled integer in compound\_infos Schema
+# Untitled undefined type in compound\_infos Schema
 
 ```txt
 json_schema/compound_info#/items/properties/pubchem_id
