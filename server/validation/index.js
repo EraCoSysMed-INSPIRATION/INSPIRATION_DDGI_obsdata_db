@@ -1,16 +1,25 @@
 const Ajv = require("ajv");
-const ajv = new Ajv();
+const ajv = new Ajv({ discriminator: true });
 const fs = require("fs");
 const path = require("path");
 const basename = path.basename(__filename);
+const null_check = require("./allowed_values/mapper.json");
 
-async function validateSchema(req, schema) {
+async function validateSchema(req, schema, null_check) {
   let message = `Schema '${schema.title}' is valid`;
   let json = req.body[schema.title];
   let validate = ajv.compile(schema);
   let valid = await validate(json);
   if (!valid) {
     message = validate.errors;
+  } else if (
+    typeof null_check[schema.title].columns === "object" &&
+    allNull(null_check[schema.title].columns, req.body[schema.title])
+  ) {
+    message = `Bad request. Properties for '${schema.title}' ('${null_check[
+      schema.title
+    ].columns.join(", ")}') not allowed to be all null!`;
+    valid = false;
   }
 
   return { message: message, isValid: valid };
@@ -18,6 +27,9 @@ async function validateSchema(req, schema) {
 
 function allTrue(arr) {
   return arr.every((element) => element === true);
+}
+function allNull(arr, object) {
+  return arr.every((element) => object[element] === null);
 }
 
 async function validateAllSchemas(req) {
@@ -42,7 +54,7 @@ async function validateAllSchemas(req) {
       files.map(async (file) => {
         let schema = require(file);
         let title = schema.title;
-        let validatedSchema = await validateSchema(req, schema);
+        let validatedSchema = await validateSchema(req, schema, null_check);
         if (validatedSchema.isValid) {
           messages.push({
             schema: title,

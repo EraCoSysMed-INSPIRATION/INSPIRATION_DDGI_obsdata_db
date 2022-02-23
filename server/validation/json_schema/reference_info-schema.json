@@ -3,16 +3,20 @@
   "title": "referenceInfo",
   "type": "object",
   "required": [
-    "doi",
-    "pmid",
     "doctitle",
-    "first_author",
     "publication_year",
     "reference_type"
   ],
   "properties": {
     "doi": {
       "description": "Document object identifier",
+      "type": "string",
+      "nullable": true,
+      "minLength": 4,
+      "maxLength": 255
+    },
+    "alternative_id": {
+      "description": "Alternative identifier of the document, i.e., link to the document",
       "type": "string",
       "nullable": true,
       "minLength": 4,
@@ -42,7 +46,7 @@
     "publication_year": {
       "description": "Year of the publication of the document",
       "type": "integer",
-      "nullable": true,
+      "nullable": false,
       "minimum": 1850,
       "maximum": 2022
     },
@@ -52,5 +56,6 @@
       "nullable": false,
       "enum": ["journal article", "book chapter", "drug label", "nda"]
     }
-  }
+  },
+  "additionalProperties": false
 }

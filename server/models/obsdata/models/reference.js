@@ -5,16 +5,19 @@ module.exports = (sequelize, Sequelize) => {
       doi: {
         type: Sequelize.STRING,
         comment: "Document object identifier for journal articles, etc.",
+        unique: true
       },
       pmid: {
         type: Sequelize.INTEGER,
         comment: "Pubmed identifier of the document",
+        unique: true
       },
       alternative_id: {
         type: Sequelize.STRING,
-        comment: "Pubmed identifier of the document",
+        comment: "Alternative identifier of the document, i.e., link to the document.",
+        unique: true
       },
-      title: {
+      doctitle: {
         type: Sequelize.STRING,
         comment: "Title of the document",
       },
@@ -34,12 +37,6 @@ module.exports = (sequelize, Sequelize) => {
     },
     {
       tableName: "reference",
-      indexes: [
-        {
-          unique: true,
-          fields: ["doi", "pmid", "alternative_id"],
-        },
-      ],
     }
   );
   return Reference;

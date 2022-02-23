@@ -1,0 +1,12 @@
+{
+  "referenceInfo": {
+    "checkTableName": "Reference",
+    "checkColumns": ["doi", "pmid", "alternative_id"],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "compoundInfo": {
+    "checkTableName": "Compound",
+    "checkColumns": ["pubchem_id", "compound_name", "compound_alias"],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  }
+}
