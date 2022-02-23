@@ -2,13 +2,15 @@
 
 ## Top-level Schemas
 
-*   [compoundInfo](./compound_info.md) – `-`
+*   [compoundInfos](./compound_info.md) – `-`
+
+*   [referenceInfo](./reference_info.md) – `-`
 
 ## Other Schemas
 
 ### Objects
 
-*   [Untitled object in compoundInfo](./compound_info-items.md) – `undefined#/items`
+*   [compoundInfo](./compound_info-compoundinfo.md "Compound information block") – `undefined#/items`
 
 ### Arrays
 

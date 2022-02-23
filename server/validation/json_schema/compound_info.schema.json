@@ -1,9 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "title": "compoundInfo",
+  "title": "compoundInfos",
   "type": ["array", "null"],
+  "additionalProperties": false,
   "items": {
     "type": "object",
+    "title": "compoundInfo",
+    "description": "Compound information block. Create one for all compounds (analytes and administered compounds).",
     "required": ["compound_name", "compound_mw", "pubchem_id"],
     "properties": {
       "compound_name": {

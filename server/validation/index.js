@@ -43,7 +43,7 @@ async function validateAllSchemas(req) {
         return (
           file.indexOf(".") !== 0 &&
           file !== basename &&
-          file.slice(-12) == "-schema.json"
+          file.slice(-12) == ".schema.json"
         );
       })
       .forEach((file) => {

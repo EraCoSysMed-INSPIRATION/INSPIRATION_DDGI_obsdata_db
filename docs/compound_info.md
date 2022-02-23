@@ -1,4 +1,4 @@
-# compoundInfo Schema
+# compoundInfos Schema
 
 ```txt
 undefined
@@ -8,8 +8,8 @@ undefined
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                            |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [compound\_info.schema.json](../out/compound_info.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Forbidden             | none                | [compound\_info.schema.json](../out/compound_info.schema.json "open original schema") |
 
-## compoundInfo Type
+## compoundInfos Type
 
-`object[]` ([Details](compound_info-items.md))
+`object[]` ([compoundInfo](compound_info-compoundinfo.md))
