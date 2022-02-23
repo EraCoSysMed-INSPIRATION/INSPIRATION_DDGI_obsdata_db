@@ -8,7 +8,7 @@ Compound information block. Create one for all compounds (analytes and administe
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [compound\_info.schema.json\*](../out/compound_info.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [compound\_info.schema.json\*](../out/compound_info.schema.json "open original schema") |
 
 ## items Type
 

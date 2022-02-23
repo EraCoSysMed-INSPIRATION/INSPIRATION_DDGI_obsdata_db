@@ -3,14 +3,13 @@
   "title": "compound_infos",
   "description": "Array of compound information for all profile compounds.",
   "type": ["array", "null"],
-  "nullable": true,
-  "additionalProperties": false,
   "minItems": 0,
   "items": {
     "type": "object",
     "title": "compound_info",
     "description": "Compound information block. Create one for all compounds (analytes and administered compounds).",
     "required": ["compound_name", "compound_mw", "pubchem_id"],
+    "additionalProperties": false,
     "properties": {
       "compound_name": {
         "description": "Name of the compound, use INN where available",

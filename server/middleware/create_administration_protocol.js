@@ -14,7 +14,7 @@ async function createAdministrationProtocols(database, body) {
     let protocol_new = {};
     protocol_new.protocol_new = await database["AdministrationProtocol"].build(obj);
     protocol_new.protocol_match = await database["AdministrationProtocolMatcher"].build({})
-    protocol_new.messages = "New entry and match for administration protocol created."
+    protocol_new.messages = "New entry and match for administration protocol staged."
     protocols.push(protocol_new)
   }
   return protocols;

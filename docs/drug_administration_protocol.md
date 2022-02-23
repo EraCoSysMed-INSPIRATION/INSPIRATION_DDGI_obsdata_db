@@ -12,9 +12,7 @@ Array of all drug administration protocols.
 
 ## drug\_administrations Type
 
-an array where each item follows the corresponding schema in the following list:
-
-1.  [drug\_administration](drug_administration_protocol-items-drug_administration.md "check type definition")
+`object[]` ([drug\_administration](drug_administration_protocol-drug_administration.md))
 
 ## drug\_administrations Constraints
 

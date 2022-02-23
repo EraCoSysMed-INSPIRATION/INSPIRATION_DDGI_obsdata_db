@@ -4,7 +4,7 @@
 undefined
 ```
 
-
+Array storing all demographic parameter for a study population.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                         |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------- |
@@ -12,9 +12,7 @@ undefined
 
 ## demographics Type
 
-an array where each item follows the corresponding schema in the following list:
-
-1.  [demographic](demographics-items-demographic.md "check type definition")
+`object[]` ([demographic](demographics-demographic.md))
 
 ## demographics Constraints
 
