@@ -13,3 +13,7 @@ Array of compound information for all profile compounds.
 ## compound\_infos Type
 
 `object[]` ([compound\_info](compound_info-compound_info.md))
+
+## compound\_infos Constraints
+
+**minimum number of items**: the minimum number of items for this array is: `0`

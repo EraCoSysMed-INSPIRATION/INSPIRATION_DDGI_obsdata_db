@@ -3,7 +3,9 @@
   "title": "compound_infos",
   "description": "Array of compound information for all profile compounds.",
   "type": ["array", "null"],
+  "nullable": true,
   "additionalProperties": false,
+  "minItems": 0,
   "items": {
     "type": "object",
     "title": "compound_info",
@@ -12,8 +14,7 @@
     "properties": {
       "compound_name": {
         "description": "Name of the compound, use INN where available",
-        "type": "string",
-        "nullable": true,
+        "type": ["string", "null"],
         "minLength": 1,
         "maxLength": 255
       },
@@ -31,7 +32,7 @@
         "minimum": 3
       },
       "pubchem_id": {
-        "description": "Pubmed identifier",
+        "description": "Pubchem identifier",
         "type": "integer",
         "nullable": true,
         "minimum": 1,

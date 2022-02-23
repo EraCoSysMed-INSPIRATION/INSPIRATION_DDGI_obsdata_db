@@ -13,6 +13,7 @@ const mapper = require("../../validation/allowed_values/mapper.json");
 const createReferenceIfNotExists = require("../../middleware/create_reference");
 const createCompoundsIfNotExists = require("../../middleware/create_compound");
 const createAdministrationProtocols = require("../../middleware/create_administration_protocol");
+const createDemographics = require("../../middleware/create_demographics");
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
@@ -59,8 +60,14 @@ module.exports = function (app) {
             obs_db,
             req.body
           );
-          console.log(administration_protocols);
           for (c of administration_protocols) {
+            output.messages.push(c);
+          }
+          let demographics = await createDemographics(
+            obs_db,
+            req.body
+          );
+          for (c of demographics) {
             output.messages.push(c);
           }
         } catch (err) {

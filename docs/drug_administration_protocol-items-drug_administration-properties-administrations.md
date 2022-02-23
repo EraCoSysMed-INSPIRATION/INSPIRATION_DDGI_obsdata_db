@@ -1,4 +1,4 @@
-# Untitled array in drug\_administrations Schema
+# administrations Schema
 
 ```txt
 undefined#/items/0/properties/administrations

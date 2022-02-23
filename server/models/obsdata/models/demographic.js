@@ -14,11 +14,11 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         comment: "Unit of the parameter value, e.g., kg",
       },
-      value_num: {
+      value_numeric: {
         type: Sequelize.STRING,
         comment: "Numeric parameter value",
       },
-      value_str: {
+      value_string: {
         type: Sequelize.STRING,
         comment: "Non-numeric parameter value",
       },

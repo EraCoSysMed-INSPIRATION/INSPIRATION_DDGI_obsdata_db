@@ -13,5 +13,10 @@
     "checkTableName": "AdministrationProtocol",
     "checkColumns": [],
     "hiddenOutputColumns": ["id"]
+  },
+  "demographics": {
+    "checkTableName": "Demographic",
+    "checkColumns": ["parameter", "value_type"],
+    "hiddenOutputColumns": ["id"]
   }
 }

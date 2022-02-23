@@ -18,7 +18,7 @@ Compound information block. Create one for all compounds (analytes and administe
 
 | Property                           | Type      | Required | Nullable       | Defined by                                                                                                               |
 | :--------------------------------- | :-------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| [compound\_name](#compound_name)   | `string`  | Required | cannot be null | [compound\_infos](compound_info-compound_info-properties-compound_name.md "undefined#/items/properties/compound_name")   |
+| [compound\_name](#compound_name)   | `string`  | Required | can be null    | [compound\_infos](compound_info-compound_info-properties-compound_name.md "undefined#/items/properties/compound_name")   |
 | [compound\_alias](#compound_alias) | `string`  | Optional | cannot be null | [compound\_infos](compound_info-compound_info-properties-compound_alias.md "undefined#/items/properties/compound_alias") |
 | [compound\_mw](#compound_mw)       | `number`  | Required | cannot be null | [compound\_infos](compound_info-compound_info-properties-compound_mw.md "undefined#/items/properties/compound_mw")       |
 | [pubchem\_id](#pubchem_id)         | `integer` | Required | cannot be null | [compound\_infos](compound_info-compound_info-properties-pubchem_id.md "undefined#/items/properties/pubchem_id")         |
@@ -33,7 +33,7 @@ Name of the compound, use INN where available
 
 *   Type: `string`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [compound\_infos](compound_info-compound_info-properties-compound_name.md "undefined#/items/properties/compound_name")
 
@@ -95,7 +95,7 @@ Molecular weight of the compound
 
 ## pubchem\_id
 
-Pubmed identifier
+Pubchem identifier
 
 `pubchem_id`
 

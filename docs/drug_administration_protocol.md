@@ -15,3 +15,7 @@ Array of all drug administration protocols.
 an array where each item follows the corresponding schema in the following list:
 
 1.  [drug\_administration](drug_administration_protocol-items-drug_administration.md "check type definition")
+
+## drug\_administrations Constraints
+
+**minimum number of items**: the minimum number of items for this array is: `0`

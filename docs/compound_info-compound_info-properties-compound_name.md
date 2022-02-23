@@ -1,4 +1,4 @@
-# Untitled string in compound\_infos Schema
+# Untitled undefined type in compound\_infos Schema
 
 ```txt
 undefined#/items/properties/compound_name

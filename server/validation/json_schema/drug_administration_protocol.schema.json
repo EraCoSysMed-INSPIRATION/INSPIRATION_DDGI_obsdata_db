@@ -3,6 +3,7 @@
   "title": "drug_administrations",
   "description": "Array of all drug administration protocols.",
   "type": "array",
+  "minItems": 0,
   "items": [
     {
       "type": "object",
@@ -10,6 +11,7 @@
       "description": "Drug administration protocol. One per administered compound and respective formulation.",
       "properties": {
         "administrations": {
+          "title": "administrations",
           "description": "Array of drug administrations per administration protocol. One per administered dose.",
           "type": "array",
           "items": [
