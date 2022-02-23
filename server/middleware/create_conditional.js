@@ -39,7 +39,7 @@ async function createConditional(
       messages.push(allEntries.trimmedResults);
       break;
   }
-  return {messages: messages, warnings: warnings, model: model, isNew: isNew};
+  return {messages: messages, warnings: warnings, model: model, is_new: isNew};
 }
 
 module.exports = createConditional;

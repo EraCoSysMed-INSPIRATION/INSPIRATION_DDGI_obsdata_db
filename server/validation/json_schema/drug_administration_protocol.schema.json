@@ -1,11 +1,12 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "drugAdministrations",
+  "title": "drug_administrations",
   "description": "Array of all drug administration protocols.",
   "type": "array",
   "items": [
     {
       "type": "object",
+      "title": "drug_administration",
       "description": "Drug administration protocol. One per administered compound and respective formulation.",
       "properties": {
         "administrations": {
@@ -35,19 +36,19 @@
             }
           ]
         },
-        "timeUnit": {
+        "time_unit": {
           "type": "string",
           "description": "Unit of the time."
         },
-        "doseUnit": {
+        "dose_unit": {
           "type": "string",
           "description": "Unit of the administered dose."
         },
-        "durationUnit": {
+        "duration_unit": {
           "description": "Unit of the dosing duration.",
           "type": "string"
         },
-        "administeredCompound": {
+        "administered_compound": {
           "description": "Compound name of the administered compound. Must match compound_name or compound_alias of compoundInfo.",
           "type": "string"
         },
@@ -55,12 +56,12 @@
           "description": "Formulation of the administered doses, e.g., immediate release tablet",
           "type": "string"
         },
-        "formulationComment": {
+        "formulation_comment": {
           "description": "Additional information about the formulation, e.g., brand name.",
           "type": "null"
         },
-        "administrationRoute": {
-          "duration": "Route of the administration, e.g., oral.",
+        "administration_route": {
+          "description": "Route of the administration, e.g., oral.",
           "type": "string",
           "enum": ["oral", "iv", "transdermal", "inhalation"]
         }

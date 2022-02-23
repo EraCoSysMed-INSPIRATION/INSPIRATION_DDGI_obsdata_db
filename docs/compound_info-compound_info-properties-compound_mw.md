@@ -1,21 +1,19 @@
-# Untitled string in compoundInfos Schema
+# Untitled number in compound\_infos Schema
 
 ```txt
-undefined#/items/properties/compound_name
+undefined#/items/properties/compound_mw
 ```
 
-Name of the compound, use INN where available
+Molecular weight of the compound
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [compound\_info.schema.json\*](../out/compound_info.schema.json "open original schema") |
 
-## compound\_name Type
+## compound\_mw Type
 
-`string`
+`number`
 
-## compound\_name Constraints
+## compound\_mw Constraints
 
-**maximum length**: the maximum number of characters for this string is: `255`
-
-**minimum length**: the minimum number of characters for this string is: `1`
+**minimum**: the value of this number must greater than or equal to: `3`

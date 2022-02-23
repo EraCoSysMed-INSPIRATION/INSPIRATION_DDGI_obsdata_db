@@ -12,6 +12,7 @@ const isDuplicateRequest = require("../../validation/check_duplicate");
 const mapper = require("../../validation/allowed_values/mapper.json");
 const createReferenceIfNotExists = require("../../middleware/create_reference");
 const createCompoundsIfNotExists = require("../../middleware/create_compound");
+const createAdministrationProtocols = require("../../middleware/create_administration_protocol");
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
@@ -36,13 +37,32 @@ module.exports = function (app) {
       }
       if (!output.warnings.length > 0) {
         try {
-          let compounds = await createCompoundsIfNotExists(obs_db, mapper, req.body)
-          for (c of compounds) {
-            output.messages.push(c)
-            if (c.warnings.length > 0) {output.messages.push(compound.warnings)}
-          }
-          let reference = await createReferenceIfNotExists(obs_db, mapper, req.body)
+          let reference = await createReferenceIfNotExists(
+            obs_db,
+            mapper,
+            req.body
+          );
           output.warnings.push(reference.warnings);
+          let compounds = await createCompoundsIfNotExists(
+            obs_db,
+            mapper,
+            req.body
+          );
+          for (c of compounds) {
+            output.messages.push(c.messages);
+            if (c.warnings.length > 0) {
+              output.messages.push(c.warnings);
+            }
+          }
+          output.messages.push(reference.messages);
+          let administration_protocols = await createAdministrationProtocols(
+            obs_db,
+            req.body
+          );
+          console.log(administration_protocols);
+          for (c of administration_protocols) {
+            output.messages.push(c);
+          }
         } catch (err) {
           console.log(err);
         }

@@ -1,21 +1,26 @@
-# Untitled string in referenceInfo Schema
+# Untitled string in reference\_info Schema
 
 ```txt
-undefined#/properties/firstAuthor
+undefined#/properties/reference_type
 ```
 
-First author of the document
+Type of the document, e.g., journal article.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../out/reference_info.schema.json "open original schema") |
 
-## firstAuthor Type
+## reference\_type Type
 
 `string`
 
-## firstAuthor Constraints
+## reference\_type Constraints
 
-**maximum length**: the maximum number of characters for this string is: `255`
+**enum**: the value of this property must be equal to one of the following values:
 
-**minimum length**: the minimum number of characters for this string is: `4`
+| Value               | Explanation |
+| :------------------ | :---------- |
+| `"journal article"` |             |
+| `"book chapter"`    |             |
+| `"drug label"`      |             |
+| `"nda"`             |             |

@@ -1,4 +1,4 @@
-# Untitled string in referenceInfo Schema
+# Untitled string in reference\_info Schema
 
 ```txt
 undefined#/properties/doi

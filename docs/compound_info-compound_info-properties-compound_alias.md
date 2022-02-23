@@ -1,4 +1,4 @@
-# Untitled string in compoundInfos Schema
+# Untitled string in compound\_infos Schema
 
 ```txt
 undefined#/items/properties/compound_alias

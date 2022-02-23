@@ -1,21 +1,21 @@
-# Untitled integer in compoundInfos Schema
+# Untitled string in compound\_infos Schema
 
 ```txt
-undefined#/items/properties/pubchem_id
+undefined#/items/properties/compound_name
 ```
 
-Pubmed identifier
+Name of the compound, use INN where available
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [compound\_info.schema.json\*](../out/compound_info.schema.json "open original schema") |
 
-## pubchem\_id Type
+## compound\_name Type
 
-`integer`
+`string`
 
-## pubchem\_id Constraints
+## compound\_name Constraints
 
-**maximum**: the value of this number must smaller than or equal to: `10000000`
+**maximum length**: the maximum number of characters for this string is: `255`
 
-**minimum**: the value of this number must greater than or equal to: `1`
+**minimum length**: the minimum number of characters for this string is: `1`

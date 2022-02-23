@@ -1,15 +1,15 @@
 {
-  "referenceInfo": {
+  "reference_info": {
     "checkTableName": "Reference",
     "checkColumns": ["doi", "pmid", "alternative_id"],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
-  "compoundInfos": {
+  "compound_infos": {
     "checkTableName": "Compound",
     "checkColumns": ["pubchem_id", "compound_name", "compound_alias"],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
-  "drugAdministrations": {
+  "drug_administrations": {
     "checkTableName": "AdministrationProtocol",
     "checkColumns": [],
     "hiddenOutputColumns": ["id"]

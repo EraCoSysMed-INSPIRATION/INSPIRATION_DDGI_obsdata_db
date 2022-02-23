@@ -1,15 +1,17 @@
-# Untitled string in drugAdministrations Schema
+# Untitled array in drug\_administrations Schema
 
 ```txt
-undefined#/items/0/properties/timeUnit
+undefined#/items/0/properties/administrations
 ```
 
-Unit of the time.
+Array of drug administrations per administration protocol. One per administered dose.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                             |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [drug\_administration\_protocol.schema.json\*](../out/drug_administration_protocol.schema.json "open original schema") |
 
-## timeUnit Type
+## administrations Type
 
-`string`
+an array where each item follows the corresponding schema in the following list:
+
+1.  [Untitled object in drug\_administrations](drug_administration_protocol-items-drug_administration-properties-administrations-items-0.md "check type definition")

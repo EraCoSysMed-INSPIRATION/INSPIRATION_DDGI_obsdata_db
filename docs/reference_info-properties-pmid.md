@@ -1,4 +1,4 @@
-# Untitled integer in referenceInfo Schema
+# Untitled integer in reference\_info Schema
 
 ```txt
 undefined#/properties/pmid

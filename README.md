@@ -9,18 +9,16 @@ Schema for the database, last updated 07/14/2021.
 # Input validation
 
 User input is validated using [JSON-schema draft-07](http://json-schema.org/draft-07/schema). 
-For the documentation for the user input validation [click here](./docs/README.md).
+For the documentation of the user input validation [click here](./docs/README.md).
 
-## Running the database locally
-
-1. Install mysql.
-2. Create and run a mysql-server instance.
-3. Create the database by running the script (sql/create_database.sql) in the mysql shell.
-
-## Setting up the REST-API
+# Running the database locally
+## Requirements
+node.js
+npm
+mysql
 
 1. Install node, npm and postman (https://www.postman.com/).
-2. In node_restapi/server/db create a folder 'config' and in it a 'config.json' and 'userdb_config.json' files.
+2. In server/db create a folder 'config' and in it a 'config.json' and 'userdb_config.json' files.
 3. The config files should be formatted as follows:
 
    ```json

@@ -1,15 +1,15 @@
-# Untitled null in drugAdministrations Schema
+# Untitled number in drug\_administrations Schema
 
 ```txt
-undefined#/items/0/properties/formulationComment
+undefined#/items/0/properties/administrations/items/0/properties/dose
 ```
 
-Additional information about the formulation, e.g., brand name.
+Dose of the drug administration.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                             |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [drug\_administration\_protocol.schema.json\*](../out/drug_administration_protocol.schema.json "open original schema") |
 
-## formulationComment Type
+## dose Type
 
-`null`, the value must be null
+`number`

@@ -1,7 +1,7 @@
-# Untitled string in referenceInfo Schema
+# Untitled string in reference\_info Schema
 
 ```txt
-undefined#/properties/alternativeId
+undefined#/properties/alternative_id
 ```
 
 Alternative identifier of the document, i.e., link to the document
@@ -10,11 +10,11 @@ Alternative identifier of the document, i.e., link to the document
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../out/reference_info.schema.json "open original schema") |
 
-## alternativeId Type
+## alternative\_id Type
 
 `string`
 
-## alternativeId Constraints
+## alternative\_id Constraints
 
 **maximum length**: the maximum number of characters for this string is: `255`
 

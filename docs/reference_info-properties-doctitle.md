@@ -1,7 +1,7 @@
-# Untitled string in referenceInfo Schema
+# Untitled string in reference\_info Schema
 
 ```txt
-undefined#/properties/docTitle
+undefined#/properties/doctitle
 ```
 
 Title of the document
@@ -10,11 +10,11 @@ Title of the document
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../out/reference_info.schema.json "open original schema") |
 
-## docTitle Type
+## doctitle Type
 
 `string`
 
-## docTitle Constraints
+## doctitle Constraints
 
 **maximum length**: the maximum number of characters for this string is: `255`
 

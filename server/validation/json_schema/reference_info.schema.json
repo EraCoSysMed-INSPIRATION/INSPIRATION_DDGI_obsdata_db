@@ -1,6 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
-  "title": "referenceInfo",
+  "title": "reference_info",
+  "description": "Object containing information about the source document.",
   "type": "object",
   "required": [
     "doctitle",
@@ -15,7 +16,7 @@
       "minLength": 4,
       "maxLength": 255
     },
-    "alternativeId": {
+    "alternative_id": {
       "description": "Alternative identifier of the document, i.e., link to the document",
       "type": "string",
       "nullable": true,
@@ -29,28 +30,28 @@
       "minimum": 1,
       "maximum": 10000000
     },
-    "docTitle": {
+    "doctitle": {
       "description": "Title of the document",
       "type": "string",
       "nullable": false,
       "minLength": 4,
       "maxLength": 255
     },
-    "firstAuthor": {
+    "first_author": {
       "description": "First author of the document",
       "type": "string",
       "nullable": true,
       "minLength": 4,
       "maxLength": 255
     },
-    "publicationYear": {
+    "publication_year": {
       "description": "Year of the publication of the document",
       "type": "integer",
       "nullable": false,
       "minimum": 1850,
       "maximum": 2022
     },
-    "referenceType": {
+    "reference_type": {
       "description": "Type of the document, e.g., journal article.",
       "type": "string",
       "nullable": false,

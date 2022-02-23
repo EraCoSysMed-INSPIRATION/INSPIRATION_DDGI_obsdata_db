@@ -1,7 +1,7 @@
-# Untitled integer in referenceInfo Schema
+# Untitled integer in reference\_info Schema
 
 ```txt
-undefined#/properties/publicationYear
+undefined#/properties/publication_year
 ```
 
 Year of the publication of the document
@@ -10,11 +10,11 @@ Year of the publication of the document
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../out/reference_info.schema.json "open original schema") |
 
-## publicationYear Type
+## publication\_year Type
 
 `integer`
 
-## publicationYear Constraints
+## publication\_year Constraints
 
 **maximum**: the value of this number must smaller than or equal to: `2022`
 

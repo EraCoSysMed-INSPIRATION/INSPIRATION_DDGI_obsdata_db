@@ -1,19 +1,21 @@
-# Untitled number in compoundInfos Schema
+# Untitled integer in compound\_infos Schema
 
 ```txt
-undefined#/items/properties/compound_mw
+undefined#/items/properties/pubchem_id
 ```
 
-Molecular weight of the compound
+Pubmed identifier
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                              |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [compound\_info.schema.json\*](../out/compound_info.schema.json "open original schema") |
 
-## compound\_mw Type
+## pubchem\_id Type
 
-`number`
+`integer`
 
-## compound\_mw Constraints
+## pubchem\_id Constraints
 
-**minimum**: the value of this number must greater than or equal to: `3`
+**maximum**: the value of this number must smaller than or equal to: `10000000`
+
+**minimum**: the value of this number must greater than or equal to: `1`
