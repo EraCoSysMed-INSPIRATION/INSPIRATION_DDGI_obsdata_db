@@ -2,17 +2,13 @@ module.exports = (sequelize, Sequelize) => {
   const AdministrationProtocol = sequelize.define(
     "AdministrationProtocol",
     {
-      time_values: {
+      administrations: {
         type: Sequelize.JSON,
-        comment: "Time point of the drug administration",
+        comment: "Time, dose, and dosing duration for each drug administration of a given compound and formulation",
       },
       time_unit: {
         type: Sequelize.STRING,
         comment: "Unit of the entered time values",
-      },
-      doses: {
-        type: Sequelize.JSON,
-        comment: "Numeric value of the event parameter, e.g. 100 for the administered dose in mg",
       },
       dose_unit: {
         type: Sequelize.STRING,
@@ -31,10 +27,6 @@ module.exports = (sequelize, Sequelize) => {
       administration_route: {
         type: Sequelize.STRING,
         comment: "Route of the administration, e.g., oral",
-      },
-      duration_time_values: {
-        type: Sequelize.JSON,
-        comment: "Duration of dosing, e.g., 5 min infusion time",
       },
       duration_time_unit: {
         type: Sequelize.STRING,

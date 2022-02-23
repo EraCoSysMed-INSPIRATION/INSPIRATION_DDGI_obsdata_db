@@ -8,12 +8,6 @@ module.exports = (sequelize, Sequelize) => {
       },
     },
     {
-    //   indexes: [
-    //     {
-    //       unique: true,
-    //       fields: ["compound_id"],
-    //     },
-    //   ],
       tableName: "molecular_weight",
     }
   );
