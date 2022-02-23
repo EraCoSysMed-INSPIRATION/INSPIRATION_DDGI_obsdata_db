@@ -1,7 +1,7 @@
 # Untitled string in drug\_administrations Schema
 
 ```txt
-undefined#/items/properties/administered_compound
+json_schema/drug_administration_protocol#/items/properties/administered_compound
 ```
 
 Compound name of the administered compound. Must match compound\_name or compound\_alias of compoundInfo.

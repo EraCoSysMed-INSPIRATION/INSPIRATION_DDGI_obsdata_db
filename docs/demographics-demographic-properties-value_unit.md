@@ -1,7 +1,7 @@
 # Untitled string in demographics Schema
 
 ```txt
-undefined#/items/properties/value_unit
+json_schema/demographics#/items/properties/value_unit
 ```
 
 Unit of the parameter value, e.g., 'years'.

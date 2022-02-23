@@ -1,7 +1,7 @@
 # compound\_infos Schema
 
 ```txt
-undefined
+json_schema/compound_info
 ```
 
 Array of compound information for all profile compounds.

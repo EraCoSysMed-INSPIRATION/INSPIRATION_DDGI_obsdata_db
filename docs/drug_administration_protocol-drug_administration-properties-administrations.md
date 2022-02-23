@@ -1,7 +1,7 @@
 # administrations Schema
 
 ```txt
-undefined#/items/properties/administrations
+json_schema/drug_administration_protocol#/items/properties/administrations
 ```
 
 Array of drug administrations per administration protocol. One per administered dose.
@@ -12,6 +12,4 @@ Array of drug administrations per administration protocol. One per administered 
 
 ## administrations Type
 
-an array where each item follows the corresponding schema in the following list:
-
-1.  [Untitled object in drug\_administrations](drug_administration_protocol-drug_administration-properties-administrations-items-0.md "check type definition")
+`object[]` ([administration](drug_administration_protocol-drug_administration-properties-administrations-administration.md))

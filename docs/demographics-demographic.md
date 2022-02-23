@@ -1,7 +1,7 @@
 # demographic Schema
 
 ```txt
-undefined#/items
+json_schema/demographics#/items
 ```
 
 Object storing a singular demographic parameter.
@@ -16,14 +16,14 @@ Object storing a singular demographic parameter.
 
 # items Properties
 
-| Property                         | Type     | Required | Nullable       | Defined by                                                                                                       |
-| :------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------- |
-| [parameter](#parameter)          | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-parameter.md "undefined#/items/properties/parameter")         |
-| [value\_type](#value_type)       | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_type.md "undefined#/items/properties/value_type")       |
-| [value\_numeric](#value_numeric) | `number` | Required | cannot be null | [demographics](demographics-demographic-properties-value_numeric.md "undefined#/items/properties/value_numeric") |
-| [value\_string](#value_string)   | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_string.md "undefined#/items/properties/value_string")   |
-| [value\_unit](#value_unit)       | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_unit.md "undefined#/items/properties/value_unit")       |
-| [value\_comment](#value_comment) | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_comment.md "undefined#/items/properties/value_comment") |
+| Property                         | Type     | Required | Nullable       | Defined by                                                                                                                      |
+| :------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------ |
+| [parameter](#parameter)          | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-parameter.md "json_schema/demographics#/items/properties/parameter")         |
+| [value\_type](#value_type)       | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_type.md "json_schema/demographics#/items/properties/value_type")       |
+| [value\_numeric](#value_numeric) | `number` | Required | cannot be null | [demographics](demographics-demographic-properties-value_numeric.md "json_schema/demographics#/items/properties/value_numeric") |
+| [value\_string](#value_string)   | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_string.md "json_schema/demographics#/items/properties/value_string")   |
+| [value\_unit](#value_unit)       | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_unit.md "json_schema/demographics#/items/properties/value_unit")       |
+| [value\_comment](#value_comment) | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_comment.md "json_schema/demographics#/items/properties/value_comment") |
 
 ## parameter
 
@@ -37,7 +37,7 @@ Name of the parameter, e.g., 'age'.
 
 *   cannot be null
 
-*   defined in: [demographics](demographics-demographic-properties-parameter.md "undefined#/items/properties/parameter")
+*   defined in: [demographics](demographics-demographic-properties-parameter.md "json_schema/demographics#/items/properties/parameter")
 
 ### parameter Type
 
@@ -55,7 +55,7 @@ Type of the parameter value, e.g., 'mean'.
 
 *   cannot be null
 
-*   defined in: [demographics](demographics-demographic-properties-value_type.md "undefined#/items/properties/value_type")
+*   defined in: [demographics](demographics-demographic-properties-value_type.md "json_schema/demographics#/items/properties/value_type")
 
 ### value\_type Type
 
@@ -89,7 +89,7 @@ Numeric value of the parameter value, e.g., 'mean'.
 
 *   cannot be null
 
-*   defined in: [demographics](demographics-demographic-properties-value_numeric.md "undefined#/items/properties/value_numeric")
+*   defined in: [demographics](demographics-demographic-properties-value_numeric.md "json_schema/demographics#/items/properties/value_numeric")
 
 ### value\_numeric Type
 
@@ -107,7 +107,7 @@ Non-numeric value of the parameter value.
 
 *   cannot be null
 
-*   defined in: [demographics](demographics-demographic-properties-value_string.md "undefined#/items/properties/value_string")
+*   defined in: [demographics](demographics-demographic-properties-value_string.md "json_schema/demographics#/items/properties/value_string")
 
 ### value\_string Type
 
@@ -125,7 +125,7 @@ Unit of the parameter value, e.g., 'years'.
 
 *   cannot be null
 
-*   defined in: [demographics](demographics-demographic-properties-value_unit.md "undefined#/items/properties/value_unit")
+*   defined in: [demographics](demographics-demographic-properties-value_unit.md "json_schema/demographics#/items/properties/value_unit")
 
 ### value\_unit Type
 
@@ -143,7 +143,7 @@ Additional information about the parameter.
 
 *   cannot be null
 
-*   defined in: [demographics](demographics-demographic-properties-value_comment.md "undefined#/items/properties/value_comment")
+*   defined in: [demographics](demographics-demographic-properties-value_comment.md "json_schema/demographics#/items/properties/value_comment")
 
 ### value\_comment Type
 

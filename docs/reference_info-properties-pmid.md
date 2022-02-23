@@ -1,7 +1,7 @@
 # Untitled integer in reference\_info Schema
 
 ```txt
-undefined#/properties/pmid
+json_schema/reference_info#/properties/pmid
 ```
 
 Pubmed identifier

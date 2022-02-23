@@ -1,7 +1,7 @@
 # Untitled string in demographics Schema
 
 ```txt
-undefined#/items/properties/value_string
+json_schema/demographics#/items/properties/value_string
 ```
 
 Non-numeric value of the parameter value.

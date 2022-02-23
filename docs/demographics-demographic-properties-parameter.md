@@ -1,7 +1,7 @@
 # Untitled string in demographics Schema
 
 ```txt
-undefined#/items/properties/parameter
+json_schema/demographics#/items/properties/parameter
 ```
 
 Name of the parameter, e.g., 'age'.

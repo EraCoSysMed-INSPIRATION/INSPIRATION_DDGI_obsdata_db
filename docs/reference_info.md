@@ -1,7 +1,7 @@
 # reference\_info Schema
 
 ```txt
-undefined
+json_schema/reference_info
 ```
 
 Object containing information about the source document.
@@ -16,15 +16,15 @@ Object containing information about the source document.
 
 # reference\_info Properties
 
-| Property                               | Type      | Required | Nullable       | Defined by                                                                                                |
-| :------------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------- |
-| [doi](#doi)                            | `string`  | Optional | cannot be null | [reference\_info](reference_info-properties-doi.md "undefined#/properties/doi")                           |
-| [alternative\_id](#alternative_id)     | `string`  | Optional | cannot be null | [reference\_info](reference_info-properties-alternative_id.md "undefined#/properties/alternative_id")     |
-| [pmid](#pmid)                          | `integer` | Optional | cannot be null | [reference\_info](reference_info-properties-pmid.md "undefined#/properties/pmid")                         |
-| [doctitle](#doctitle)                  | `string`  | Required | cannot be null | [reference\_info](reference_info-properties-doctitle.md "undefined#/properties/doctitle")                 |
-| [first\_author](#first_author)         | `string`  | Optional | cannot be null | [reference\_info](reference_info-properties-first_author.md "undefined#/properties/first_author")         |
-| [publication\_year](#publication_year) | `integer` | Required | cannot be null | [reference\_info](reference_info-properties-publication_year.md "undefined#/properties/publication_year") |
-| [reference\_type](#reference_type)     | `string`  | Required | cannot be null | [reference\_info](reference_info-properties-reference_type.md "undefined#/properties/reference_type")     |
+| Property                               | Type      | Required | Nullable       | Defined by                                                                                                                 |
+| :------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------- |
+| [doi](#doi)                            | `string`  | Optional | cannot be null | [reference\_info](reference_info-properties-doi.md "json_schema/reference_info#/properties/doi")                           |
+| [alternative\_id](#alternative_id)     | `string`  | Optional | cannot be null | [reference\_info](reference_info-properties-alternative_id.md "json_schema/reference_info#/properties/alternative_id")     |
+| [pmid](#pmid)                          | `integer` | Optional | cannot be null | [reference\_info](reference_info-properties-pmid.md "json_schema/reference_info#/properties/pmid")                         |
+| [doctitle](#doctitle)                  | `string`  | Required | cannot be null | [reference\_info](reference_info-properties-doctitle.md "json_schema/reference_info#/properties/doctitle")                 |
+| [first\_author](#first_author)         | `string`  | Optional | cannot be null | [reference\_info](reference_info-properties-first_author.md "json_schema/reference_info#/properties/first_author")         |
+| [publication\_year](#publication_year) | `integer` | Required | cannot be null | [reference\_info](reference_info-properties-publication_year.md "json_schema/reference_info#/properties/publication_year") |
+| [reference\_type](#reference_type)     | `string`  | Required | cannot be null | [reference\_info](reference_info-properties-reference_type.md "json_schema/reference_info#/properties/reference_type")     |
 
 ## doi
 
@@ -38,7 +38,7 @@ Document object identifier
 
 *   cannot be null
 
-*   defined in: [reference\_info](reference_info-properties-doi.md "undefined#/properties/doi")
+*   defined in: [reference\_info](reference_info-properties-doi.md "json_schema/reference_info#/properties/doi")
 
 ### doi Type
 
@@ -62,7 +62,7 @@ Alternative identifier of the document, i.e., link to the document
 
 *   cannot be null
 
-*   defined in: [reference\_info](reference_info-properties-alternative_id.md "undefined#/properties/alternative_id")
+*   defined in: [reference\_info](reference_info-properties-alternative_id.md "json_schema/reference_info#/properties/alternative_id")
 
 ### alternative\_id Type
 
@@ -86,7 +86,7 @@ Pubmed identifier
 
 *   cannot be null
 
-*   defined in: [reference\_info](reference_info-properties-pmid.md "undefined#/properties/pmid")
+*   defined in: [reference\_info](reference_info-properties-pmid.md "json_schema/reference_info#/properties/pmid")
 
 ### pmid Type
 
@@ -110,7 +110,7 @@ Title of the document
 
 *   cannot be null
 
-*   defined in: [reference\_info](reference_info-properties-doctitle.md "undefined#/properties/doctitle")
+*   defined in: [reference\_info](reference_info-properties-doctitle.md "json_schema/reference_info#/properties/doctitle")
 
 ### doctitle Type
 
@@ -134,7 +134,7 @@ First author of the document
 
 *   cannot be null
 
-*   defined in: [reference\_info](reference_info-properties-first_author.md "undefined#/properties/first_author")
+*   defined in: [reference\_info](reference_info-properties-first_author.md "json_schema/reference_info#/properties/first_author")
 
 ### first\_author Type
 
@@ -158,7 +158,7 @@ Year of the publication of the document
 
 *   cannot be null
 
-*   defined in: [reference\_info](reference_info-properties-publication_year.md "undefined#/properties/publication_year")
+*   defined in: [reference\_info](reference_info-properties-publication_year.md "json_schema/reference_info#/properties/publication_year")
 
 ### publication\_year Type
 
@@ -182,7 +182,7 @@ Type of the document, e.g., journal article.
 
 *   cannot be null
 
-*   defined in: [reference\_info](reference_info-properties-reference_type.md "undefined#/properties/reference_type")
+*   defined in: [reference\_info](reference_info-properties-reference_type.md "json_schema/reference_info#/properties/reference_type")
 
 ### reference\_type Type
 

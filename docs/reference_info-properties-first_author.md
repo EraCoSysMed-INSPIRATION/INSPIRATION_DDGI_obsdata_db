@@ -1,7 +1,7 @@
 # Untitled string in reference\_info Schema
 
 ```txt
-undefined#/properties/first_author
+json_schema/reference_info#/properties/first_author
 ```
 
 First author of the document

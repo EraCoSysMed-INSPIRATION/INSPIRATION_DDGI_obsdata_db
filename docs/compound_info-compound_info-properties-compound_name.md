@@ -1,7 +1,7 @@
 # Untitled undefined type in compound\_infos Schema
 
 ```txt
-undefined#/items/properties/compound_name
+json_schema/compound_info#/items/properties/compound_name
 ```
 
 Name of the compound, use INN where available

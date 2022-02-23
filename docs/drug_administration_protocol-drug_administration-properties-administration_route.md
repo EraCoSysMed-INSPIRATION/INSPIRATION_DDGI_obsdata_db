@@ -1,7 +1,7 @@
 # Untitled string in drug\_administrations Schema
 
 ```txt
-undefined#/items/properties/administration_route
+json_schema/drug_administration_protocol#/items/properties/administration_route
 ```
 
 Route of the administration, e.g., oral.

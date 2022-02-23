@@ -1,7 +1,7 @@
 # Untitled string in demographics Schema
 
 ```txt
-undefined#/items/properties/value_comment
+json_schema/demographics#/items/properties/value_comment
 ```
 
 Additional information about the parameter.

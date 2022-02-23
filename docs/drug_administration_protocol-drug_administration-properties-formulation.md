@@ -1,7 +1,7 @@
 # Untitled string in drug\_administrations Schema
 
 ```txt
-undefined#/items/properties/formulation
+json_schema/drug_administration_protocol#/items/properties/formulation
 ```
 
 Formulation of the administered doses, e.g., immediate release tablet

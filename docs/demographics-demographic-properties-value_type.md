@@ -1,7 +1,7 @@
 # Untitled string in demographics Schema
 
 ```txt
-undefined#/items/properties/value_type
+json_schema/demographics#/items/properties/value_type
 ```
 
 Type of the parameter value, e.g., 'mean'.

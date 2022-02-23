@@ -1,7 +1,7 @@
 # Untitled string in reference\_info Schema
 
 ```txt
-undefined#/properties/reference_type
+json_schema/reference_info#/properties/reference_type
 ```
 
 Type of the document, e.g., journal article.

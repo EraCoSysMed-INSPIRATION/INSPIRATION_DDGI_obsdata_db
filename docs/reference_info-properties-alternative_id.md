@@ -1,7 +1,7 @@
 # Untitled string in reference\_info Schema
 
 ```txt
-undefined#/properties/alternative_id
+json_schema/reference_info#/properties/alternative_id
 ```
 
 Alternative identifier of the document, i.e., link to the document

@@ -1,7 +1,7 @@
 # Untitled null in drug\_administrations Schema
 
 ```txt
-undefined#/items/properties/formulation_comment
+json_schema/drug_administration_protocol#/items/properties/formulation_comment
 ```
 
 Additional information about the formulation, e.g., brand name.

@@ -1,7 +1,7 @@
 # Untitled integer in compound\_infos Schema
 
 ```txt
-undefined#/items/properties/pubchem_id
+json_schema/compound_info#/items/properties/pubchem_id
 ```
 
 Pubchem identifier

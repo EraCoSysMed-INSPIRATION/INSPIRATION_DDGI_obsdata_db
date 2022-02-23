@@ -1,7 +1,7 @@
 # demographics Schema
 
 ```txt
-undefined
+json_schema/demographics
 ```
 
 Array storing all demographic parameter for a study population.

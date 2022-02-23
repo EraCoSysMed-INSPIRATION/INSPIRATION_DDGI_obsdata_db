@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "drug_administrations",
   "description": "Array of all drug administration protocols.",
+  "$id": "json_schema/drug_administration_protocol",
   "type": "array",
   "minItems": 0,
   "items": {
@@ -13,29 +14,28 @@
         "title": "administrations",
         "description": "Array of drug administrations per administration protocol. One per administered dose.",
         "type": "array",
-        "items": [
-          {
-            "type": "object",
-            "description": "Time point of the drug administration.",
-            "properties": {
-              "time": {
-                "type": "number",
-                "nullable": false
-              },
-              "dose": {
-                "description": "Dose of the drug administration.",
-                "type": "number",
-                "nullable": false
-              },
-              "duration": {
-                "description": "Duration of the drug administration i.e., in case of infusions.",
-                "type": "integer",
-                "nullable": true
-              }
+        "items": {
+          "type": "object",
+          "description": "Time point of the drug administration.",
+          "title": "administration",
+          "properties": {
+            "time": {
+              "type": "number",
+              "nullable": false
             },
-            "required": ["time", "dose", "duration"]
-          }
-        ]
+            "dose": {
+              "description": "Dose of the drug administration.",
+              "type": "number",
+              "nullable": false
+            },
+            "duration": {
+              "description": "Duration of the drug administration i.e., in case of infusions.",
+              "type": "integer",
+              "nullable": true
+            }
+          },
+          "required": ["time", "dose", "duration"]
+        }
       },
       "time_unit": {
         "type": "string",

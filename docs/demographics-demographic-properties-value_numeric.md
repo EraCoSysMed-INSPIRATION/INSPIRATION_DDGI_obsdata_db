@@ -1,7 +1,7 @@
 # Untitled number in demographics Schema
 
 ```txt
-undefined#/items/properties/value_numeric
+json_schema/demographics#/items/properties/value_numeric
 ```
 
 Numeric value of the parameter value, e.g., 'mean'.

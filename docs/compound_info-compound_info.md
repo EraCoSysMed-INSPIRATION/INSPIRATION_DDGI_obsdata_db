@@ -1,7 +1,7 @@
 # compound\_info Schema
 
 ```txt
-undefined#/items
+json_schema/compound_info#/items
 ```
 
 Compound information block. Create one for all compounds (analytes and administered compounds).
@@ -16,12 +16,12 @@ Compound information block. Create one for all compounds (analytes and administe
 
 # items Properties
 
-| Property                           | Type      | Required | Nullable       | Defined by                                                                                                               |
-| :--------------------------------- | :-------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| [compound\_name](#compound_name)   | `string`  | Required | can be null    | [compound\_infos](compound_info-compound_info-properties-compound_name.md "undefined#/items/properties/compound_name")   |
-| [compound\_alias](#compound_alias) | `string`  | Optional | cannot be null | [compound\_infos](compound_info-compound_info-properties-compound_alias.md "undefined#/items/properties/compound_alias") |
-| [compound\_mw](#compound_mw)       | `number`  | Required | cannot be null | [compound\_infos](compound_info-compound_info-properties-compound_mw.md "undefined#/items/properties/compound_mw")       |
-| [pubchem\_id](#pubchem_id)         | `integer` | Required | cannot be null | [compound\_infos](compound_info-compound_info-properties-pubchem_id.md "undefined#/items/properties/pubchem_id")         |
+| Property                           | Type      | Required | Nullable       | Defined by                                                                                                                               |
+| :--------------------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
+| [compound\_name](#compound_name)   | `string`  | Required | can be null    | [compound\_infos](compound_info-compound_info-properties-compound_name.md "json_schema/compound_info#/items/properties/compound_name")   |
+| [compound\_alias](#compound_alias) | `string`  | Optional | cannot be null | [compound\_infos](compound_info-compound_info-properties-compound_alias.md "json_schema/compound_info#/items/properties/compound_alias") |
+| [compound\_mw](#compound_mw)       | `number`  | Required | cannot be null | [compound\_infos](compound_info-compound_info-properties-compound_mw.md "json_schema/compound_info#/items/properties/compound_mw")       |
+| [pubchem\_id](#pubchem_id)         | `integer` | Required | cannot be null | [compound\_infos](compound_info-compound_info-properties-pubchem_id.md "json_schema/compound_info#/items/properties/pubchem_id")         |
 
 ## compound\_name
 
@@ -35,7 +35,7 @@ Name of the compound, use INN where available
 
 *   can be null
 
-*   defined in: [compound\_infos](compound_info-compound_info-properties-compound_name.md "undefined#/items/properties/compound_name")
+*   defined in: [compound\_infos](compound_info-compound_info-properties-compound_name.md "json_schema/compound_info#/items/properties/compound_name")
 
 ### compound\_name Type
 
@@ -59,7 +59,7 @@ Alias of the compound. Enter when no INN is available or compound name is confid
 
 *   cannot be null
 
-*   defined in: [compound\_infos](compound_info-compound_info-properties-compound_alias.md "undefined#/items/properties/compound_alias")
+*   defined in: [compound\_infos](compound_info-compound_info-properties-compound_alias.md "json_schema/compound_info#/items/properties/compound_alias")
 
 ### compound\_alias Type
 
@@ -83,7 +83,7 @@ Molecular weight of the compound
 
 *   cannot be null
 
-*   defined in: [compound\_infos](compound_info-compound_info-properties-compound_mw.md "undefined#/items/properties/compound_mw")
+*   defined in: [compound\_infos](compound_info-compound_info-properties-compound_mw.md "json_schema/compound_info#/items/properties/compound_mw")
 
 ### compound\_mw Type
 
@@ -105,7 +105,7 @@ Pubchem identifier
 
 *   cannot be null
 
-*   defined in: [compound\_infos](compound_info-compound_info-properties-pubchem_id.md "undefined#/items/properties/pubchem_id")
+*   defined in: [compound\_infos](compound_info-compound_info-properties-pubchem_id.md "json_schema/compound_info#/items/properties/pubchem_id")
 
 ### pubchem\_id Type
 

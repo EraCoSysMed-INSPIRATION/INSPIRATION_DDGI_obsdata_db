@@ -1,7 +1,7 @@
 # Untitled integer in reference\_info Schema
 
 ```txt
-undefined#/properties/publication_year
+json_schema/reference_info#/properties/publication_year
 ```
 
 Year of the publication of the document

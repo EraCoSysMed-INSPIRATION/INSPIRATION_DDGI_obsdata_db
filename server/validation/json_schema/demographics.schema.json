@@ -2,6 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": "array",
   "title": "demographics",
+  "$id": "json_schema/demographics",
   "description": "Array storing all demographic parameter for a study population.",
   "minItems": 1,
   "items": {

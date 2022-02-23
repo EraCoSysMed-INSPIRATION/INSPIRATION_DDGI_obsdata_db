@@ -1,7 +1,7 @@
 # Untitled string in reference\_info Schema
 
 ```txt
-undefined#/properties/doi
+json_schema/reference_info#/properties/doi
 ```
 
 Document object identifier

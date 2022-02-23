@@ -1,7 +1,7 @@
 # Untitled string in drug\_administrations Schema
 
 ```txt
-undefined#/items/properties/duration_unit
+json_schema/drug_administration_protocol#/items/properties/duration_unit
 ```
 
 Unit of the dosing duration.

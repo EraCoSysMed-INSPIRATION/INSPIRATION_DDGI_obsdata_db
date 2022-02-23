@@ -1,7 +1,7 @@
 # Untitled string in compound\_infos Schema
 
 ```txt
-undefined#/items/properties/compound_alias
+json_schema/compound_info#/items/properties/compound_alias
 ```
 
 Alias of the compound. Enter when no INN is available or compound name is confidential

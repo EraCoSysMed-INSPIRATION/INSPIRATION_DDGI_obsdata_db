@@ -1,7 +1,7 @@
 # drug\_administrations Schema
 
 ```txt
-undefined
+json_schema/drug_administration_protocol
 ```
 
 Array of all drug administration protocols.

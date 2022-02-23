@@ -1,7 +1,7 @@
 # Untitled string in reference\_info Schema
 
 ```txt
-undefined#/properties/doctitle
+json_schema/reference_info#/properties/doctitle
 ```
 
 Title of the document

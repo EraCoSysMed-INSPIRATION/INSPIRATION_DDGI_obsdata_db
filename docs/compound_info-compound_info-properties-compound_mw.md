@@ -1,7 +1,7 @@
 # Untitled number in compound\_infos Schema
 
 ```txt
-undefined#/items/properties/compound_mw
+json_schema/compound_info#/items/properties/compound_mw
 ```
 
 Molecular weight of the compound
