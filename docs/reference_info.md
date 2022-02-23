@@ -16,15 +16,15 @@ undefined
 
 # referenceInfo Properties
 
-| Property                               | Type      | Required | Nullable       | Defined by                                                                                              |
-| :------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------ |
-| [doi](#doi)                            | `string`  | Optional | cannot be null | [referenceInfo](reference_info-properties-doi.md "undefined#/properties/doi")                           |
-| [alternative\_id](#alternative_id)     | `string`  | Optional | cannot be null | [referenceInfo](reference_info-properties-alternative_id.md "undefined#/properties/alternative_id")     |
-| [pmid](#pmid)                          | `integer` | Optional | cannot be null | [referenceInfo](reference_info-properties-pmid.md "undefined#/properties/pmid")                         |
-| [doctitle](#doctitle)                  | `string`  | Required | cannot be null | [referenceInfo](reference_info-properties-doctitle.md "undefined#/properties/doctitle")                 |
-| [first\_author](#first_author)         | `string`  | Optional | cannot be null | [referenceInfo](reference_info-properties-first_author.md "undefined#/properties/first_author")         |
-| [publication\_year](#publication_year) | `integer` | Required | cannot be null | [referenceInfo](reference_info-properties-publication_year.md "undefined#/properties/publication_year") |
-| [reference\_type](#reference_type)     | `string`  | Required | cannot be null | [referenceInfo](reference_info-properties-reference_type.md "undefined#/properties/reference_type")     |
+| Property                            | Type      | Required | Nullable       | Defined by                                                                                            |
+| :---------------------------------- | :-------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------- |
+| [doi](#doi)                         | `string`  | Optional | cannot be null | [referenceInfo](reference_info-properties-doi.md "undefined#/properties/doi")                         |
+| [alternativeId](#alternativeid)     | `string`  | Optional | cannot be null | [referenceInfo](reference_info-properties-alternativeid.md "undefined#/properties/alternativeId")     |
+| [pmid](#pmid)                       | `integer` | Optional | cannot be null | [referenceInfo](reference_info-properties-pmid.md "undefined#/properties/pmid")                       |
+| [docTitle](#doctitle)               | `string`  | Optional | cannot be null | [referenceInfo](reference_info-properties-doctitle.md "undefined#/properties/docTitle")               |
+| [firstAuthor](#firstauthor)         | `string`  | Optional | cannot be null | [referenceInfo](reference_info-properties-firstauthor.md "undefined#/properties/firstAuthor")         |
+| [publicationYear](#publicationyear) | `integer` | Optional | cannot be null | [referenceInfo](reference_info-properties-publicationyear.md "undefined#/properties/publicationYear") |
+| [referenceType](#referencetype)     | `string`  | Optional | cannot be null | [referenceInfo](reference_info-properties-referencetype.md "undefined#/properties/referenceType")     |
 
 ## doi
 
@@ -50,11 +50,11 @@ Document object identifier
 
 **minimum length**: the minimum number of characters for this string is: `4`
 
-## alternative\_id
+## alternativeId
 
 Alternative identifier of the document, i.e., link to the document
 
-`alternative_id`
+`alternativeId`
 
 *   is optional
 
@@ -62,13 +62,13 @@ Alternative identifier of the document, i.e., link to the document
 
 *   cannot be null
 
-*   defined in: [referenceInfo](reference_info-properties-alternative_id.md "undefined#/properties/alternative_id")
+*   defined in: [referenceInfo](reference_info-properties-alternativeid.md "undefined#/properties/alternativeId")
 
-### alternative\_id Type
+### alternativeId Type
 
 `string`
 
-### alternative\_id Constraints
+### alternativeId Constraints
 
 **maximum length**: the maximum number of characters for this string is: `255`
 
@@ -98,35 +98,11 @@ Pubmed identifier
 
 **minimum**: the value of this number must greater than or equal to: `1`
 
-## doctitle
+## docTitle
 
 Title of the document
 
-`doctitle`
-
-*   is required
-
-*   Type: `string`
-
-*   cannot be null
-
-*   defined in: [referenceInfo](reference_info-properties-doctitle.md "undefined#/properties/doctitle")
-
-### doctitle Type
-
-`string`
-
-### doctitle Constraints
-
-**maximum length**: the maximum number of characters for this string is: `255`
-
-**minimum length**: the minimum number of characters for this string is: `4`
-
-## first\_author
-
-First author of the document
-
-`first_author`
+`docTitle`
 
 *   is optional
 
@@ -134,61 +110,85 @@ First author of the document
 
 *   cannot be null
 
-*   defined in: [referenceInfo](reference_info-properties-first_author.md "undefined#/properties/first_author")
+*   defined in: [referenceInfo](reference_info-properties-doctitle.md "undefined#/properties/docTitle")
 
-### first\_author Type
+### docTitle Type
 
 `string`
 
-### first\_author Constraints
+### docTitle Constraints
 
 **maximum length**: the maximum number of characters for this string is: `255`
 
 **minimum length**: the minimum number of characters for this string is: `4`
 
-## publication\_year
+## firstAuthor
 
-Year of the publication of the document
+First author of the document
 
-`publication_year`
+`firstAuthor`
 
-*   is required
-
-*   Type: `integer`
-
-*   cannot be null
-
-*   defined in: [referenceInfo](reference_info-properties-publication_year.md "undefined#/properties/publication_year")
-
-### publication\_year Type
-
-`integer`
-
-### publication\_year Constraints
-
-**maximum**: the value of this number must smaller than or equal to: `2022`
-
-**minimum**: the value of this number must greater than or equal to: `1850`
-
-## reference\_type
-
-Type of the document, e.g., journal article.
-
-`reference_type`
-
-*   is required
+*   is optional
 
 *   Type: `string`
 
 *   cannot be null
 
-*   defined in: [referenceInfo](reference_info-properties-reference_type.md "undefined#/properties/reference_type")
+*   defined in: [referenceInfo](reference_info-properties-firstauthor.md "undefined#/properties/firstAuthor")
 
-### reference\_type Type
+### firstAuthor Type
 
 `string`
 
-### reference\_type Constraints
+### firstAuthor Constraints
+
+**maximum length**: the maximum number of characters for this string is: `255`
+
+**minimum length**: the minimum number of characters for this string is: `4`
+
+## publicationYear
+
+Year of the publication of the document
+
+`publicationYear`
+
+*   is optional
+
+*   Type: `integer`
+
+*   cannot be null
+
+*   defined in: [referenceInfo](reference_info-properties-publicationyear.md "undefined#/properties/publicationYear")
+
+### publicationYear Type
+
+`integer`
+
+### publicationYear Constraints
+
+**maximum**: the value of this number must smaller than or equal to: `2022`
+
+**minimum**: the value of this number must greater than or equal to: `1850`
+
+## referenceType
+
+Type of the document, e.g., journal article.
+
+`referenceType`
+
+*   is optional
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [referenceInfo](reference_info-properties-referencetype.md "undefined#/properties/referenceType")
+
+### referenceType Type
+
+`string`
+
+### referenceType Constraints
 
 **enum**: the value of this property must be equal to one of the following values:
 

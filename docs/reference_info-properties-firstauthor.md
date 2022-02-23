@@ -1,21 +1,21 @@
-# Untitled integer in referenceInfo Schema
+# Untitled string in referenceInfo Schema
 
 ```txt
-undefined#/properties/publication_year
+undefined#/properties/firstAuthor
 ```
 
-Year of the publication of the document
+First author of the document
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../out/reference_info.schema.json "open original schema") |
 
-## publication\_year Type
+## firstAuthor Type
 
-`integer`
+`string`
 
-## publication\_year Constraints
+## firstAuthor Constraints
 
-**maximum**: the value of this number must smaller than or equal to: `2022`
+**maximum length**: the maximum number of characters for this string is: `255`
 
-**minimum**: the value of this number must greater than or equal to: `1850`
+**minimum length**: the minimum number of characters for this string is: `4`

@@ -28,7 +28,7 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         comment: "Route of the administration, e.g., oral",
       },
-      duration_time_unit: {
+      duration_unit: {
         type: Sequelize.STRING,
         comment: "Unit for the dosing duration",
       },

@@ -1,26 +1,21 @@
-# Untitled string in referenceInfo Schema
+# Untitled integer in referenceInfo Schema
 
 ```txt
-undefined#/properties/reference_type
+undefined#/properties/publicationYear
 ```
 
-Type of the document, e.g., journal article.
+Year of the publication of the document
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :---------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../out/reference_info.schema.json "open original schema") |
 
-## reference\_type Type
+## publicationYear Type
 
-`string`
+`integer`
 
-## reference\_type Constraints
+## publicationYear Constraints
 
-**enum**: the value of this property must be equal to one of the following values:
+**maximum**: the value of this number must smaller than or equal to: `2022`
 
-| Value               | Explanation |
-| :------------------ | :---------- |
-| `"journal article"` |             |
-| `"book chapter"`    |             |
-| `"drug label"`      |             |
-| `"nda"`             |             |
+**minimum**: the value of this number must greater than or equal to: `1850`

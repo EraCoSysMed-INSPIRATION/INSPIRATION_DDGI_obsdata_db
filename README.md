@@ -4,7 +4,12 @@ This is the remote repository for the EraCoSysMed DDGI observed data database.
 
 Schema for the database, last updated 07/14/2021.
 
-<img src="./database_schema/database_schema_30_06_2021.svg">
+<img src="./schema/database_schema_30_06_2021.svg">
+
+# Input validation
+
+User input is validated using [JSON-schema draft-07](http://json-schema.org/draft-07/schema). 
+For the documentation for the user input validation [click here](./docs/README.md).
 
 ## Running the database locally
 
