@@ -4,7 +4,7 @@
 json_schema/drug_administration_protocol#/items/properties/administrations/items/properties/time
 ```
 
-
+Time point of the drug administration.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                             |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------------------------- |

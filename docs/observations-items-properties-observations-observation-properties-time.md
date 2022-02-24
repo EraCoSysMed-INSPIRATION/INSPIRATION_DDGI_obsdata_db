@@ -1,15 +1,15 @@
-# Untitled undefined type in demographics Schema
+# Untitled number in observations Schema
 
 ```txt
-json_schema/demographics#/items/properties/value_string
+json_schema/observations#/items/properties/observations/items/properties/time
 ```
 
-Non-numeric value of the parameter value.
+Time point of the observation.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                           |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [demographics.schema.json\*](../out/demographics.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [observations.schema.json\*](../out/observations.schema.json "open original schema") |
 
-## value\_string Type
+## time Type
 
-`string`
+`number`

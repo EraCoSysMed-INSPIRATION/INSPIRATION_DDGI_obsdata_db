@@ -1,44 +1,32 @@
 module.exports = (sequelize, Sequelize) => {
-  const CompoundObservation = sequelize.define(
-    "CompoundObservation",
+  const Observation = sequelize.define(
+    "Observation",
     {
-      time_values: {
-        type: Sequelize.JSON,
-        comment: "Series of timepoints of the observations",
-      },
       time_unit: {
         type: Sequelize.STRING,
         comment: "Unit of the entered time values",
       },
-      obs_values: {
+      observations: {
         type: Sequelize.JSON,
-        comment: "Series of observed values",
+        comment: "Array of all observations for the given profile.",
       },
       obs_value_unit: {
         type: Sequelize.STRING,
         comment: "Unit of the observed values",
       },
-      obs_error_value: {
-        type: Sequelize.JSON,
-        comment: "Series of numeric observation errors",
-      },
-      obs_error_unit: {
-        type: Sequelize.STRING,
-        comment: "Unit of observed errors",
-      },
-      obs_error_type: {
+      error_type: {
         type: Sequelize.STRING,
         comment: "Type of the error, e.g. SD",
       },
-      obs_organ: {
+      organ: {
         type: Sequelize.STRING,
         comment: "Organ or tissue where observation was made, e.g., liver",
       },
-      obs_compartment: {
+      compartment: {
         type: Sequelize.STRING,
         comment: "Compartment where observation was made, e.g., extracellular",
       },
-      obs_matrix: {
+      matrix: {
         type: Sequelize.STRING,
         comment: "Matrix where observation was made, e.g., ?",
       },
@@ -46,12 +34,12 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.FLOAT,
         comment: "Lower limit of quantification",
       },
-      obs_values_blq: {
-        type: Sequelize.JSON,
-        comment: "Series of booleans that describe wether value is below LLOQ",
+      observation_description: {
+        type: Sequelize.STRING,
+        comment: "Description of the observation.",
       },
     },
-    { tableName: "compound_observation" }
+    { tableName: "observations" }
   );
-  return CompoundObservation;
+  return Observation;
 };

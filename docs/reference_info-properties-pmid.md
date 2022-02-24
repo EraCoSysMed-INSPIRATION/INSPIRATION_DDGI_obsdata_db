@@ -1,4 +1,4 @@
-# Untitled integer in reference\_info Schema
+# Untitled undefined type in reference\_info Schema
 
 ```txt
 json_schema/reference_info#/properties/pmid

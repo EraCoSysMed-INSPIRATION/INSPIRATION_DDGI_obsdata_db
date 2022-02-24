@@ -1,4 +1,4 @@
-# Untitled string in demographics Schema
+# Untitled undefined type in demographics Schema
 
 ```txt
 json_schema/demographics#/items/properties/value_unit

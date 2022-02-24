@@ -16,16 +16,16 @@ Drug administration protocol. One per administered compound and respective formu
 
 # items Properties
 
-| Property                                         | Type          | Required | Nullable       | Defined by                                                                                                                                                                                       |
-| :----------------------------------------------- | :------------ | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [administrations](#administrations)              | `array`       | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administrations.md "json_schema/drug_administration_protocol#/items/properties/administrations")             |
-| [time\_unit](#time_unit)                         | `string`      | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-time_unit.md "json_schema/drug_administration_protocol#/items/properties/time_unit")                         |
-| [dose\_unit](#dose_unit)                         | `string`      | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-dose_unit.md "json_schema/drug_administration_protocol#/items/properties/dose_unit")                         |
-| [duration\_unit](#duration_unit)                 | `string`      | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-duration_unit.md "json_schema/drug_administration_protocol#/items/properties/duration_unit")                 |
-| [administered\_compound](#administered_compound) | `string`      | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administered_compound.md "json_schema/drug_administration_protocol#/items/properties/administered_compound") |
-| [formulation](#formulation)                      | `string`      | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-formulation.md "json_schema/drug_administration_protocol#/items/properties/formulation")                     |
-| [formulation\_comment](#formulation_comment)     | Not specified | Required | can be null    | [drug\_administrations](drug_administration_protocol-drug_administration-properties-formulation_comment.md "json_schema/drug_administration_protocol#/items/properties/formulation_comment")     |
-| [administration\_route](#administration_route)   | `string`      | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administration_route.md "json_schema/drug_administration_protocol#/items/properties/administration_route")   |
+| Property                                         | Type     | Required | Nullable       | Defined by                                                                                                                                                                                       |
+| :----------------------------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [administrations](#administrations)              | `array`  | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administrations.md "json_schema/drug_administration_protocol#/items/properties/administrations")             |
+| [time\_unit](#time_unit)                         | `string` | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-time_unit.md "json_schema/drug_administration_protocol#/items/properties/time_unit")                         |
+| [dose\_unit](#dose_unit)                         | `string` | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-dose_unit.md "json_schema/drug_administration_protocol#/items/properties/dose_unit")                         |
+| [duration\_unit](#duration_unit)                 | `string` | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-duration_unit.md "json_schema/drug_administration_protocol#/items/properties/duration_unit")                 |
+| [administered\_compound](#administered_compound) | `string` | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administered_compound.md "json_schema/drug_administration_protocol#/items/properties/administered_compound") |
+| [formulation](#formulation)                      | `string` | Required | can be null    | [drug\_administrations](drug_administration_protocol-drug_administration-properties-formulation.md "json_schema/drug_administration_protocol#/items/properties/formulation")                     |
+| [formulation\_comment](#formulation_comment)     | `string` | Required | can be null    | [drug\_administrations](drug_administration_protocol-drug_administration-properties-formulation_comment.md "json_schema/drug_administration_protocol#/items/properties/formulation_comment")     |
+| [administration\_route](#administration_route)   | `string` | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administration_route.md "json_schema/drug_administration_protocol#/items/properties/administration_route")   |
 
 ## administrations
 
@@ -127,7 +127,7 @@ Formulation of the administered doses, e.g., immediate release tablet
 
 *   Type: `string`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [drug\_administrations](drug_administration_protocol-drug_administration-properties-formulation.md "json_schema/drug_administration_protocol#/items/properties/formulation")
 
@@ -143,7 +143,7 @@ Additional information about the formulation, e.g., brand name.
 
 *   is required
 
-*   Type: `null`, the value must be null
+*   Type: `string`
 
 *   can be null
 
@@ -151,7 +151,7 @@ Additional information about the formulation, e.g., brand name.
 
 ### formulation\_comment Type
 
-`null`, the value must be null
+`string`
 
 ## administration\_route
 

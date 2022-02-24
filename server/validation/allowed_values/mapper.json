@@ -16,7 +16,12 @@
   },
   "demographics": {
     "checkTableName": "Demographic",
-    "checkColumns": ["parameter", "value_type"],
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id"]
+  },
+  "observations": {
+    "checkTableName": "Observation",
+    "checkColumns": [],
     "hiddenOutputColumns": ["id"]
   }
 }

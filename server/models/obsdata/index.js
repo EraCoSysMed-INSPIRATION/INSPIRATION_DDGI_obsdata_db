@@ -179,21 +179,21 @@ obs_db.MealProtocol.hasMany(obs_db.MealProtocolMatcher, {
     onUpdate: "cascade",
   },
 });
-obs_db.Compound.hasMany(obs_db.CompoundObservation, {
+obs_db.Compound.hasMany(obs_db.Observation, {
   foreignKey: {
     name: "compound_id",
     onDelete: "cascade",
     onUpdate: "cascade",
   },
 });
-obs_db.Profile.hasMany(obs_db.CompoundObservationMatcher, {
+obs_db.Profile.hasMany(obs_db.ObservationMatcher, {
   foreignKey: {
     name: "profile_id",
     onDelete: "cascade",
     onUpdate: "cascade",
   },
 });
-obs_db.CompoundObservation.hasMany(obs_db.CompoundObservationMatcher, {
+obs_db.Observation.hasMany(obs_db.ObservationMatcher, {
   foreignKey: {
     name: "compound_observation_id",
     onDelete: "cascade",

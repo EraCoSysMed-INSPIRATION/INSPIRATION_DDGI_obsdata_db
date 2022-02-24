@@ -4,11 +4,11 @@
 json_schema/drug_administration_protocol#/items/properties/administrations/items
 ```
 
-Time point of the drug administration.
+Object describing a single drug administration.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                             |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [drug\_administration\_protocol.schema.json\*](../out/drug_administration_protocol.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [drug\_administration\_protocol.schema.json\*](../out/drug_administration_protocol.schema.json "open original schema") |
 
 ## items Type
 
@@ -20,11 +20,11 @@ Time point of the drug administration.
 | :-------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [time](#time)         | `number`  | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administrations-administration-properties-time.md "json_schema/drug_administration_protocol#/items/properties/administrations/items/properties/time")         |
 | [dose](#dose)         | `number`  | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administrations-administration-properties-dose.md "json_schema/drug_administration_protocol#/items/properties/administrations/items/properties/dose")         |
-| [duration](#duration) | `integer` | Required | cannot be null | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administrations-administration-properties-duration.md "json_schema/drug_administration_protocol#/items/properties/administrations/items/properties/duration") |
+| [duration](#duration) | `integer` | Required | can be null    | [drug\_administrations](drug_administration_protocol-drug_administration-properties-administrations-administration-properties-duration.md "json_schema/drug_administration_protocol#/items/properties/administrations/items/properties/duration") |
 
 ## time
 
-
+Time point of the drug administration.
 
 `time`
 
@@ -68,7 +68,7 @@ Duration of the drug administration i.e., in case of infusions.
 
 *   Type: `integer`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [drug\_administrations](drug_administration_protocol-drug_administration-properties-administrations-administration-properties-duration.md "json_schema/drug_administration_protocol#/items/properties/administrations/items/properties/duration")
 

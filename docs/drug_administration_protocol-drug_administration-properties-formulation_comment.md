@@ -1,4 +1,4 @@
-# Untitled null in drug\_administrations Schema
+# Untitled undefined type in drug\_administrations Schema
 
 ```txt
 json_schema/drug_administration_protocol#/items/properties/formulation_comment
@@ -12,4 +12,4 @@ Additional information about the formulation, e.g., brand name.
 
 ## formulation\_comment Type
 
-`null`, the value must be null
+`string`

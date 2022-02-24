@@ -1,8 +1,8 @@
 module.exports = (sequelize, Sequelize) => {
-  const CompoundObservationMatcher = sequelize.define(
-    "CompoundObservationMatcher",
+  const ObservationMatcher = sequelize.define(
+    "ObservationMatcher",
     {},
     { tableName: "compound_observation_matcher" }
   );
-  return CompoundObservationMatcher;
+  return ObservationMatcher;
 };

@@ -4,7 +4,7 @@ module.exports = (sequelize, Sequelize) => {
     {
       administrations: {
         type: Sequelize.JSON,
-        comment: "Time, dose, and dosing duration for each drug administration of a given compound and formulation",
+        comment: "Array of time, dose, and dosing duration for each drug administration of a given compound and formulation",
       },
       time_unit: {
         type: Sequelize.STRING,

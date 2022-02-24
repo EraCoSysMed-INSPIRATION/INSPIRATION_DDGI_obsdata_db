@@ -20,10 +20,10 @@ Object storing a singular demographic parameter.
 | :------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------ |
 | [parameter](#parameter)          | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-parameter.md "json_schema/demographics#/items/properties/parameter")         |
 | [value\_type](#value_type)       | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_type.md "json_schema/demographics#/items/properties/value_type")       |
-| [value\_numeric](#value_numeric) | `number` | Required | cannot be null | [demographics](demographics-demographic-properties-value_numeric.md "json_schema/demographics#/items/properties/value_numeric") |
-| [value\_string](#value_string)   | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_string.md "json_schema/demographics#/items/properties/value_string")   |
-| [value\_unit](#value_unit)       | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_unit.md "json_schema/demographics#/items/properties/value_unit")       |
-| [value\_comment](#value_comment) | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_comment.md "json_schema/demographics#/items/properties/value_comment") |
+| [value\_numeric](#value_numeric) | `number` | Required | can be null    | [demographics](demographics-demographic-properties-value_numeric.md "json_schema/demographics#/items/properties/value_numeric") |
+| [value\_string](#value_string)   | `string` | Required | can be null    | [demographics](demographics-demographic-properties-value_string.md "json_schema/demographics#/items/properties/value_string")   |
+| [value\_unit](#value_unit)       | `string` | Required | can be null    | [demographics](demographics-demographic-properties-value_unit.md "json_schema/demographics#/items/properties/value_unit")       |
+| [value\_comment](#value_comment) | `string` | Required | can be null    | [demographics](demographics-demographic-properties-value_comment.md "json_schema/demographics#/items/properties/value_comment") |
 
 ## parameter
 
@@ -87,7 +87,7 @@ Numeric value of the parameter value, e.g., 'mean'.
 
 *   Type: `number`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [demographics](demographics-demographic-properties-value_numeric.md "json_schema/demographics#/items/properties/value_numeric")
 
@@ -105,7 +105,7 @@ Non-numeric value of the parameter value.
 
 *   Type: `string`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [demographics](demographics-demographic-properties-value_string.md "json_schema/demographics#/items/properties/value_string")
 
@@ -123,7 +123,7 @@ Unit of the parameter value, e.g., 'years'.
 
 *   Type: `string`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [demographics](demographics-demographic-properties-value_unit.md "json_schema/demographics#/items/properties/value_unit")
 
@@ -141,7 +141,7 @@ Additional information about the parameter.
 
 *   Type: `string`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [demographics](demographics-demographic-properties-value_comment.md "json_schema/demographics#/items/properties/value_comment")
 
