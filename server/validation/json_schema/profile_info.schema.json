@@ -1,0 +1,34 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "profile_info",
+  "$id": "json_schema/profile_info",
+  "description": "Object for basic information on the profile.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+      "is_DDI": {
+        "description": "The profile is a DDI-profile (i.e., a perpetrator is administered).",
+        "type": ["boolean", "null"]
+      },
+      "is_DGI": {
+        "description": "The profile is a DGI-profile (i.e., the effect of a variant phenotype or genotype on the PK or PD of a compound is analyzed).",
+        "type": ["boolean", "null"]
+      },
+      "is_DFI": {
+        "description": "The profile is a DFI-profile (i.e., the effect of food administration is analyzed).",
+        "type": ["boolean", "null"]
+      },
+      "start_clocktime": {
+        "description": "Clocktime of the start of the study, i.e., time of the first drug administration. All time points (e.g., observations, administrations) should be relative to this time point. Given as hh:mm:ss.",
+        "type": ["string", "null"],
+        "minLength": 8,
+        "maxLength": 8,
+        "format": "time"
+      },
+      "profile_type": {
+        "description": "Type of the profile, i.e., 'PK' or 'PD'",
+        "type": "string",
+        "enum": ["pk", "pd"]
+      }
+    }
+}

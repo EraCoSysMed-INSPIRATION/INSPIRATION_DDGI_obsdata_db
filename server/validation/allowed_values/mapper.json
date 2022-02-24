@@ -23,5 +23,10 @@
     "checkTableName": "Observation",
     "checkColumns": [],
     "hiddenOutputColumns": ["id"]
+  },
+  "profile_info": {
+    "checkTableName": "profile",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id"]
   }
 }

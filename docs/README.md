@@ -10,6 +10,8 @@
 
 *   [observations](./observations.md "Array of all observations of the given profile") – `json_schema/observations`
 
+*   [profile\_info](./profile_info.md "Object for basic information on the profile") – `json_schema/profile_info`
+
 *   [reference\_info](./reference_info.md "Object containing information about the source document") – `json_schema/reference_info`
 
 ## Other Schemas
