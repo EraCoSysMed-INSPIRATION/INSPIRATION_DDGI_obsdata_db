@@ -16,6 +16,6 @@ NCBI gene identifier
 
 ## ncbi\_gene\_id Constraints
 
-**maximum length**: the maximum number of characters for this string is: `20`
+**maximum**: the value of this number must smaller than or equal to: `20`
 
-**minimum length**: the minimum number of characters for this string is: `1`
+**minimum**: the value of this number must greater than or equal to: `1`

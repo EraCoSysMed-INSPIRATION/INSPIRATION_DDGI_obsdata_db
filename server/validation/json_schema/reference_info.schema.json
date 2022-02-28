@@ -4,11 +4,7 @@
   "$id": "json_schema/reference_info",
   "description": "Object containing information about the source document.",
   "type": "object",
-  "required": [
-    "doctitle",
-    "publication_year",
-    "reference_type"
-  ],
+  "required": ["doctitle", "publication_year", "reference_type"],
   "properties": {
     "doi": {
       "description": "Document object identifier",
@@ -49,7 +45,13 @@
     "reference_type": {
       "description": "Type of the document, e.g., journal article.",
       "type": "string",
-      "enum": ["journal article", "book chapter", "drug label", "nda"]
+      "enum": ["journal article", "book chapter", "drug label", "nda"],
+      "meta:enum": {
+        "journal article": "Published original article or review",
+        "book chapter": "Book chapter",
+        "drug label": "Drug label",
+        "nda": "New drug application"
+      }
     }
   },
   "additionalProperties": false

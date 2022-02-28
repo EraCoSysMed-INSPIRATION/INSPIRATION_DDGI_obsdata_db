@@ -19,7 +19,7 @@ Compound information block. Create one for all compounds (analytes and administe
 | Property                           | Type      | Required | Nullable       | Defined by                                                                                                                               |
 | :--------------------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------- |
 | [compound\_name](#compound_name)   | `string`  | Required | can be null    | [compound\_infos](compound_info-compound_info-properties-compound_name.md "json_schema/compound_info#/items/properties/compound_name")   |
-| [compound\_alias](#compound_alias) | `string`  | Optional | can be null    | [compound\_infos](compound_info-compound_info-properties-compound_alias.md "json_schema/compound_info#/items/properties/compound_alias") |
+| [compound\_alias](#compound_alias) | `string`  | Required | can be null    | [compound\_infos](compound_info-compound_info-properties-compound_alias.md "json_schema/compound_info#/items/properties/compound_alias") |
 | [compound\_mw](#compound_mw)       | `number`  | Required | cannot be null | [compound\_infos](compound_info-compound_info-properties-compound_mw.md "json_schema/compound_info#/items/properties/compound_mw")       |
 | [pubchem\_id](#pubchem_id)         | `integer` | Required | can be null    | [compound\_infos](compound_info-compound_info-properties-pubchem_id.md "json_schema/compound_info#/items/properties/pubchem_id")         |
 
@@ -53,7 +53,7 @@ Alias of the compound. Enter when no INN is available or compound name is confid
 
 `compound_alias`
 
-*   is optional
+*   is required
 
 *   Type: `string`
 

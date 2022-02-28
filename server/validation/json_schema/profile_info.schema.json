@@ -29,7 +29,8 @@
       "profile_type": {
         "description": "Type of the profile, i.e., 'PK' or 'PD'",
         "type": "string",
-        "enum": ["pk", "pd"]
+        "enum": ["pk", "pd"],
+        "meta:enum": {"pk": "pharmacokinetic", "pd": "pharmacokinetic"}
       }
     }
 }

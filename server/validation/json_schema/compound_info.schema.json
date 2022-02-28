@@ -9,7 +9,7 @@
     "type": "object",
     "title": "compound_info",
     "description": "Compound information block. Create one for all compounds (analytes and administered compounds).",
-    "required": ["compound_name", "compound_mw", "pubchem_id"],
+    "required": ["compound_name", "compound_mw", "pubchem_id", "compound_alias"],
     "additionalProperties": false,
     "properties": {
       "compound_name": {

@@ -126,7 +126,7 @@ Type of the profile, i.e., 'PK' or 'PD'
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value  | Explanation |
-| :----- | :---------- |
-| `"pk"` |             |
-| `"pd"` |             |
+| Value  | Explanation     |
+| :----- | :-------------- |
+| `"pk"` | pharmacokinetic |
+| `"pd"` | pharmacokinetic |

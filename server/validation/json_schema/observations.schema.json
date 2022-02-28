@@ -55,7 +55,8 @@
       "error_type": {
         "description": "Type of the error..",
         "type": ["string", "null"],
-        "enum": ["sd", "gsd"]
+        "enum": ["sd", "gsd"],
+        "meta:enum": {"sd": "Arithmetic standard deviation", "gsd": "Geometric standard deviation"}
       },
       "compartment": {
         "description": "Compartment, where observations were made.",

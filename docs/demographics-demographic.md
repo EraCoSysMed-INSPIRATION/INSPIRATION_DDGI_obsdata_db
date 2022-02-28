@@ -65,17 +65,18 @@ Type of the parameter value, e.g., 'mean'.
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value           | Explanation |
-| :-------------- | :---------- |
-| `"mean"`        |             |
-| `"median"`      |             |
-| `"range_lower"` |             |
-| `"range_upper"` |             |
-| `"percentage"`  |             |
-| `"single"`      |             |
-| `"sd"`          |             |
-| `"gsd"`         |             |
-| `"count"`       |             |
+| Value           | Explanation                       |
+| :-------------- | :-------------------------------- |
+| `"mean"`        | arithmetic mean                   |
+| `"geomean"`     | geometric mean                    |
+| `"sd"`          | arithmetic standard deviation     |
+| `"gsd"`         | geometric standard deviation      |
+| `"median"`      | median                            |
+| `"range_lower"` | lower boundary of the value range |
+| `"range_upper"` | upper boundary of the value range |
+| `"percentage"`  | percentage                        |
+| `"single"`      | single value for individuals      |
+| `"count"`       | count                             |
 
 ## value\_numeric
 

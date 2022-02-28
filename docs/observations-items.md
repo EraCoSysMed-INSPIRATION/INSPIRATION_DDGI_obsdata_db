@@ -127,10 +127,10 @@ Type of the error..
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value   | Explanation |
-| :------ | :---------- |
-| `"sd"`  |             |
-| `"gsd"` |             |
+| Value   | Explanation                   |
+| :------ | :---------------------------- |
+| `"sd"`  | Arithmetic standard deviation |
+| `"gsd"` | Geometric standard deviation  |
 
 ## compartment
 

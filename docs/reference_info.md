@@ -192,9 +192,9 @@ Type of the document, e.g., journal article.
 
 **enum**: the value of this property must be equal to one of the following values:
 
-| Value               | Explanation |
-| :------------------ | :---------- |
-| `"journal article"` |             |
-| `"book chapter"`    |             |
-| `"drug label"`      |             |
-| `"nda"`             |             |
+| Value               | Explanation                          |
+| :------------------ | :----------------------------------- |
+| `"journal article"` | Published original article or review |
+| `"book chapter"`    | Book chapter                         |
+| `"drug label"`      | Drug label                           |
+| `"nda"`             | New drug application                 |

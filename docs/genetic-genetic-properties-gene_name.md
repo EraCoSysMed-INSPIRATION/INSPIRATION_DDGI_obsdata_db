@@ -1,4 +1,4 @@
-# Untitled undefined type in genetic\_info Schema
+# Untitled string in genetic\_info Schema
 
 ```txt
 json_schema/genetic_info#/items/properties/gene_name

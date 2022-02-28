@@ -20,15 +20,28 @@
         "type": "string",
         "enum": [
           "mean",
+          "geomean",
+          "sd",
+          "gsd",
           "median",
           "range_lower",
           "range_upper",
           "percentage",
           "single",
-          "sd",
-          "gsd",
           "count"
-        ]
+        ],
+        "meta:enum": {
+          "mean": "arithmetic mean",
+          "geomean": "geometric mean",
+          "sd": "arithmetic standard deviation",
+          "gsd": "geometric standard deviation",
+          "median": "median",
+          "range_lower": "lower boundary of the value range",
+          "range_upper": "upper boundary of the value range",
+          "percentage": "percentage",
+          "single": "single value for individuals",
+          "count": "count"
+        }
       },
       "value_numeric": {
         "description": "Numeric value of the parameter value, e.g., 'mean'.",

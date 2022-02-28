@@ -15,19 +15,20 @@
       "ncbi_gene_id": {
         "description": "NCBI gene identifier",
         "type": ["integer", "null"],
-        "minLength": 1,
-        "maxLength": 20
+        "minimum": 1,
+        "maximum": 20
       },
       "gene_name": {
         "description": "Conventional gene name, e.g., CYP2D6.",
-        "type": ["string", "null"],
+        "type": "string",
         "minLength": 1,
         "maxLength": 255
       },
       "parameter": {
         "description": "Parameter: phenotype, diplotype or haplotype",
         "type": "string",
-        "enum": ["phenotype", "diplotype", "haplotype"]
+        "enum": ["phenotype", "diplotype", "haplotype"],
+        "meta:enum": {"phenotype": "phenotype", "diplotype": "diplotype", "haplotype": "haplotype"}
       },
       "value": {
         "description": "Value of the parameter. E.g., 'PM', '*1/*2' or 'rs4244285'.",
@@ -38,12 +39,12 @@
         "type": "number"
       },
       "method": {
-        "type": "string",
+        "type": ["string", "null"],
         "description": "Method of determination for the genetic parameter. E.g., 'dextromethorphan/dextrorphan urinary metabolic ratio' or 'PCR-RFLP'."
       },
       "comment": {
         "description": "Comment regarding the provided value.",
-        "type": "string"
+        "type": ["string", "null"]
       }
     }
   }

@@ -46,7 +46,7 @@
       },
       "duration_unit": {
         "description": "Unit of the dosing duration.",
-        "type": "string"
+        "type": ["string", "null"]
       },
       "administered_compound": {
         "description": "Compound name of the administered compound. Must match compound_name or compound_alias of compoundInfo.",
@@ -63,7 +63,8 @@
       "administration_route": {
         "description": "Route of the administration, e.g., oral.",
         "type": "string",
-        "enum": ["oral", "iv", "transdermal", "inhalation"]
+        "enum": ["oral", "iv", "transdermal", "inhalation"],
+        "meta:enum": {"oral": "Drug was administered per os.", "iv":"Drug was administered intravenously.", "transdermal":"Drug was administered via the skin.", "inhalation":"Drug was inhaled."}
       }
     },
     "required": [

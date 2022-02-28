@@ -19,12 +19,12 @@ Compound information block. Create one for all compounds (analytes and administe
 | Property                        | Type      | Required | Nullable       | Defined by                                                                                                            |
 | :------------------------------ | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------- |
 | [ncbi\_gene\_id](#ncbi_gene_id) | `integer` | Required | can be null    | [genetic\_info](genetic-genetic-properties-ncbi_gene_id.md "json_schema/genetic_info#/items/properties/ncbi_gene_id") |
-| [gene\_name](#gene_name)        | `string`  | Required | can be null    | [genetic\_info](genetic-genetic-properties-gene_name.md "json_schema/genetic_info#/items/properties/gene_name")       |
+| [gene\_name](#gene_name)        | `string`  | Required | cannot be null | [genetic\_info](genetic-genetic-properties-gene_name.md "json_schema/genetic_info#/items/properties/gene_name")       |
 | [parameter](#parameter)         | `string`  | Required | cannot be null | [genetic\_info](genetic-genetic-properties-parameter.md "json_schema/genetic_info#/items/properties/parameter")       |
 | [value](#value)                 | `string`  | Required | cannot be null | [genetic\_info](genetic-genetic-properties-value.md "json_schema/genetic_info#/items/properties/value")               |
 | [percentage](#percentage)       | `number`  | Required | cannot be null | [genetic\_info](genetic-genetic-properties-percentage.md "json_schema/genetic_info#/items/properties/percentage")     |
-| [method](#method)               | `string`  | Optional | cannot be null | [genetic\_info](genetic-genetic-properties-method.md "json_schema/genetic_info#/items/properties/method")             |
-| [comment](#comment)             | `string`  | Required | cannot be null | [genetic\_info](genetic-genetic-properties-comment.md "json_schema/genetic_info#/items/properties/comment")           |
+| [method](#method)               | `string`  | Optional | can be null    | [genetic\_info](genetic-genetic-properties-method.md "json_schema/genetic_info#/items/properties/method")             |
+| [comment](#comment)             | `string`  | Required | can be null    | [genetic\_info](genetic-genetic-properties-comment.md "json_schema/genetic_info#/items/properties/comment")           |
 
 ## ncbi\_gene\_id
 
@@ -46,9 +46,9 @@ NCBI gene identifier
 
 ### ncbi\_gene\_id Constraints
 
-**maximum length**: the maximum number of characters for this string is: `20`
+**maximum**: the value of this number must smaller than or equal to: `20`
 
-**minimum length**: the minimum number of characters for this string is: `1`
+**minimum**: the value of this number must greater than or equal to: `1`
 
 ## gene\_name
 
@@ -60,7 +60,7 @@ Conventional gene name, e.g., CYP2D6.
 
 *   Type: `string`
 
-*   can be null
+*   cannot be null
 
 *   defined in: [genetic\_info](genetic-genetic-properties-gene_name.md "json_schema/genetic_info#/items/properties/gene_name")
 
@@ -98,9 +98,9 @@ Parameter: phenotype, diplotype or haplotype
 
 | Value         | Explanation |
 | :------------ | :---------- |
-| `"phenotype"` |             |
-| `"diplotype"` |             |
-| `"haplotype"` |             |
+| `"phenotype"` | phenotype   |
+| `"diplotype"` | diplotype   |
+| `"haplotype"` | haplotype   |
 
 ## value
 
@@ -148,7 +148,7 @@ Method of determination for the genetic parameter. E.g., 'dextromethorphan/dextr
 
 *   Type: `string`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [genetic\_info](genetic-genetic-properties-method.md "json_schema/genetic_info#/items/properties/method")
 
@@ -166,7 +166,7 @@ Comment regarding the provided value.
 
 *   Type: `string`
 
-*   cannot be null
+*   can be null
 
 *   defined in: [genetic\_info](genetic-genetic-properties-comment.md "json_schema/genetic_info#/items/properties/comment")
 
