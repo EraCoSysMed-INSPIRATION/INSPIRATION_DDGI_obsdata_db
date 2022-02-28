@@ -8,6 +8,8 @@
 
 *   [drug\_administrations](./drug_administration_protocol.md "Array of all drug administration protocols") – `json_schema/drug_administration_protocol`
 
+*   [genetic\_info](./genetic.md "Array of genetic information for the respective study population") – `json_schema/genetic_info`
+
 *   [observations](./observations.md "Array of all observations of the given profile") – `json_schema/observations`
 
 *   [profile\_info](./profile_info.md "Object for basic information on the profile") – `json_schema/profile_info`
@@ -27,6 +29,8 @@
 *   [demographic](./demographics-demographic.md "Object storing a singular demographic parameter") – `json_schema/demographics#/items`
 
 *   [drug\_administration](./drug_administration_protocol-drug_administration.md "Drug administration protocol") – `json_schema/drug_administration_protocol#/items`
+
+*   [genetic](./genetic-genetic.md "Compound information block") – `json_schema/genetic_info#/items`
 
 *   [observation](./observations-items-properties-observations-observation.md "Object describing a single observation") – `json_schema/observations#/items/properties/observations/items`
 

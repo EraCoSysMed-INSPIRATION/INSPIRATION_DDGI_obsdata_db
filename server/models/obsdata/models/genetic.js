@@ -4,28 +4,24 @@ module.exports = (sequelize, Sequelize) => {
     {
       ncbi_gene_id: {
         type: Sequelize.INTEGER,
-        comment: "NCBI gene id",
       },
       gene_name: {
         type: Sequelize.STRING,
-        comment: "Conventional gene name, e.g., CYP2D6",
       },
-      value_num: {
+      parameter: {
+        type: Sequelize.STRING,
+      },
+      value: {
+        type: Sequelize.STRING,
+      },
+      percentage: {
         type: Sequelize.FLOAT,
-        comment:
-          "Numeric value of a parameter, e.g., percentage of individuals in the population carrying a specific allele",
       },
-      value_str: {
+      method: {
         type: Sequelize.STRING,
-        comment: "Non-numeric value of a parameter, e.g., Poor Metabolizer",
       },
-      value_unit: {
+      comment: {
         type: Sequelize.STRING,
-        comment: "Unit of a parameter, e.g., %",
-      },
-      value_comment: {
-        type: Sequelize.STRING,
-        comment: "Additional information about the parameter",
       },
     },
     { tableName: "genetic" }

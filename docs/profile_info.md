@@ -18,11 +18,11 @@ Object for basic information on the profile.
 
 | Property                             | Type      | Required | Nullable       | Defined by                                                                                                         |
 | :----------------------------------- | :-------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------- |
-| [is\_DDI](#is_ddi)                   | `boolean` | Optional | can be null    | [profile\_info](profile_info-properties-is_ddi.md "json_schema/profile_info#/properties/is_DDI")                   |
-| [is\_DGI](#is_dgi)                   | `boolean` | Optional | can be null    | [profile\_info](profile_info-properties-is_dgi.md "json_schema/profile_info#/properties/is_DGI")                   |
-| [is\_DFI](#is_dfi)                   | `boolean` | Optional | can be null    | [profile\_info](profile_info-properties-is_dfi.md "json_schema/profile_info#/properties/is_DFI")                   |
-| [start\_clocktime](#start_clocktime) | `string`  | Optional | can be null    | [profile\_info](profile_info-properties-start_clocktime.md "json_schema/profile_info#/properties/start_clocktime") |
-| [profile\_type](#profile_type)       | `string`  | Optional | cannot be null | [profile\_info](profile_info-properties-profile_type.md "json_schema/profile_info#/properties/profile_type")       |
+| [is\_DDI](#is_ddi)                   | `boolean` | Optional | cannot be null | [profile\_info](profile_info-properties-is_ddi.md "json_schema/profile_info#/properties/is_DDI")                   |
+| [is\_DGI](#is_dgi)                   | `boolean` | Optional | cannot be null | [profile\_info](profile_info-properties-is_dgi.md "json_schema/profile_info#/properties/is_DGI")                   |
+| [is\_DFI](#is_dfi)                   | `boolean` | Optional | cannot be null | [profile\_info](profile_info-properties-is_dfi.md "json_schema/profile_info#/properties/is_DFI")                   |
+| [start\_clocktime](#start_clocktime) | `string`  | Required | can be null    | [profile\_info](profile_info-properties-start_clocktime.md "json_schema/profile_info#/properties/start_clocktime") |
+| [profile\_type](#profile_type)       | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-profile_type.md "json_schema/profile_info#/properties/profile_type")       |
 
 ## is\_DDI
 
@@ -34,7 +34,7 @@ The profile is a DDI-profile (i.e., a perpetrator is administered).
 
 *   Type: `boolean`
 
-*   can be null
+*   cannot be null
 
 *   defined in: [profile\_info](profile_info-properties-is_ddi.md "json_schema/profile_info#/properties/is_DDI")
 
@@ -52,7 +52,7 @@ The profile is a DGI-profile (i.e., the effect of a variant phenotype or genotyp
 
 *   Type: `boolean`
 
-*   can be null
+*   cannot be null
 
 *   defined in: [profile\_info](profile_info-properties-is_dgi.md "json_schema/profile_info#/properties/is_DGI")
 
@@ -70,7 +70,7 @@ The profile is a DFI-profile (i.e., the effect of food administration is analyze
 
 *   Type: `boolean`
 
-*   can be null
+*   cannot be null
 
 *   defined in: [profile\_info](profile_info-properties-is_dfi.md "json_schema/profile_info#/properties/is_DFI")
 
@@ -84,7 +84,7 @@ Clocktime of the start of the study, i.e., time of the first drug administration
 
 `start_clocktime`
 
-*   is optional
+*   is required
 
 *   Type: `string`
 
@@ -110,7 +110,7 @@ Type of the profile, i.e., 'PK' or 'PD'
 
 `profile_type`
 
-*   is optional
+*   is required
 
 *   Type: `string`
 

@@ -12,21 +12,26 @@
   "drug_administrations": {
     "checkTableName": "AdministrationProtocol",
     "checkColumns": [],
-    "hiddenOutputColumns": ["id"]
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
   "demographics": {
     "checkTableName": "Demographic",
     "checkColumns": [],
-    "hiddenOutputColumns": ["id"]
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
   "observations": {
     "checkTableName": "Observation",
     "checkColumns": [],
-    "hiddenOutputColumns": ["id"]
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
   "profile_info": {
-    "checkTableName": "profile",
+    "checkTableName": "ProfileInfo",
     "checkColumns": [],
-    "hiddenOutputColumns": ["id"]
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "biomarker_and_covariate": {
+    "checkTableName": "BiomarkerAndCovariateObservation",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   }
 }

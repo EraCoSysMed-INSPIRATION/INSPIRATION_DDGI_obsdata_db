@@ -1,4 +1,4 @@
-# Untitled undefined type in profile\_info Schema
+# Untitled boolean in profile\_info Schema
 
 ```txt
 json_schema/profile_info#/properties/is_DFI

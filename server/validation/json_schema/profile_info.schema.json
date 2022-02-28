@@ -5,18 +5,19 @@
   "description": "Object for basic information on the profile.",
   "type": "object",
   "additionalProperties": false,
+  "required": ["isDDI", "isDGI", "isDFI", "profile_type", "start_clocktime"],
   "properties": {
       "is_DDI": {
         "description": "The profile is a DDI-profile (i.e., a perpetrator is administered).",
-        "type": ["boolean", "null"]
+        "type": "boolean"
       },
       "is_DGI": {
         "description": "The profile is a DGI-profile (i.e., the effect of a variant phenotype or genotype on the PK or PD of a compound is analyzed).",
-        "type": ["boolean", "null"]
+        "type": "boolean"
       },
       "is_DFI": {
         "description": "The profile is a DFI-profile (i.e., the effect of food administration is analyzed).",
-        "type": ["boolean", "null"]
+        "type": "boolean"
       },
       "start_clocktime": {
         "description": "Clocktime of the start of the study, i.e., time of the first drug administration. All time points (e.g., observations, administrations) should be relative to this time point. Given as hh:mm:ss.",

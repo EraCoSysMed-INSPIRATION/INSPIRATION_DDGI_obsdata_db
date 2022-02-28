@@ -4,15 +4,12 @@ module.exports = (sequelize, Sequelize) => {
     {
       pubchem_id: {
         type: Sequelize.INTEGER,
-        comment: "Pubchem identifier",
       },
       compound_name: {
         type: Sequelize.STRING,
-        comment: "Commonly used name of the compound",
       },
       compound_alias: {
         type: Sequelize.STRING,
-        comment: "Alternative name or identifier",
       },
     },
     {
