@@ -1,9 +1,9 @@
-# TOC
-1. [About](#about)
+# Table of Contents
+## [About](#about)
 
-2. [Input Validation](#input-validation)
+## [Input Validation](#input-validation)
 
-3. [Running the database locally](#running-the-database-locally)
+## [Running the database locally](#running-the-database-locally)
 
 # About
 
