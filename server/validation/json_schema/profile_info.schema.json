@@ -5,7 +5,7 @@
   "description": "Object for basic information on the profile.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["isDDI", "isDGI", "isDFI", "profile_type", "start_clocktime"],
+  "required": ["is_DDI", "is_DGI", "is_DFI", "profile_type", "start_clocktime"],
   "properties": {
       "is_DDI": {
         "description": "The profile is a DDI-profile (i.e., a perpetrator is administered).",

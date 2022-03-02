@@ -2,8 +2,8 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "compound_infos",
   "$id": "json_schema/compound_info",
-  "description": "Array of compound information for all profile compounds.",
-  "type": ["array", "null"],
+  "description": "Array of compound information for all profile compounds. One of [compound_name](https://github.com/EraCoSysMed-INSPIRATION/INSPIRATION_DDGI_obsdata_db/blob/master/docs/compound_info-compound_info.md#compound_name), [compound_alias](https://github.com/EraCoSysMed-INSPIRATION/INSPIRATION_DDGI_obsdata_db/blob/master/docs/compound_info-compound_info.md#compound_alias) or [pubchem_id](https://github.com/EraCoSysMed-INSPIRATION/INSPIRATION_DDGI_obsdata_db/blob/master/docs/compound_info-compound_info.md#pubchem_id) is required to be not null.",
+  "type": "array",
   "minItems": 0,
   "items": {
     "type": "object",

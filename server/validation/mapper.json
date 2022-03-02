@@ -29,7 +29,7 @@
     "checkColumns": [],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
-  "biomarker_and_covariate": {
+  "biomarkers_and_covariates": {
     "checkTableName": "BiomarkerAndCovariateObservation",
     "checkColumns": [],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]

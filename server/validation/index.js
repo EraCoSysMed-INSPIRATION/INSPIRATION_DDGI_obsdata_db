@@ -4,9 +4,12 @@ const ajv = new Ajv({ discriminator: true });
 const fs = require("fs");
 const path = require("path");
 const basename = path.basename(__filename);
-const null_check = require("./allowed_values/mapper.json");
+const null_check = require("./mapper.json");
 
 addFormats(ajv, "iso-time")
+ajv.addKeyword({
+  keyword: "meta:enum"
+})
 
 async function validateSchema(req, schema, null_check) {
   let message = `Schema '${schema.title}' is valid`;

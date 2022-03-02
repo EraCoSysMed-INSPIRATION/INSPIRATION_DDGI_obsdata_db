@@ -3,7 +3,7 @@
   "type": "array",
   "title": "demographics",
   "$id": "json_schema/demographics",
-  "description": "Array storing all demographic parameter for a study population.",
+  "description": "Array storing all demographic parameters for a study population.",
   "minItems": 1,
   "items": {
     "type": "object",
