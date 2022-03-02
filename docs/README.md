@@ -6,15 +6,11 @@
 
 *   [compound\_infos](./compound_info.md "Array of compound information for all profile compounds") – `json_schema/compound_info`
 
-*   [demographics](./demographics.md "Array storing all demographic parameter for a study population") – `json_schema/demographics`
+*   [demographics](./demographics.md "Array storing all demographic parameters for a study population") – `json_schema/demographics`
 
 *   [drug\_administrations](./drug_administration_protocol.md "Array of all drug administration protocols") – `json_schema/drug_administration_protocol`
 
-*   [genetic\_info](./genetic.md "Array of genetic information for the respective study population") – `json_schema/genetic_info`
-
 *   [observations](./observations.md "Array of all observations of the given profile") – `json_schema/observations`
-
-*   [profile](./profile.md "Top level object containing all information about a given profile") – `json_schema/profile`
 
 *   [profile\_info](./profile_info.md "Object for basic information on the profile") – `json_schema/profile_info`
 
@@ -33,8 +29,6 @@
 *   [demographic](./demographics-demographic.md "Object storing a singular demographic parameter") – `json_schema/demographics#/items`
 
 *   [drug\_administration](./drug_administration_protocol-drug_administration.md "Drug administration protocol") – `json_schema/drug_administration_protocol#/items`
-
-*   [genetic](./genetic-genetic.md "Compound information block") – `json_schema/genetic_info#/items`
 
 *   [observation](./biomarkers_and_covariates-biomarker_and_covariates_observations-properties-observations-observation.md "Object describing a single biomarker or covariate observation") – `json_schema/biomarkers_and_covariates#/items/properties/observations/items`
 

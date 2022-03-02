@@ -4,7 +4,7 @@
 json_schema/demographics
 ```
 
-Array storing all demographic parameter for a study population.
+Array storing all demographic parameters for a study population.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                         |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------- |
