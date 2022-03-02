@@ -33,5 +33,15 @@
     "checkTableName": "BiomarkerAndCovariateObservation",
     "checkColumns": [],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "genetic_info": {
+    "checkTableName": "Genetic",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "nca_values": {
+    "checkTableName": "NCAValue",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   }
 }

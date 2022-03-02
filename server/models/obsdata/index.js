@@ -200,13 +200,6 @@ obs_db.Observation.hasMany(obs_db.ObservationMatcher, {
     onUpdate: "cascade",
   },
 });
-obs_db.NCAParameter.hasMany(obs_db.NCAValue, {
-  foreignKey: {
-    name: "nca_parameter_id",
-    onDelete: "cascade",
-    onUpdate: "cascade",
-  },
-});
 obs_db.Compound.hasMany(obs_db.NCAValue, {
   foreignKey: {
     name: "compound_id",

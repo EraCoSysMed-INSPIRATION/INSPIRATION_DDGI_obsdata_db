@@ -9,7 +9,34 @@ Schema for the database, last updated 07/14/2021.
 # Input validation
 
 User input is validated using [JSON-schema draft-07](http://json-schema.org/draft-07/schema). 
-For the documentation of the user input validation [click here](./docs/README.md).
+<!-- For the full documentation of the user input validation [click here](./docs/README.md). -->
+The input is required to have the following structure:
+```json
+   {
+     "profile_info": "object",
+     "reference_info": "object",
+     "compound_infos": "array",
+     "drug_administrations": ["array", "null"],
+     "demographic_infos": ["array", "null"],
+     "genetic_infos": ["array", "null"],
+     "observations": ["array", "null"],
+     "biomarkers_and_covariates": ["array", "null"],
+     "nca_values": ["array", "null"],
+     "interaction_ratios": ["array", "null"]
+   }
+```
+For specific details, please refer to the documentation:
+- [profile_info](./docs/profile_info.md)
+- [reference_info](./docs/reference_info.md)
+- [compound_infos](./docs/compound_infos.md)
+- [drug_administrations](./docs/drug_administrations.md)
+- [demographic_infos](./docs/demographics.md)
+- [genetic_infos](./docs/genetic.md)
+- [observations](./docs/observations.md)
+- [biomarkers_and_covariates](./docs/biomarkers_and_covariates.md)
+- [nca_values](./docs/nca_values.md)
+- [interaction_ratios](./docs/interaction_ratios.md)
+
 
 # Running the database locally
 ## Requirements
