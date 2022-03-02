@@ -1,4 +1,9 @@
-# EracoSysMed - DDGI observed data database
+# TOC
+[1. About](#about)
+[2. Input Validation](#input-validation)
+[3. Running the database locally](#running-the-database-locally)
+
+# About
 
 This is the remote repository for the EraCoSysMed DDGI observed data database.
 
@@ -10,7 +15,7 @@ Schema for the database, last updated 07/14/2021.
 
 User input is validated using [JSON-schema draft-07](http://json-schema.org/draft-07/schema). 
 <!-- For the full documentation of the user input validation [click here](./docs/README.md). -->
-The input is required to have the following structure:
+The input is required to have the following structure and data types:
 ```json
    {
      "profile_info": "object",
