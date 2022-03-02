@@ -13,3 +13,16 @@ Unit of time point for the observations.
 ## time\_unit Type
 
 `string`
+
+## time\_unit Constraints
+
+**enum**: the value of this property must be equal to one of the following values:
+
+| Value   | Explanation |
+| :------ | :---------- |
+| `"s"`   | seconds     |
+| `"min"` | minutes     |
+| `"h"`   | hours       |
+| `"d"`   | days        |
+| `"m"`   | months      |
+| `"y"`   | years       |

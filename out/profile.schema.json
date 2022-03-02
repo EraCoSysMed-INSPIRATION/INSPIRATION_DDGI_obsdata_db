@@ -1,0 +1,1 @@
+{"$id":"json_schema/profile","type":"object","properties":{"profile_info":{"$ref":"json_schema/profile_info"}}}

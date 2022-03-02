@@ -25,16 +25,7 @@
           "properties": {
             "time": {
               "type": "number",
-              "description": "Time point of the observation.",
-              "enum": ["s", "min", "h", "d", "m", "y"],
-              "meta:enum": {
-                "s": "seconds",
-                "min": "minutes",
-                "h": "hours",
-                "d": "days",
-                "m": "months",
-                "y": "years"
-              }
+              "description": "Time point of the observation."
             },
             "observation_numeric": {
               "type": ["number", "null"],
@@ -57,7 +48,16 @@
       },
       "time_unit": {
         "type": "string",
-        "description": "Unit of time point for the observations."
+        "description": "Unit of time point for the observations.",
+        "enum": ["s", "min", "h", "d", "m", "y"],
+        "meta:enum": {
+          "s": "seconds",
+          "min": "minutes",
+          "h": "hours",
+          "d": "days",
+          "m": "months",
+          "y": "years"
+        }
       },
       "observation_unit": {
         "type": ["string", "null"],
