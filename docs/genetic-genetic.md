@@ -23,7 +23,7 @@ Compound information block. Create one for all compounds (analytes and administe
 | [parameter](#parameter)         | `string`  | Required | cannot be null | [genetic\_info](genetic-genetic-properties-parameter.md "json_schema/genetic_info#/items/properties/parameter")       |
 | [value](#value)                 | `string`  | Required | cannot be null | [genetic\_info](genetic-genetic-properties-value.md "json_schema/genetic_info#/items/properties/value")               |
 | [percentage](#percentage)       | `number`  | Required | cannot be null | [genetic\_info](genetic-genetic-properties-percentage.md "json_schema/genetic_info#/items/properties/percentage")     |
-| [method](#method)               | `string`  | Optional | can be null    | [genetic\_info](genetic-genetic-properties-method.md "json_schema/genetic_info#/items/properties/method")             |
+| [method](#method)               | `string`  | Required | can be null    | [genetic\_info](genetic-genetic-properties-method.md "json_schema/genetic_info#/items/properties/method")             |
 | [comment](#comment)             | `string`  | Required | can be null    | [genetic\_info](genetic-genetic-properties-comment.md "json_schema/genetic_info#/items/properties/comment")           |
 
 ## ncbi\_gene\_id
@@ -144,7 +144,7 @@ Method of determination for the genetic parameter. E.g., 'dextromethorphan/dextr
 
 `method`
 
-*   is optional
+*   is required
 
 *   Type: `string`
 

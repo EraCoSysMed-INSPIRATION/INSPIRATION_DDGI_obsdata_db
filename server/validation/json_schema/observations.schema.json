@@ -6,8 +6,10 @@
   "description": "Array of all observations of the given profile.",
   "items": {
     "type": "object",
+    "title": "observations",
     "properties": {
       "analyte": {
+        "description": "Name of the analyte. Must be part of compound_info as [compound_name](https://github.com/EraCoSysMed-INSPIRATION/INSPIRATION_DDGI_obsdata_db/blob/master/docs/compound_info-compound_info.md#compound_name) or compound_alias.",
         "type": ["string", "null"]
       },
       "observations": {
@@ -23,7 +25,16 @@
           "properties": {
             "time": {
               "type": "number",
-              "description": "Time point of the observation."
+              "description": "Time point of the observation.",
+              "enum": ["s", "min", "h", "d", "m", "y"],
+              "meta:enum": {
+                "s": "seconds",
+                "min": "minutes",
+                "h": "hours",
+                "d": "days",
+                "m": "months",
+                "y": "years"
+              }
             },
             "observation_numeric": {
               "type": ["number", "null"],
@@ -56,7 +67,10 @@
         "description": "Type of the error..",
         "type": ["string", "null"],
         "enum": ["sd", "gsd"],
-        "meta:enum": {"sd": "Arithmetic standard deviation", "gsd": "Geometric standard deviation"}
+        "meta:enum": {
+          "sd": "Arithmetic standard deviation",
+          "gsd": "Geometric standard deviation"
+        }
       },
       "compartment": {
         "description": "Compartment, where observations were made.",

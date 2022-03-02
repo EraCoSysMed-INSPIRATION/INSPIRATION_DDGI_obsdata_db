@@ -8,6 +8,9 @@ module.exports = (sequelize, Sequelize) => {
       profile_type: {
         type: Sequelize.STRING,
       },
+      ddi: { type: Sequelize.BOOLEAN, comment: "Profile is DDI profile" },
+      dgi: { type: Sequelize.BOOLEAN, comment: "Profile is DGI profile" },
+      dfi: { type: Sequelize.BOOLEAN, comment: "Profile is DFI profile" },
     },
     { tableName: "profile_info" }
   );

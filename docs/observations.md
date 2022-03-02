@@ -12,4 +12,4 @@ Array of all observations of the given profile.
 
 ## observations Type
 
-`object[]` ([Details](observations-items.md))
+`object[]` ([observations](observations-observations.md))
