@@ -1,7 +1,9 @@
 # TOC
-[1. About](#about)
-[2. Input Validation](#input-validation)
-[3. Running the database locally](#running-the-database-locally)
+1. [About](#about)
+
+2. [Input Validation](#input-validation)
+
+3. [Running the database locally](#running-the-database-locally)
 
 # About
 
