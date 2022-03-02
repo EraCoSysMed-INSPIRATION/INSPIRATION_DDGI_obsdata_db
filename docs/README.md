@@ -2,8 +2,6 @@
 
 ## Top-level Schemas
 
-*   [Untitled object in undefined](./profile.md) – `json_schema/profile`
-
 *   [biomarkers\_and\_covariates](./biomarkers_and_covariates.md "Array of all biomarkers and covariates of the given profile") – `json_schema/biomarkers_and_covariates`
 
 *   [compound\_infos](./compound_info.md "Array of compound information for all profile compounds") – `json_schema/compound_info`
@@ -15,6 +13,8 @@
 *   [genetic\_info](./genetic.md "Array of genetic information for the respective study population") – `json_schema/genetic_info`
 
 *   [observations](./observations.md "Array of all observations of the given profile") – `json_schema/observations`
+
+*   [profile](./profile.md "Top level object containing all information about a given profile") – `json_schema/profile`
 
 *   [profile\_info](./profile_info.md "Object for basic information on the profile") – `json_schema/profile_info`
 
