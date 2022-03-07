@@ -1,14 +1,14 @@
 # profile\_info Schema
 
 ```txt
-#/properties/profile_info
+profile/profile_info
 ```
 
 Object for basic information on the profile.
 
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                 |
-| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [profile\_info.schema.json](../../out/schemas/sub-schemas/profile_info.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                             |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [profile\_info.schema.json](../../out/profile_info.schema.json "open original schema") |
 
 ## profile\_info Type
 
@@ -16,14 +16,14 @@ Object for basic information on the profile.
 
 # profile\_info Properties
 
-| Property                               | Type      | Required | Nullable       | Defined by                                                                                                            |
-| :------------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------- |
-| [is\_DDI](#is_ddi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_ddi.md "#/properties/profile_info#/properties/is_DDI")                     |
-| [is\_DGI](#is_dgi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dgi.md "#/properties/profile_info#/properties/is_DGI")                     |
-| [is\_DFI](#is_dfi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dfi.md "#/properties/profile_info#/properties/is_DFI")                     |
-| [start\_clocktime](#start_clocktime)   | `string`  | Required | can be null    | [profile\_info](profile_info-properties-start_clocktime.md "#/properties/profile_info#/properties/start_clocktime")   |
-| [profile\_type](#profile_type)         | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-profile_type.md "#/properties/profile_info#/properties/profile_type")         |
-| [aggregation\_type](#aggregation_type) | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-aggregation_type.md "#/properties/profile_info#/properties/aggregation_type") |
+| Property                               | Type      | Required | Nullable       | Defined by                                                                                                       |
+| :------------------------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------- |
+| [is\_DDI](#is_ddi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_ddi.md "profile/profile_info#/properties/is_DDI")                     |
+| [is\_DGI](#is_dgi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dgi.md "profile/profile_info#/properties/is_DGI")                     |
+| [is\_DFI](#is_dfi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dfi.md "profile/profile_info#/properties/is_DFI")                     |
+| [start\_clocktime](#start_clocktime)   | `string`  | Required | can be null    | [profile\_info](profile_info-properties-start_clocktime.md "profile/profile_info#/properties/start_clocktime")   |
+| [profile\_type](#profile_type)         | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-profile_type.md "profile/profile_info#/properties/profile_type")         |
+| [aggregation\_type](#aggregation_type) | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-aggregation_type.md "profile/profile_info#/properties/aggregation_type") |
 
 ## is\_DDI
 
@@ -37,7 +37,7 @@ The profile is a DDI-profile (i.e., a perpetrator is administered).
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-is_ddi.md "#/properties/profile_info#/properties/is_DDI")
+*   defined in: [profile\_info](profile_info-properties-is_ddi.md "profile/profile_info#/properties/is_DDI")
 
 ### is\_DDI Type
 
@@ -55,7 +55,7 @@ The profile is a DGI-profile (i.e., the effect of a variant phenotype or genotyp
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-is_dgi.md "#/properties/profile_info#/properties/is_DGI")
+*   defined in: [profile\_info](profile_info-properties-is_dgi.md "profile/profile_info#/properties/is_DGI")
 
 ### is\_DGI Type
 
@@ -73,7 +73,7 @@ The profile is a DFI-profile (i.e., the effect of food administration is analyze
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-is_dfi.md "#/properties/profile_info#/properties/is_DFI")
+*   defined in: [profile\_info](profile_info-properties-is_dfi.md "profile/profile_info#/properties/is_DFI")
 
 ### is\_DFI Type
 
@@ -91,7 +91,7 @@ Clocktime of the start of the study, i.e., time of the first drug administration
 
 *   can be null
 
-*   defined in: [profile\_info](profile_info-properties-start_clocktime.md "#/properties/profile_info#/properties/start_clocktime")
+*   defined in: [profile\_info](profile_info-properties-start_clocktime.md "profile/profile_info#/properties/start_clocktime")
 
 ### start\_clocktime Type
 
@@ -117,7 +117,7 @@ Type of the profile, i.e., 'PK' or 'PD'
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-profile_type.md "#/properties/profile_info#/properties/profile_type")
+*   defined in: [profile\_info](profile_info-properties-profile_type.md "profile/profile_info#/properties/profile_type")
 
 ### profile\_type Type
 
@@ -144,7 +144,7 @@ Type of aggregation, i.e. individual, typical or aggregated.
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-aggregation_type.md "#/properties/profile_info#/properties/aggregation_type")
+*   defined in: [profile\_info](profile_info-properties-aggregation_type.md "profile/profile_info#/properties/aggregation_type")
 
 ### aggregation\_type Type
 

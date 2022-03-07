@@ -1,14 +1,14 @@
 # Untitled undefined type in reference\_info Schema
 
 ```txt
-json_schema/reference_info#/properties/first_author
+profile/reference_info#/properties/first_author
 ```
 
 First author of the document
 
-| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                       |
-| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../../out/schemas/sub-schemas/reference_info.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                   |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../../out/reference_info.schema.json "open original schema") |
 
 ## first\_author Type
 

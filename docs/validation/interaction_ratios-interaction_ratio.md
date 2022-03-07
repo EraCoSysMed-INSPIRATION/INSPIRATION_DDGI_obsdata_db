@@ -1,14 +1,14 @@
 # interaction\_ratio Schema
 
 ```txt
-json_schema/interaction_ratios#/items
+profile/interaction_ratios#/items
 ```
 
 
 
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                               |
-| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [interaction\_ratios.schema.json\*](../../out/schemas/sub-schemas/interaction_ratios.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                           |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [interaction\_ratios.schema.json\*](../../out/interaction_ratios.schema.json "open original schema") |
 
 ## items Type
 
@@ -16,17 +16,17 @@ json_schema/interaction_ratios#/items
 
 # items Properties
 
-| Property                               | Type     | Required | Nullable       | Defined by                                                                                                                                                     |
-| :------------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [ratio\_type](#ratio_type)             | `string` | Optional | cannot be null | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-ratio_type.md "json_schema/interaction_ratios#/items/properties/ratio_type")             |
-| [interaction\_type](#interaction_type) | `string` | Optional | cannot be null | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-interaction_type.md "json_schema/interaction_ratios#/items/properties/interaction_type") |
-| [value](#value)                        | `number` | Optional | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-value.md "json_schema/interaction_ratios#/items/properties/value")                       |
-| [error\_value](#error_value)           | `number` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_value.md "json_schema/interaction_ratios#/items/properties/error_value")           |
-| [error\_type](#error_type)             | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_type.md "json_schema/interaction_ratios#/items/properties/error_type")             |
-| [compartment](#compartment)            | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-compartment.md "json_schema/interaction_ratios#/items/properties/compartment")           |
-| [organ](#organ)                        | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-organ.md "json_schema/interaction_ratios#/items/properties/organ")                       |
-| [matrix](#matrix)                      | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-matrix.md "json_schema/interaction_ratios#/items/properties/matrix")                     |
-| [description](#description)            | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-description.md "json_schema/interaction_ratios#/items/properties/description")           |
+| Property                               | Type     | Required | Nullable       | Defined by                                                                                                                                                 |
+| :------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [ratio\_type](#ratio_type)             | `string` | Optional | cannot be null | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-ratio_type.md "profile/interaction_ratios#/items/properties/ratio_type")             |
+| [interaction\_type](#interaction_type) | `string` | Optional | cannot be null | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-interaction_type.md "profile/interaction_ratios#/items/properties/interaction_type") |
+| [value](#value)                        | `number` | Optional | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-value.md "profile/interaction_ratios#/items/properties/value")                       |
+| [error\_value](#error_value)           | `number` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_value.md "profile/interaction_ratios#/items/properties/error_value")           |
+| [error\_type](#error_type)             | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_type.md "profile/interaction_ratios#/items/properties/error_type")             |
+| [compartment](#compartment)            | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-compartment.md "profile/interaction_ratios#/items/properties/compartment")           |
+| [organ](#organ)                        | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-organ.md "profile/interaction_ratios#/items/properties/organ")                       |
+| [matrix](#matrix)                      | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-matrix.md "profile/interaction_ratios#/items/properties/matrix")                     |
+| [description](#description)            | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-description.md "profile/interaction_ratios#/items/properties/description")           |
 
 ## ratio\_type
 
@@ -40,7 +40,7 @@ Type of ratio.
 
 *   cannot be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-ratio_type.md "json_schema/interaction_ratios#/items/properties/ratio_type")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-ratio_type.md "profile/interaction_ratios#/items/properties/ratio_type")
 
 ### ratio\_type Type
 
@@ -67,7 +67,7 @@ Type of interaction.
 
 *   cannot be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-interaction_type.md "json_schema/interaction_ratios#/items/properties/interaction_type")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-interaction_type.md "profile/interaction_ratios#/items/properties/interaction_type")
 
 ### interaction\_type Type
 
@@ -95,7 +95,7 @@ Value of the NCA-parameter.
 
 *   can be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-value.md "json_schema/interaction_ratios#/items/properties/value")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-value.md "profile/interaction_ratios#/items/properties/value")
 
 ### value Type
 
@@ -113,7 +113,7 @@ Error of the NCA-parameter value.
 
 *   can be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_value.md "json_schema/interaction_ratios#/items/properties/error_value")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_value.md "profile/interaction_ratios#/items/properties/error_value")
 
 ### error\_value Type
 
@@ -133,7 +133,7 @@ Type of the error.
 
 *   can be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_type.md "json_schema/interaction_ratios#/items/properties/error_type")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_type.md "profile/interaction_ratios#/items/properties/error_type")
 
 ### error\_type Type
 
@@ -163,7 +163,7 @@ Compartment, where observations were made.
 
 *   can be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-compartment.md "json_schema/interaction_ratios#/items/properties/compartment")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-compartment.md "profile/interaction_ratios#/items/properties/compartment")
 
 ### compartment Type
 
@@ -181,7 +181,7 @@ Organ or tissue, where observations were made.
 
 *   can be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-organ.md "json_schema/interaction_ratios#/items/properties/organ")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-organ.md "profile/interaction_ratios#/items/properties/organ")
 
 ### organ Type
 
@@ -199,7 +199,7 @@ Matrix where observations were made.
 
 *   can be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-matrix.md "json_schema/interaction_ratios#/items/properties/matrix")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-matrix.md "profile/interaction_ratios#/items/properties/matrix")
 
 ### matrix Type
 
@@ -217,7 +217,7 @@ Description of the nca value.
 
 *   can be null
 
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-description.md "json_schema/interaction_ratios#/items/properties/description")
+*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-description.md "profile/interaction_ratios#/items/properties/description")
 
 ### description Type
 

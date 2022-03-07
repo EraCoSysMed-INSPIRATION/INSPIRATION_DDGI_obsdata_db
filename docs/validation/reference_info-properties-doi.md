@@ -1,14 +1,14 @@
 # Untitled undefined type in reference\_info Schema
 
 ```txt
-json_schema/reference_info#/properties/doi
+profile/reference_info#/properties/doi
 ```
 
 Document object identifier
 
-| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                       |
-| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../../out/schemas/sub-schemas/reference_info.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                   |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [reference\_info.schema.json\*](../../out/reference_info.schema.json "open original schema") |
 
 ## doi Type
 

@@ -44,9 +44,14 @@
     "checkColumns": [],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
-  "meal_administration_protocol": {
+  "meal_administrations": {
     "checkTableName": "InteractionRatio",
     "checkColumns": [],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "profile": {
+    "checkTableName": "",
+    "checkColumns": [],
+    "hiddenOutputColumns": []
   }
 }
