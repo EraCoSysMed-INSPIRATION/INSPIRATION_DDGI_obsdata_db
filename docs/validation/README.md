@@ -4,9 +4,11 @@
 
 *   [compounds\_and\_analytes](./compounds_and_analytes.md "Array of all compounds and analytes for a given profile") – `profile/compounds_and_analytes`
 
-*   [demographics](./demographic_parameter.md "Array of all demographic parameters for the profile") – `profile/demographics`
+*   [demographics](./demographics.md "Array of all demographic parameters for the profile") – `profile/demographics`
 
 *   [drug\_administrations](./drug_administrations.md "Array of all drug administration protocol of a given profile") – `profile/drug_administrations`
+
+*   [genetic\_info](./genetic_info.md "Array of genetic information for the respective study population") – `profile/genetic_info`
 
 *   [interaction\_ratios](./interaction_ratios.md "Array of interaction ratios for the given profile") – `profile/interaction_ratios`
 
@@ -38,13 +40,17 @@
 
 *   [compound\_analyte](./compounds_and_analytes-compound_analyte.md "Object describing all analytes and administered compounds for a given profile") – `profile/compounds_and_analytes#/items`
 
-*   [demographic\_parameter](./demographic_parameter-demographic_parameter.md "Object storing a singular demographic parameter") – `profile/demographics#/items`
+*   [demographic\_parameter](./demographics-demographic_parameter.md "Object storing a singular demographic parameter") – `profile/demographics#/items`
 
-*   [demographic\_parameter](./demographic_parameter-demographic_parameter.md "Object storing a singular demographic parameter") – `profile/demographics#/items`
+*   [demographic\_parameter](./demographics-demographic_parameter.md "Object storing a singular demographic parameter") – `profile/demographics#/items`
+
+*   [drug\_administration](./drug_administrations-drug_administration.md "Drug administration protocol") – `profile/drug_administrations#/items`
 
 *   [drug\_administration](./drug_administrations-drug_administration.md "Drug administration protocol") – `profile/drug_administrations#/items`
 
-*   [drug\_administration](./drug_administrations-drug_administration.md "Drug administration protocol") – `profile/drug_administrations#/items`
+*   [genetic](./genetic_info-genetic.md "Compound information block") – `profile/genetic_info#/items`
+
+*   [genetic](./genetic_info-genetic.md "Compound information block") – `profile/genetic_info#/items`
 
 *   [interaction\_ratio](./interaction_ratios-interaction_ratio.md) – `profile/interaction_ratios#/items`
 

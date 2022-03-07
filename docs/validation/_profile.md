@@ -8,7 +8,7 @@ JSON Object for a single profile. A profile is defined as a series of measuremen
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [\_profile.schema.json](../../out/_profile.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [\_profile.schema.json](../../out/_profile.schema.json "open original schema") |
 
 ## profile Type
 
@@ -18,16 +18,16 @@ JSON Object for a single profile. A profile is defined as a series of measuremen
 
 | Property                                            | Type     | Required | Nullable       | Defined by                                                                                                                   |
 | :-------------------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------- |
-| [profile\_info](#profile_info)                      | `object` | Optional | cannot be null | [profile](_profile-properties-profile_info.md "profile/profile_info#/properties/profile_info")                               |
-| [reference\_info](#reference_info)                  | `object` | Optional | cannot be null | [profile](_profile-properties-reference_info.md "profile/reference_info#/properties/reference_info")                         |
+| [profile\_info](#profile_info)                      | `object` | Required | cannot be null | [profile](_profile-properties-profile_info.md "profile/profile_info#/properties/profile_info")                               |
+| [reference\_info](#reference_info)                  | `object` | Required | cannot be null | [profile](_profile-properties-reference_info.md "profile/reference_info#/properties/reference_info")                         |
 | [compounds\_and\_analytes](#compounds_and_analytes) | `array`  | Optional | cannot be null | [profile](_profile-properties-compounds_and_analytes.md "profile/compounds_and_analytes#/properties/compounds_and_analytes") |
 | [demographics](#demographics)                       | `array`  | Optional | cannot be null | [profile](_profile-properties-demographics.md "profile/demographics#/properties/demographics")                               |
+| [genetic\_info](#genetic_info)                      | `array`  | Optional | can be null    | [profile](_profile-properties-genetic_info.md "profile/genetic_info#/properties/genetic_info")                               |
 | [drug\_administrations](#drug_administrations)      | `array`  | Optional | cannot be null | [profile](_profile-properties-drug_administrations.md "profile/drug_administrations#/properties/drug_administrations")       |
 | [meal\_administrations](#meal_administrations)      | `array`  | Optional | cannot be null | [profile](_profile-properties-meal_administration.md "profile/meal_administrations#/properties/meal_administrations")        |
 | [interaction\_ratios](#interaction_ratios)          | `array`  | Optional | can be null    | [profile](_profile-properties-interaction_ratios.md "profile/interaction_ratios#/properties/interaction_ratios")             |
 | [nca\_values](#nca_values)                          | `array`  | Optional | can be null    | [profile](_profile-properties-nca_values.md "profile/nca_values#/properties/nca_values")                                     |
 | [observations](#observations)                       | `object` | Optional | cannot be null | [profile](_profile-properties-observations.md "profile/observations#/properties/observations")                               |
-| Additional Properties                               | Any      | Optional | can be null    |                                                                                                                              |
 
 ## profile\_info
 
@@ -35,7 +35,7 @@ Object for basic information on the profile.
 
 `profile_info`
 
-*   is optional
+*   is required
 
 *   Type: `object` ([profile\_info](_profile-properties-profile_info.md))
 
@@ -53,7 +53,7 @@ Object containing information about the source document. See [properties](#refer
 
 `reference_info`
 
-*   is optional
+*   is required
 
 *   Type: `object` ([reference\_info](_profile-properties-reference_info.md))
 
@@ -91,7 +91,7 @@ Array of all demographic parameters for the profile.
 
 *   is optional
 
-*   Type: `object[]` ([demographic\_parameter](demographic_parameter-demographic_parameter.md))
+*   Type: `object[]` ([demographic\_parameter](demographics-demographic_parameter.md))
 
 *   cannot be null
 
@@ -99,7 +99,29 @@ Array of all demographic parameters for the profile.
 
 ### demographics Type
 
-`object[]` ([demographic\_parameter](demographic_parameter-demographic_parameter.md))
+`object[]` ([demographic\_parameter](demographics-demographic_parameter.md))
+
+## genetic\_info
+
+Array of genetic information for the respective study population.
+
+`genetic_info`
+
+*   is optional
+
+*   Type: `object[]` ([genetic](genetic_info-genetic.md))
+
+*   can be null
+
+*   defined in: [profile](_profile-properties-genetic_info.md "profile/genetic_info#/properties/genetic_info")
+
+### genetic\_info Type
+
+`object[]` ([genetic](genetic_info-genetic.md))
+
+### genetic\_info Constraints
+
+**minimum number of items**: the minimum number of items for this array is: `0`
 
 ## drug\_administrations
 
@@ -194,7 +216,3 @@ Array of all observations of the given profile.
 ### observations Type
 
 `object` ([observations](_profile-properties-observations.md))
-
-## Additional Properties
-
-Additional properties are allowed and do not have to follow a specific schema
