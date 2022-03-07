@@ -1,14 +1,14 @@
 # Untitled string in profile\_info Schema
 
 ```txt
-json_schema/profile_info#/properties/aggregation_type
+#/properties/profile_info#/properties/aggregation_type
 ```
 
 Type of aggregation, i.e. individual, typical or aggregated.
 
-| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                               |
-| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [profile\_info.schema.json\*](../../out/profile_info.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                   |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [profile\_info.schema.json\*](../../out/schemas/sub-schemas/profile_info.schema.json "open original schema") |
 
 ## aggregation\_type Type
 

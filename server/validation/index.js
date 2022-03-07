@@ -58,7 +58,7 @@ async function validateAllSchemas(req) {
     let warnings = [];
     let valid = [];
     let files = [];
-    fs.readdirSync(__dirname + "/json_schema")
+    fs.readdirSync(__dirname + "/schemas/sub-schemas")
       .filter((file) => {
         return (
           file.indexOf(".") !== 0 &&
@@ -67,7 +67,7 @@ async function validateAllSchemas(req) {
         );
       })
       .forEach((file) => {
-        files.push(__dirname + "/json_schema/" + file);
+        files.push(__dirname + "/schemas/sub-schemas" + file);
       });
 
     await Promise.all(

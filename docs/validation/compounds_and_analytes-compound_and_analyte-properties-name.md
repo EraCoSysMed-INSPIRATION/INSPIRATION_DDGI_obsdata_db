@@ -6,9 +6,9 @@ json_schema/compounds_and_analytes#/items/properties/name
 
 Name of the analyte or administered compound, use INN where available
 
-| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                    |
-| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [compounds\_and\_analytes.schema.json\*](../../out/compounds_and_analytes.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                                        |
+| :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [compounds\_and\_analytes.schema.json\*](../../out/schemas/sub-schemas/compounds_and_analytes.schema.json "open original schema") |
 
 ## name Type
 

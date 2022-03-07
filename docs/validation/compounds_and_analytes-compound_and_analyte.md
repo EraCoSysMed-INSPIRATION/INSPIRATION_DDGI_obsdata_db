@@ -6,9 +6,9 @@ json_schema/compounds_and_analytes#/items
 
 Object describing all analytes and administered compounds for a given profile. Includes pharmacodynamic parameters and covariates
 
-| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                    |
-| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------------------ |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [compounds\_and\_analytes.schema.json\*](../../out/compounds_and_analytes.schema.json "open original schema") |
+| Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                                                        |
+| :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------------------------------------------------------- |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [compounds\_and\_analytes.schema.json\*](../../out/schemas/sub-schemas/compounds_and_analytes.schema.json "open original schema") |
 
 ## items Type
 
