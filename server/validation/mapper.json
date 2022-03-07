@@ -38,5 +38,15 @@
     "checkTableName": "NCAValue",
     "checkColumns": [],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "interaction_ratio": {
+    "checkTableName": "InteractionRatio",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "meal_administration_protocol": {
+    "checkTableName": "InteractionRatio",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   }
 }
