@@ -1,24 +1,33 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": ["array", "null"],
-  "title": "nca_values",
+  "title": "interaction_ratios",
   "$id": "json_schema/interaction_ratios",
   "description": "Array of interaction ratios for the given profile.",
   "items": {
     "type": "object",
     "title": "interaction_ratio",
     "properties": {
-      "parameter": {
-        "description": "NCA parameter name.",
+      "ratio_type": {
+        "description": "Type of ratio.",
         "type": "string",
-        "enum": ["AUC", "Cmax", "Css"],
+        "enum": ["AUC", "Cmax"],
         "meta:enum": {
           "AUC": "Area under the curve",
-          "Cmax": "Peak concentration",
-          "Css": "Steady-state concentration"
+          "Cmax": "Peak concentration"
         }
       },
-      "value_numeric": {
+      "interaction_type": {
+        "description": "Type of interaction.",
+        "type": "string",
+        "enum": ["DDI", "DGI", "DFI"],
+        "meta:enum": {
+          "DDI": "Drug-drug interaction",
+          "DGI": "Drug-gene interaction",
+          "DFI": "Drug-food interaction"
+        }
+      },
+      "value": {
         "type": ["number", "null"],
         "description": "Value of the NCA-parameter."
       },
@@ -26,12 +35,8 @@
         "type": ["number", "null"],
         "description": "Error of the NCA-parameter value."
       },
-      "value_unit": {
-        "type": ["string", "null"],
-        "description": "Unit of the NCA-parameter."
-      },
       "error_type": {
-        "description": "Type of the error..",
+        "description": "Type of the error.",
         "type": ["string", "null"],
         "enum": ["sd", "gsd", "sem", "p95", "cv"],
         "$comment": "also used in observations, biomarkers_and_covariates, interaction_ratio",
@@ -55,7 +60,7 @@
         "description": "Matrix where observations were made.",
         "type": ["string", "null"]
       },
-      "nca_description": {
+      "description": {
         "type": ["string", "null"],
         "description": "Description of the nca value."
       }
@@ -63,14 +68,12 @@
     "required": [
       "parameter",
       "value_numeric",
-      "value_unit",
       "error_type",
       "error_value",
       "compartment",
       "organ",
       "matrix",
-      "lloq",
-      "observation_description"
+      "description"
     ]
   }
 }

@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "compounds_and_analytes",
+  "$id": "json_schema/compounds_and_analytes",
+  "description": "Array of information for all profile analytes and administered compounds.",
+  "type": "array",
+  "minItems": 0,
+  "items": {
+    "type": "object",
+    "title": "compound_and_analyte_entry",
+    "description": "Object describing all analytes and administered compounds for a given profile. Includes pharmacodynamic parameters and covariates",
+    "required": ["name", "alias", "category", "pubchem_id", "molecular_weight"],
+    "additionalProperties": false,
+    "properties": {
+      "name": {
+        "description": "Name of the analyte or administered compound, use INN where available",
+        "type": ["string", "null"],
+        "minLength": 1,
+        "maxLength": 255
+      },
+      "alias": {
+        "description": "Alias of the analyte or administered compound. Enter when compound name is confidential.",
+        "type": ["string", "null"],
+        "minLength": 1,
+        "maxLength": 255
+      },
+      "category": {
+        "description": "Category of the analyte.",
+        "type": "string",
+        "enum": [
+          "compound (exogenous)",
+          "compound (endogenous)",
+          "pd parameter",
+          "covariate"
+        ],
+        "meta:enum": {
+          "compound (exogenous)": "The analyte is a xenobiotic, such as metoprolol.",
+          "compound (endogenous)": "The analyte is an endogenous compound, such as CRP.",
+          "pd parameter": "The analyte is a pharmacodynamic parameter, such as heart rate.",
+          "covariate": "The analyte is a covariate such as creatinine clearance."
+        }
+      },
+      "molecular_weight": {
+        "description": "Molecular weight in case the analyte is a compound.",
+        "type": "number",
+        "minimum": 3
+      },
+      "pubchem_id": {
+        "description": "Pubchem identifier in case the analyte is a compound.",
+        "type": ["integer", "null"],
+        "minimum": 1,
+        "maximum": 1000000000
+      }
+    }
+  }
+}

@@ -4,9 +4,9 @@
     "checkColumns": ["doi", "pmid", "alternative_id"],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
-  "compound_infos": {
-    "checkTableName": "Compound",
-    "checkColumns": ["pubchem_id", "compound_name", "compound_alias"],
+  "compounds_and_analytes": {
+    "checkTableName": "CompoundsAndAnalytes",
+    "checkColumns": ["name", "alias"],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },
   "drug_administrations": {
@@ -26,11 +26,6 @@
   },
   "profile_info": {
     "checkTableName": "ProfileInfo",
-    "checkColumns": [],
-    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
-  },
-  "biomarkers_and_covariates": {
-    "checkTableName": "BiomarkerAndCovariateObservation",
     "checkColumns": [],
     "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
   },

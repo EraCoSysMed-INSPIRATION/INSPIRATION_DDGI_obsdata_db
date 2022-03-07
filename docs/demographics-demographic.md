@@ -22,8 +22,8 @@ Object storing a singular demographic parameter.
 | [value\_type](#value_type)       | `string` | Required | cannot be null | [demographics](demographics-demographic-properties-value_type.md "json_schema/demographics#/items/properties/value_type")       |
 | [value\_numeric](#value_numeric) | `number` | Required | can be null    | [demographics](demographics-demographic-properties-value_numeric.md "json_schema/demographics#/items/properties/value_numeric") |
 | [value\_string](#value_string)   | `string` | Required | can be null    | [demographics](demographics-demographic-properties-value_string.md "json_schema/demographics#/items/properties/value_string")   |
-| [value\_unit](#value_unit)       | `string` | Required | can be null    | [demographics](demographics-demographic-properties-value_unit.md "json_schema/demographics#/items/properties/value_unit")       |
-| [value\_comment](#value_comment) | `string` | Required | can be null    | [demographics](demographics-demographic-properties-value_comment.md "json_schema/demographics#/items/properties/value_comment") |
+| [unit](#unit)                    | `string` | Optional | can be null    | [demographics](demographics-demographic-properties-unit.md "json_schema/demographics#/items/properties/unit")                   |
+| [description](#description)      | `string` | Optional | can be null    | [demographics](demographics-demographic-properties-description.md "json_schema/demographics#/items/properties/description")     |
 
 ## parameter
 
@@ -72,6 +72,7 @@ Type of the parameter value, e.g., 'mean'.
 | `"sd"`          | arithmetic standard deviation     |
 | `"gsd"`         | geometric standard deviation      |
 | `"median"`      | median                            |
+| `"mode"`        | mode                              |
 | `"range_lower"` | lower boundary of the value range |
 | `"range_upper"` | upper boundary of the value range |
 | `"percentage"`  | percentage                        |
@@ -114,38 +115,38 @@ Non-numeric value of the parameter value.
 
 `string`
 
-## value\_unit
+## unit
 
 Unit of the parameter value, e.g., 'years'.
 
-`value_unit`
+`unit`
 
-*   is required
+*   is optional
 
 *   Type: `string`
 
 *   can be null
 
-*   defined in: [demographics](demographics-demographic-properties-value_unit.md "json_schema/demographics#/items/properties/value_unit")
+*   defined in: [demographics](demographics-demographic-properties-unit.md "json_schema/demographics#/items/properties/unit")
 
-### value\_unit Type
+### unit Type
 
 `string`
 
-## value\_comment
+## description
 
 Additional information about the parameter.
 
-`value_comment`
+`description`
 
-*   is required
+*   is optional
 
 *   Type: `string`
 
 *   can be null
 
-*   defined in: [demographics](demographics-demographic-properties-value_comment.md "json_schema/demographics#/items/properties/value_comment")
+*   defined in: [demographics](demographics-demographic-properties-description.md "json_schema/demographics#/items/properties/description")
 
-### value\_comment Type
+### description Type
 
 `string`

@@ -24,6 +24,7 @@
           "sd",
           "gsd",
           "median",
+          "mode",
           "range_lower",
           "range_upper",
           "percentage",
@@ -36,6 +37,7 @@
           "sd": "arithmetic standard deviation",
           "gsd": "geometric standard deviation",
           "median": "median",
+          "mode": "mode",
           "range_lower": "lower boundary of the value range",
           "range_upper": "upper boundary of the value range",
           "percentage": "percentage",
@@ -51,11 +53,11 @@
         "description": "Non-numeric value of the parameter value.",
         "type": ["string", "null"]
       },
-      "value_unit": {
+      "unit": {
         "description": "Unit of the parameter value, e.g., 'years'.",
         "type": ["string", "null"]
       },
-      "value_comment": {
+      "description": {
         "description": "Additional information about the parameter.",
         "type": ["string", "null"]
       }

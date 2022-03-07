@@ -4,7 +4,7 @@
 json_schema/nca_values#/items/properties/parameter
 ```
 
-NCA parameter name.
+NCA parameter name such as AUC.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                        |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :-------------------------------------------------------------------------------- |
@@ -13,13 +13,3 @@ NCA parameter name.
 ## parameter Type
 
 `string`
-
-## parameter Constraints
-
-**enum**: the value of this property must be equal to one of the following values:
-
-| Value    | Explanation                |
-| :------- | :------------------------- |
-| `"AUC"`  | Area under the curve       |
-| `"Cmax"` | Peak concentration         |
-| `"Css"`  | Steady-state concentration |

@@ -2,21 +2,22 @@ const createConditional = require("./create_conditional");
 
 async function createCompoundsIfNotExists(database, mapper, body) {
   let compounds = [];
-  for (let compound of body.compound_infos) {
+  for (let compound of body.compounds_and_analytes) {
     let obj = {
       pubchem_id: compound.pubchem_id,
-      compound_name: compound.compound_name,
-      compound_alias: compound.compound_alias,
+      compound_name: compound.name,
+      compound_alias: compound.alias,
+      category: compound.category
     };
     compound_new = await createConditional(
       database,
       mapper,
       compound,
-      "compound_infos",
+      "compounds_and_analytes",
       obj
     );
     if (compound_new.is_new) {
-      let compound_mw = { compound_mw: compound.compound_mw }
+      let compound_mw = { molecularWeight: compound.molecular_weight }
       compound_new.compound_mw = await database["MolecularWeight"].build(compound_mw);
       compound_new.messages.push("New entry for 'MolecularWeight' was staged")
     }

@@ -25,6 +25,7 @@ Type of the parameter value, e.g., 'mean'.
 | `"sd"`          | arithmetic standard deviation     |
 | `"gsd"`         | geometric standard deviation      |
 | `"median"`      | median                            |
+| `"mode"`        | mode                              |
 | `"range_lower"` | lower boundary of the value range |
 | `"range_upper"` | upper boundary of the value range |
 | `"percentage"`  | percentage                        |

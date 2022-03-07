@@ -1,9 +1,9 @@
 # Table of Contents
-## [About](#about)
+- [About](#about)
 
-## [Input Validation](#input-validation)
+- [Input Validation](#input-validation)
 
-## [Running the database locally](#running-the-database-locally)
+- [Running the database locally](#running-the-database-locally)
 
 # About
 
@@ -22,7 +22,7 @@ The input is required to have the following structure and data types:
    {
      "profile_info": "object",
      "reference_info": "object",
-     "compound_infos": "array",
+     "compounds_and_analytes": "array",
      "drug_administrations": ["array", "null"],
      "demographic_infos": ["array", "null"],
      "genetic_infos": ["array", "null"],
@@ -35,12 +35,10 @@ The input is required to have the following structure and data types:
 For specific details, please refer to the documentation:
 - [profile_info](./docs/profile_info.md)
 - [reference_info](./docs/reference_info.md)
-- [compound_infos](./docs/compound_infos.md)
 - [drug_administrations](./docs/drug_administrations.md)
 - [demographic_infos](./docs/demographics.md)
 - [genetic_infos](./docs/genetic.md)
 - [observations](./docs/observations.md)
-- [biomarkers_and_covariates](./docs/biomarkers_and_covariates.md)
 - [nca_values](./docs/nca_values.md)
 - [interaction_ratios](./docs/interaction_ratios.md)
 

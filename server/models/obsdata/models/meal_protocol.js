@@ -10,7 +10,7 @@ module.exports = (sequelize, Sequelize) => {
         type: Sequelize.STRING,
         comment: "Unit of the entered time values",
       },
-      calorific_calue: {
+      calorific_value: {
         type: Sequelize.JSON,
         comment: "Calorific content of the given meals",
       },

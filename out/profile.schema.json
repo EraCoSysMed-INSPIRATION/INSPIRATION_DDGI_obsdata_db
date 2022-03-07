@@ -1,1 +1,0 @@
-{"$id":"json_schema/profile","type":"object","title":"profile","description":"Top level object containing all information about a given profile.","properties":{"profile_info":{"$ref":"json_schema/profile_info"},"reference_info":{"$ref":"json_schema/reference_info"},"compound_infos":{"$ref":"json_schema/compound_info"},"demographics":{"$ref":"json_schema/demographics"}}}

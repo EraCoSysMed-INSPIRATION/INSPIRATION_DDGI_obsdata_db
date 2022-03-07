@@ -2,25 +2,32 @@ module.exports = (sequelize, Sequelize) => {
   const InteractionRatio = sequelize.define(
     "InteractionRatio",
     {
-      ratio_value: {
+      value: {
         type: Sequelize.FLOAT,
-        comment: "Value of ratio",
+      },
+      interaction_type: {
+        type: Sequelize.STRING,
       },
       ratio_type: {
         type: Sequelize.STRING,
-        comment: "Type of ratio, e.g., AUClast",
       },
-      ratio_error_value: {
+      error_value: {
         type: Sequelize.FLOAT,
-        comment: "Error of ratio",
       },
-      ratio_error_type: {
+      error_type: {
         type: Sequelize.STRING,
-        comment: "Type of error, e.g., SD",
       },
-      ratio_comment: {
+      compartment: {
         type: Sequelize.STRING,
-        comment: "Additional information about the ratio",
+      },
+      organ: {
+        type: Sequelize.STRING,
+      },
+      matrix: {
+        type: Sequelize.STRING,
+      },
+      description: {
+        type: Sequelize.STRING,
       },
     },
     { tableName: "interaction_ratio" }

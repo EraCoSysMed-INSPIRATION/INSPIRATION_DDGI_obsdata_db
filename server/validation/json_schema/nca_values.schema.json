@@ -9,14 +9,8 @@
     "title": "nca_value",
     "properties": {
       "parameter": {
-        "description": "NCA parameter name.",
-        "type": "string",
-        "enum": ["AUC", "Cmax", "Css"],
-        "meta:enum": {
-          "AUC": "Area under the curve",
-          "Cmax": "Peak concentration",
-          "Css": "Steady-state concentration"
-        }
+        "description": "NCA parameter name such as AUC.",
+        "type": "string"
       },
       "value_numeric": {
         "type": ["number", "null"],

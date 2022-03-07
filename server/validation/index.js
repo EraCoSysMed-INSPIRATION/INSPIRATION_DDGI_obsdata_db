@@ -6,10 +6,11 @@ const path = require("path");
 const basename = path.basename(__filename);
 const null_check = require("./mapper.json");
 
-addFormats(ajv, "iso-time")
+addFormats(ajv, "iso-time");
 ajv.addKeyword({
-  keyword: "meta:enum"
-})
+  keyword: "meta:enum",
+});
+
 
 async function validateSchema(req, schema, null_check) {
   let message = `Schema '${schema.title}' is valid`;
@@ -19,15 +20,28 @@ async function validateSchema(req, schema, null_check) {
   if (!valid) {
     message = validate.errors;
   } else if (
-    typeof null_check[schema.title].columns === "object" &&
-    allNull(null_check[schema.title].columns, req.body[schema.title])
+    json instanceof Array &&
+    null_check[schema.title].checkColumns.length > 0
   ) {
-    message = `Bad request. Properties for '${schema.title}' ('${null_check[
-      schema.title
-    ].columns.join(", ")}') not allowed to be all null!`;
-    valid = false;
+    for (item of json) {
+      if (allNull(null_check[schema.title].checkColumns, item)) {
+        message = `Bad request. Properties for '${schema.title}' ('${null_check[
+          schema.title
+        ].checkColumns.join(", ")}') not allowed to be all null!`;
+        valid = false;
+      }
+    }
+  } else if (
+    typeof json === "object" &&
+    null_check[schema.title].checkColumns.length > 0
+  ) {
+    if (allNull(null_check[schema.title].checkColumns, json)) {
+      message = `Bad request. Properties for '${schema.title}' ('${null_check[
+        schema.title
+      ].checkColumns.join(", ")}') not allowed to be all null!`;
+      valid = false;
+    }
   }
-
   return { message: message, isValid: valid };
 }
 
