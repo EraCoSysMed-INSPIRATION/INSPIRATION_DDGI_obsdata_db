@@ -12,6 +12,8 @@
 
 *   [interaction\_ratios](./interaction_ratios.md "Array of interaction ratios for the given profile") – `json_schema/interaction_ratios`
 
+*   [meal\_administrations](./meal_administration_protocol.md "Array of all meal administration protocols") – `json_schema/meal_administration_protocol`
+
 *   [nca\_values](./nca_values.md "Array of NCA values for the given profile") – `json_schema/nca_values`
 
 *   [observations](./observations.md "Array of all observations of the given profile") – `json_schema/observations`
@@ -26,6 +28,8 @@
 
 *   [administration](./drug_administration_protocol-drug_administration-properties-administrations-administration.md "Object describing a single drug administration") – `json_schema/drug_administration_protocol#/items/properties/administrations/items`
 
+*   [administration](./meal_administration_protocol-meal_administration-properties-administrations-administration.md "Object describing a single meal administration") – `json_schema/meal_administration_protocol#/items/properties/administrations/items`
+
 *   [compound\_and\_analyte\_entry](./compounds_and_analytes-compound_and_analyte_entry.md "Object describing all analytes and administered compounds for a given profile") – `json_schema/compounds_and_analytes#/items`
 
 *   [demographic](./demographics-demographic.md "Object storing a singular demographic parameter") – `json_schema/demographics#/items`
@@ -36,6 +40,10 @@
 
 *   [interaction\_ratio](./interaction_ratios-interaction_ratio.md) – `json_schema/interaction_ratios#/items`
 
+*   [meal\_administration](./meal_administration_protocol-meal_administration.md "Meal administration protocol") – `json_schema/meal_administration_protocol#/items`
+
+*   [meal\_composition](./meal_administration_protocol-meal_administration-properties-administrations-administration-properties-meal_composition.md "Composition of the meal in percentages") – `json_schema/meal_administration_protocol#/items/properties/administrations/items/properties/meal_composition`
+
 *   [nca\_value](./nca_values-nca_value.md) – `json_schema/nca_values#/items`
 
 *   [observation](./observations-observations-properties-observations-observation.md "Object describing a single observation") – `json_schema/observations#/items/properties/observations/items`
@@ -45,5 +53,7 @@
 ### Arrays
 
 *   [administrations](./drug_administration_protocol-drug_administration-properties-administrations.md "Array of drug administrations per administration protocol") – `json_schema/drug_administration_protocol#/items/properties/administrations`
+
+*   [administrations](./meal_administration_protocol-meal_administration-properties-administrations.md "Array of meal administrations per administration protocol") – `json_schema/meal_administration_protocol#/items/properties/administrations`
 
 *   [observations](./observations-observations-properties-observations.md "Array of all observations of the given profile") – `json_schema/observations#/items/properties/observations`

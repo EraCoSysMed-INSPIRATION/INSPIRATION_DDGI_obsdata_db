@@ -24,6 +24,7 @@ The input is required to have the following structure and data types:
      "reference_info": "object",
      "compounds_and_analytes": "array",
      "drug_administrations": ["array", "null"],
+     "meal_administrations": ["array", "null"],
      "demographic_infos": ["array", "null"],
      "genetic_infos": ["array", "null"],
      "observations": ["array", "null"],
@@ -36,6 +37,7 @@ For specific details, please refer to the documentation:
 - [profile_info](./docs/profile_info.md)
 - [reference_info](./docs/reference_info.md)
 - [drug_administrations](./docs/drug_administrations.md)
+- [meal_administrations](./docs/meal_administration_protocol.md)
 - [demographic_infos](./docs/demographics.md)
 - [genetic_infos](./docs/genetic.md)
 - [observations](./docs/observations.md)
