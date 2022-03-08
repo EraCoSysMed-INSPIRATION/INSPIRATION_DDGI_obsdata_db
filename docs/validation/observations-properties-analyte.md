@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/analyte
+/observations#/properties/analyte
 ```
 
 Name of the analyte. Must be part of compound\_info as [compound\_name](https://github.com/EraCoSysMed-INSPIRATION/INSPIRATION_DDGI_obsdata_db/blob/master/docs/compound_info-compound_info.md#compound_name) or compound\_alias.

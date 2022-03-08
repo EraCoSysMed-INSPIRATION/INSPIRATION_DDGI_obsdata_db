@@ -1,7 +1,7 @@
 # Untitled undefined type in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/administrations/items/properties/duration
+/drug_administrations#/items/properties/administrations/items/properties/duration
 ```
 
 Duration of the drug administration i.e., in case of infusions.

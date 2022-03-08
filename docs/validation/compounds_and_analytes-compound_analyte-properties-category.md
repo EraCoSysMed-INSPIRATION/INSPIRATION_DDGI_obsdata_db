@@ -1,7 +1,7 @@
 # Untitled string in compounds\_and\_analytes Schema
 
 ```txt
-profile/compounds_and_analytes#/items/properties/category
+/compounds_and_analytes#/items/properties/category
 ```
 
 Category of the analyte.

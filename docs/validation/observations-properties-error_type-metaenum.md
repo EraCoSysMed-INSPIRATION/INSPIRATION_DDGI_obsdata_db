@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/error_type/meta:enum
+/observations#/properties/error_type/meta:enum
 ```
 
 

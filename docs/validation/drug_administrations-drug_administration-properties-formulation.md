@@ -1,7 +1,7 @@
 # Untitled undefined type in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/formulation
+/drug_administrations#/items/properties/formulation
 ```
 
 Formulation of the administered doses, e.g., immediate release tablet

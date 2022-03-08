@@ -1,7 +1,7 @@
 # Untitled undefined type in interaction\_ratios Schema
 
 ```txt
-profile/interaction_ratios#/items/properties/error_type
+/interaction_ratios#/items/properties/error_type
 ```
 
 Type of the error.

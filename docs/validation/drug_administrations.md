@@ -1,7 +1,7 @@
 # drug\_administrations Schema
 
 ```txt
-profile/drug_administrations
+/drug_administrations
 ```
 
 Array of all drug administration protocol of a given profile. Contains one [object per administration protocol](./drug_administrations-drug_administration.md)

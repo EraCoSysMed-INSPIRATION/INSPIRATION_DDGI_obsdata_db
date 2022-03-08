@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/observation_description
+/observations#/properties/observation_description
 ```
 
 Description of the observation. I.e., Measurements of heart rate.

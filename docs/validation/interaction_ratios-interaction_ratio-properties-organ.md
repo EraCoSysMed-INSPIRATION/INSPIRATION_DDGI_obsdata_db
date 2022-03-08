@@ -1,7 +1,7 @@
 # Untitled undefined type in interaction\_ratios Schema
 
 ```txt
-profile/interaction_ratios#/items/properties/organ
+/interaction_ratios#/items/properties/organ
 ```
 
 Organ or tissue, where observations were made.

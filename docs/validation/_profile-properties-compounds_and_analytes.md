@@ -1,7 +1,7 @@
 # compounds\_and\_analytes Schema
 
 ```txt
-profile/compounds_and_analytes#/properties/compounds_and_analytes
+/compounds_and_analytes#/properties/compounds_and_analytes
 ```
 
 Array of all compounds and analytes for a given profile.

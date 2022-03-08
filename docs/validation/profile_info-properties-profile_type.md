@@ -1,7 +1,7 @@
 # Untitled string in profile\_info Schema
 
 ```txt
-profile/profile_info#/properties/profile_type
+/profile_info#/properties/profile_type
 ```
 
 Type of the profile, i.e., 'PK' or 'PD'

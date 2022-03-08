@@ -1,7 +1,7 @@
 # Untitled undefined type in demographics Schema
 
 ```txt
-profile/demographics#/items/properties/value_type/meta:enum
+/demographics#/items/properties/value_type/meta:enum
 ```
 
 

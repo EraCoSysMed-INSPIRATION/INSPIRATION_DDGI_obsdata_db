@@ -1,7 +1,7 @@
 # Untitled string in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/dose_unit
+/drug_administrations#/items/properties/dose_unit
 ```
 
 Unit of the administered dose.

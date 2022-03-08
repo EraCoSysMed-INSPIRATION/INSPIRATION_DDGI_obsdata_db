@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/lloq
+/observations#/properties/lloq
 ```
 
 Lower limit of quantification in the same unit as the observations.

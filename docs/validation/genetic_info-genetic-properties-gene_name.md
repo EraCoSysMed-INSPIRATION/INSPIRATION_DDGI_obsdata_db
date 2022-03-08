@@ -1,7 +1,7 @@
 # Untitled string in genetic\_info Schema
 
 ```txt
-profile/genetic_info#/items/properties/gene_name
+/genetic_info#/items/properties/gene_name
 ```
 
 Conventional gene name, e.g., CYP2D6.

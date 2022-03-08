@@ -1,9 +1,10 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "meal_administration",
+  "title": "meal_administrations",
   "description": "Array containing all meal administrations for a given protocol.",
-  "$id": "profile/meal_administrations",
-  "type": "array",
+  "$id": "/meal_administrations",
+  "required": ["administrations", "time_unit", "calorific_value_unit"],
+  "type": ["array", "null"],
   "items": {
     "type": "object",
     "title": "meal_administration",
@@ -69,16 +70,15 @@
       "fraction_solid": {
         "description": "Solid fraction of the meal.",
         "type": ["number", "null"]
+      },
+      "time_unit": {
+        "type": "string",
+        "description": "Unit of the time."
+      },
+      "calorific_value_unit": {
+        "type": "string",
+        "description": "Unit of the administered caloric."
       }
-    },
-    "time_unit": {
-      "type": "string",
-      "description": "Unit of the time."
-    },
-    "calorific_value_unit": {
-      "type": "string",
-      "description": "Unit of the administered caloric."
-    },
-    "required": ["administrations", "time_unit", "calorific_value_unit"]
+    }
   }
 }

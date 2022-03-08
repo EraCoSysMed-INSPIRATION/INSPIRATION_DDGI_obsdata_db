@@ -1,7 +1,7 @@
 # Untitled undefined type in nca\_values Schema
 
 ```txt
-profile/nca_values#/items/properties/error_type
+/nca_values#/items/properties/error_type
 ```
 
 Type of the error..

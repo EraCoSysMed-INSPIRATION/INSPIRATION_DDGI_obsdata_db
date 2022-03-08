@@ -1,7 +1,7 @@
 # demographic\_parameter Schema
 
 ```txt
-profile/demographics#/items
+/demographics#/items
 ```
 
 Object storing a singular demographic parameter.
@@ -14,21 +14,17 @@ Object storing a singular demographic parameter.
 
 `object` ([demographic\_parameter](demographics-demographic_parameter.md))
 
-## items Constraints
-
-**minimum number of items**: the minimum number of items for this array is: `1`
-
 # items Properties
 
-| Property                         | Type     | Required | Nullable       | Defined by                                                                                                                            |
-| :------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------ |
-| [parameter](#parameter)          | `string` | Required | cannot be null | [demographics](demographics-demographic_parameter-properties-parameter.md "profile/demographics#/items/properties/parameter")         |
-| [value\_type](#value_type)       | `string` | Required | cannot be null | [demographics](demographics-demographic_parameter-properties-value_type.md "profile/demographics#/items/properties/value_type")       |
-| [value\_numeric](#value_numeric) | `number` | Required | can be null    | [demographics](demographics-demographic_parameter-properties-value_numeric.md "profile/demographics#/items/properties/value_numeric") |
-| [value\_unit](#value_unit)       | `number` | Required | can be null    | [demographics](demographics-demographic_parameter-properties-value_unit.md "profile/demographics#/items/properties/value_unit")       |
-| [value\_string](#value_string)   | `string` | Required | can be null    | [demographics](demographics-demographic_parameter-properties-value_string.md "profile/demographics#/items/properties/value_string")   |
-| [unit](#unit)                    | `string` | Optional | can be null    | [demographics](demographics-demographic_parameter-properties-unit.md "profile/demographics#/items/properties/unit")                   |
-| [description](#description)      | `string` | Required | can be null    | [demographics](demographics-demographic_parameter-properties-description.md "profile/demographics#/items/properties/description")     |
+| Property                         | Type     | Required | Nullable       | Defined by                                                                                                                     |
+| :------------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------- |
+| [parameter](#parameter)          | `string` | Required | cannot be null | [demographics](demographics-demographic_parameter-properties-parameter.md "/demographics#/items/properties/parameter")         |
+| [value\_type](#value_type)       | `string` | Required | cannot be null | [demographics](demographics-demographic_parameter-properties-value_type.md "/demographics#/items/properties/value_type")       |
+| [value\_numeric](#value_numeric) | `number` | Required | can be null    | [demographics](demographics-demographic_parameter-properties-value_numeric.md "/demographics#/items/properties/value_numeric") |
+| [value\_unit](#value_unit)       | `number` | Required | can be null    | [demographics](demographics-demographic_parameter-properties-value_unit.md "/demographics#/items/properties/value_unit")       |
+| [value\_string](#value_string)   | `string` | Required | can be null    | [demographics](demographics-demographic_parameter-properties-value_string.md "/demographics#/items/properties/value_string")   |
+| [unit](#unit)                    | `string` | Optional | can be null    | [demographics](demographics-demographic_parameter-properties-unit.md "/demographics#/items/properties/unit")                   |
+| [description](#description)      | `string` | Required | can be null    | [demographics](demographics-demographic_parameter-properties-description.md "/demographics#/items/properties/description")     |
 
 ## parameter
 
@@ -42,7 +38,7 @@ Name of the parameter, e.g., 'age'.
 
 *   cannot be null
 
-*   defined in: [demographics](demographics-demographic_parameter-properties-parameter.md "profile/demographics#/items/properties/parameter")
+*   defined in: [demographics](demographics-demographic_parameter-properties-parameter.md "/demographics#/items/properties/parameter")
 
 ### parameter Type
 
@@ -60,7 +56,7 @@ Type of the parameter value, e.g., 'mean'.
 
 *   cannot be null
 
-*   defined in: [demographics](demographics-demographic_parameter-properties-value_type.md "profile/demographics#/items/properties/value_type")
+*   defined in: [demographics](demographics-demographic_parameter-properties-value_type.md "/demographics#/items/properties/value_type")
 
 ### value\_type Type
 
@@ -96,7 +92,7 @@ Numeric value of the parameter value, e.g., 'mean'.
 
 *   can be null
 
-*   defined in: [demographics](demographics-demographic_parameter-properties-value_numeric.md "profile/demographics#/items/properties/value_numeric")
+*   defined in: [demographics](demographics-demographic_parameter-properties-value_numeric.md "/demographics#/items/properties/value_numeric")
 
 ### value\_numeric Type
 
@@ -114,7 +110,7 @@ Unit of the parameter value, e.g., 'years'.
 
 *   can be null
 
-*   defined in: [demographics](demographics-demographic_parameter-properties-value_unit.md "profile/demographics#/items/properties/value_unit")
+*   defined in: [demographics](demographics-demographic_parameter-properties-value_unit.md "/demographics#/items/properties/value_unit")
 
 ### value\_unit Type
 
@@ -132,7 +128,7 @@ Non-numeric value of the parameter value.
 
 *   can be null
 
-*   defined in: [demographics](demographics-demographic_parameter-properties-value_string.md "profile/demographics#/items/properties/value_string")
+*   defined in: [demographics](demographics-demographic_parameter-properties-value_string.md "/demographics#/items/properties/value_string")
 
 ### value\_string Type
 
@@ -150,7 +146,7 @@ Unit of the parameter value, e.g., 'years'.
 
 *   can be null
 
-*   defined in: [demographics](demographics-demographic_parameter-properties-unit.md "profile/demographics#/items/properties/unit")
+*   defined in: [demographics](demographics-demographic_parameter-properties-unit.md "/demographics#/items/properties/unit")
 
 ### unit Type
 
@@ -168,7 +164,7 @@ Additional information about the parameter.
 
 *   can be null
 
-*   defined in: [demographics](demographics-demographic_parameter-properties-description.md "profile/demographics#/items/properties/description")
+*   defined in: [demographics](demographics-demographic_parameter-properties-description.md "/demographics#/items/properties/description")
 
 ### description Type
 

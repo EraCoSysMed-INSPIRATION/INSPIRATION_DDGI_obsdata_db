@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/observations/items/properties/observation_blq
+/observations#/properties/observations/items/properties/observation_blq
 ```
 
 Observation is below the LLOQ.

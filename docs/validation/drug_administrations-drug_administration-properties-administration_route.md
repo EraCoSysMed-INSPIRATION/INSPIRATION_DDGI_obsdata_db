@@ -1,7 +1,7 @@
 # Untitled string in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/administration_route
+/drug_administrations#/items/properties/administration_route
 ```
 
 Route of the administration, e.g., oral.

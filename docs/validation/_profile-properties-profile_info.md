@@ -1,7 +1,7 @@
 # profile\_info Schema
 
 ```txt
-profile/profile_info#/properties/profile_info
+/profile_info#/properties/profile_info
 ```
 
 Object for basic information on the profile.
@@ -16,14 +16,33 @@ Object for basic information on the profile.
 
 # profile\_info Properties
 
-| Property                               | Type      | Required | Nullable       | Defined by                                                                                                       |
-| :------------------------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------- |
-| [is\_DDI](#is_ddi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_ddi.md "profile/profile_info#/properties/is_DDI")                     |
-| [is\_DGI](#is_dgi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dgi.md "profile/profile_info#/properties/is_DGI")                     |
-| [is\_DFI](#is_dfi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dfi.md "profile/profile_info#/properties/is_DFI")                     |
-| [start\_clocktime](#start_clocktime)   | `string`  | Required | can be null    | [profile\_info](profile_info-properties-start_clocktime.md "profile/profile_info#/properties/start_clocktime")   |
-| [profile\_type](#profile_type)         | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-profile_type.md "profile/profile_info#/properties/profile_type")         |
-| [aggregation\_type](#aggregation_type) | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-aggregation_type.md "profile/profile_info#/properties/aggregation_type") |
+| Property                               | Type      | Required | Nullable       | Defined by                                                                                                |
+| :------------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------- |
+| [analyte](#analyte)                    | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-analyte.md "/profile_info#/properties/analyte")                   |
+| [is\_DDI](#is_ddi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_ddi.md "/profile_info#/properties/is_DDI")                     |
+| [is\_DGI](#is_dgi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dgi.md "/profile_info#/properties/is_DGI")                     |
+| [is\_DFI](#is_dfi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dfi.md "/profile_info#/properties/is_DFI")                     |
+| [start\_clocktime](#start_clocktime)   | `string`  | Required | can be null    | [profile\_info](profile_info-properties-start_clocktime.md "/profile_info#/properties/start_clocktime")   |
+| [profile\_type](#profile_type)         | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-profile_type.md "/profile_info#/properties/profile_type")         |
+| [aggregation\_type](#aggregation_type) | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-aggregation_type.md "/profile_info#/properties/aggregation_type") |
+
+## analyte
+
+Name of the analyte. Can be a compound, covariate or pharmacodynamic parameter. Must be defined in [compounds\_and\_analytes](compounds_and_analytes.md)
+
+`analyte`
+
+*   is required
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [profile\_info](profile_info-properties-analyte.md "/profile_info#/properties/analyte")
+
+### analyte Type
+
+`string`
 
 ## is\_DDI
 
@@ -37,7 +56,7 @@ The profile is a DDI-profile (i.e., a perpetrator is administered).
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-is_ddi.md "profile/profile_info#/properties/is_DDI")
+*   defined in: [profile\_info](profile_info-properties-is_ddi.md "/profile_info#/properties/is_DDI")
 
 ### is\_DDI Type
 
@@ -55,7 +74,7 @@ The profile is a DGI-profile (i.e., the effect of a variant phenotype or genotyp
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-is_dgi.md "profile/profile_info#/properties/is_DGI")
+*   defined in: [profile\_info](profile_info-properties-is_dgi.md "/profile_info#/properties/is_DGI")
 
 ### is\_DGI Type
 
@@ -73,7 +92,7 @@ The profile is a DFI-profile (i.e., the effect of food administration is analyze
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-is_dfi.md "profile/profile_info#/properties/is_DFI")
+*   defined in: [profile\_info](profile_info-properties-is_dfi.md "/profile_info#/properties/is_DFI")
 
 ### is\_DFI Type
 
@@ -91,7 +110,7 @@ Clocktime of the start of the study, i.e., time of the first drug administration
 
 *   can be null
 
-*   defined in: [profile\_info](profile_info-properties-start_clocktime.md "profile/profile_info#/properties/start_clocktime")
+*   defined in: [profile\_info](profile_info-properties-start_clocktime.md "/profile_info#/properties/start_clocktime")
 
 ### start\_clocktime Type
 
@@ -117,7 +136,7 @@ Type of the profile, i.e., 'PK' or 'PD'
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-profile_type.md "profile/profile_info#/properties/profile_type")
+*   defined in: [profile\_info](profile_info-properties-profile_type.md "/profile_info#/properties/profile_type")
 
 ### profile\_type Type
 
@@ -144,7 +163,7 @@ Type of aggregation, i.e. individual, typical or aggregated.
 
 *   cannot be null
 
-*   defined in: [profile\_info](profile_info-properties-aggregation_type.md "profile/profile_info#/properties/aggregation_type")
+*   defined in: [profile\_info](profile_info-properties-aggregation_type.md "/profile_info#/properties/aggregation_type")
 
 ### aggregation\_type Type
 

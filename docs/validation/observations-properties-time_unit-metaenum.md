@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/time_unit/meta:enum
+/observations#/properties/time_unit/meta:enum
 ```
 
 

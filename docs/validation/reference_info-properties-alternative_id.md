@@ -1,7 +1,7 @@
 # Untitled undefined type in reference\_info Schema
 
 ```txt
-profile/reference_info#/properties/alternative_id
+/reference_info#/properties/alternative_id
 ```
 
 Alternative identifier of the document, i.e., link to the document

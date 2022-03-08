@@ -1,7 +1,7 @@
 # Untitled string in interaction\_ratios Schema
 
 ```txt
-profile/interaction_ratios#/items/properties/interaction_type
+/interaction_ratios#/items/properties/interaction_type
 ```
 
 Type of interaction.

@@ -1,7 +1,7 @@
 # Untitled undefined type in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/formulation_comment
+/drug_administrations#/items/properties/formulation_comment
 ```
 
 Additional information about the formulation, e.g., brand name.

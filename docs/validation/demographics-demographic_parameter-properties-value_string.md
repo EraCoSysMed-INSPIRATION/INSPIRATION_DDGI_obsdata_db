@@ -1,7 +1,7 @@
 # Untitled undefined type in demographics Schema
 
 ```txt
-profile/demographics#/items/properties/value_string
+/demographics#/items/properties/value_string
 ```
 
 Non-numeric value of the parameter value.

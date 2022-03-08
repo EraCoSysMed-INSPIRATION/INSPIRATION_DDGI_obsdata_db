@@ -1,7 +1,7 @@
 # observations Schema
 
 ```txt
-profile/observations#/properties/observations
+/observations#/properties/observations
 ```
 
 Array of all observations of the given profile.

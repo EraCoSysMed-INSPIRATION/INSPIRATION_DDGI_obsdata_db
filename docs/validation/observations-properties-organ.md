@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/organ
+/observations#/properties/organ
 ```
 
 Organ or tissue, where observations were made.

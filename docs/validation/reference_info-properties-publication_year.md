@@ -1,7 +1,7 @@
 # Untitled integer in reference\_info Schema
 
 ```txt
-profile/reference_info#/properties/publication_year
+/reference_info#/properties/publication_year
 ```
 
 Year of the publication of the document

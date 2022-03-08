@@ -1,7 +1,7 @@
 # Untitled undefined type in genetic\_info Schema
 
 ```txt
-profile/genetic_info#/items/properties/comment
+/genetic_info#/items/properties/comment
 ```
 
 Comment regarding the provided value.

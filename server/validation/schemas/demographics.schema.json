@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "profile/demographics",
+  "$id": "/demographics",
   "title": "demographics",
-  "type": "array",
+  "type": ["array", "null"],
   "description": "Array of all demographic parameters for the profile.",
+  "minItems": 1,
   "items": {
     "type": "object",
     "title": "demographic_parameter",
-    "minItems": 1,
     "description": "Object storing a singular demographic parameter.",
     "additionalProperties": false,
     "properties": {

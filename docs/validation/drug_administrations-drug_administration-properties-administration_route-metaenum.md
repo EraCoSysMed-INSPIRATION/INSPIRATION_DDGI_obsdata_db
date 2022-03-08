@@ -1,7 +1,7 @@
 # Untitled undefined type in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/administration_route/meta:enum
+/drug_administrations#/items/properties/administration_route/meta:enum
 ```
 
 

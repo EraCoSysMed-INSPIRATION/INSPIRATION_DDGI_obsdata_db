@@ -15,7 +15,7 @@ async function createDemographics(database, body) {
     demographic_new.protocol_match = await database["DemographicMatcher"].build(
       {}
     );
-    demographic_new.messages = "New entry and match for demographic staged.";
+    demographic_new.messages = "New entry and match for demographic parameter staged.";
     demographics.push(demographic_new);
   }
   return demographics;

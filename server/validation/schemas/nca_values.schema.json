@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": ["array", "null"],
   "title": "nca_values",
-  "$id": "profile/nca_values",
+  "$id": "/nca_values",
   "description": "Array of NCA values for the given profile.",
   "items": {
     "type": "object",

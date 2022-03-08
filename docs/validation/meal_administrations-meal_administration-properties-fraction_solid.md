@@ -1,7 +1,7 @@
-# Untitled undefined type in meal\_administration Schema
+# Untitled undefined type in meal\_administrations Schema
 
 ```txt
-profile/meal_administrations#/items/properties/fraction_solid
+/meal_administrations#/items/properties/fraction_solid
 ```
 
 Solid fraction of the meal.

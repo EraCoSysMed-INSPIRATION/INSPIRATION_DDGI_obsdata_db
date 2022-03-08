@@ -1,7 +1,7 @@
 # Untitled undefined type in reference\_info Schema
 
 ```txt
-profile/reference_info#/properties/doi
+/reference_info#/properties/doi
 ```
 
 Document object identifier

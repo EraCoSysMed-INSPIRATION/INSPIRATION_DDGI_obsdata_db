@@ -1,7 +1,7 @@
 # Untitled number in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/administrations/items/properties/time
+/drug_administrations#/items/properties/administrations/items/properties/time
 ```
 
 Time point of the drug administration.

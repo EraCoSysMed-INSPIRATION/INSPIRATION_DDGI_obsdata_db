@@ -1,7 +1,7 @@
 # Untitled undefined type in nca\_values Schema
 
 ```txt
-profile/nca_values#/items/properties/organ
+/nca_values#/items/properties/organ
 ```
 
 Organ or tissue, where observations were made.

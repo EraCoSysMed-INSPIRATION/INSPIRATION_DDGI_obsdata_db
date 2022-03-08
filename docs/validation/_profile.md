@@ -16,18 +16,18 @@ JSON Object for a single profile. A profile is defined as a series of measuremen
 
 # profile Properties
 
-| Property                                            | Type     | Required | Nullable       | Defined by                                                                                                                   |
-| :-------------------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------- |
-| [profile\_info](#profile_info)                      | `object` | Required | cannot be null | [profile](_profile-properties-profile_info.md "profile/profile_info#/properties/profile_info")                               |
-| [reference\_info](#reference_info)                  | `object` | Required | cannot be null | [profile](_profile-properties-reference_info.md "profile/reference_info#/properties/reference_info")                         |
-| [compounds\_and\_analytes](#compounds_and_analytes) | `array`  | Optional | cannot be null | [profile](_profile-properties-compounds_and_analytes.md "profile/compounds_and_analytes#/properties/compounds_and_analytes") |
-| [demographics](#demographics)                       | `array`  | Optional | cannot be null | [profile](_profile-properties-demographics.md "profile/demographics#/properties/demographics")                               |
-| [genetic\_info](#genetic_info)                      | `array`  | Optional | can be null    | [profile](_profile-properties-genetic_info.md "profile/genetic_info#/properties/genetic_info")                               |
-| [drug\_administrations](#drug_administrations)      | `array`  | Optional | cannot be null | [profile](_profile-properties-drug_administrations.md "profile/drug_administrations#/properties/drug_administrations")       |
-| [meal\_administrations](#meal_administrations)      | `array`  | Optional | cannot be null | [profile](_profile-properties-meal_administration.md "profile/meal_administrations#/properties/meal_administrations")        |
-| [interaction\_ratios](#interaction_ratios)          | `array`  | Optional | can be null    | [profile](_profile-properties-interaction_ratios.md "profile/interaction_ratios#/properties/interaction_ratios")             |
-| [nca\_values](#nca_values)                          | `array`  | Optional | can be null    | [profile](_profile-properties-nca_values.md "profile/nca_values#/properties/nca_values")                                     |
-| [observations](#observations)                       | `object` | Optional | cannot be null | [profile](_profile-properties-observations.md "profile/observations#/properties/observations")                               |
+| Property                                            | Type     | Required | Nullable       | Defined by                                                                                                            |
+| :-------------------------------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------- |
+| [profile\_info](#profile_info)                      | `object` | Required | cannot be null | [profile](_profile-properties-profile_info.md "/profile_info#/properties/profile_info")                               |
+| [reference\_info](#reference_info)                  | `object` | Required | cannot be null | [profile](_profile-properties-reference_info.md "/reference_info#/properties/reference_info")                         |
+| [compounds\_and\_analytes](#compounds_and_analytes) | `array`  | Optional | cannot be null | [profile](_profile-properties-compounds_and_analytes.md "/compounds_and_analytes#/properties/compounds_and_analytes") |
+| [demographics](#demographics)                       | `array`  | Optional | can be null    | [profile](_profile-properties-demographics.md "/demographics#/properties/demographics")                               |
+| [genetic\_info](#genetic_info)                      | `array`  | Optional | can be null    | [profile](_profile-properties-genetic_info.md "/genetic_info#/properties/genetic_info")                               |
+| [drug\_administrations](#drug_administrations)      | `array`  | Optional | cannot be null | [profile](_profile-properties-drug_administrations.md "/drug_administrations#/properties/drug_administrations")       |
+| [meal\_administrations](#meal_administrations)      | `array`  | Optional | can be null    | [profile](_profile-properties-meal_administrations.md "/meal_administrations#/properties/meal_administrations")       |
+| [interaction\_ratios](#interaction_ratios)          | `array`  | Optional | can be null    | [profile](_profile-properties-interaction_ratios.md "/interaction_ratios#/properties/interaction_ratios")             |
+| [nca\_values](#nca_values)                          | `array`  | Optional | can be null    | [profile](_profile-properties-nca_values.md "/nca_values#/properties/nca_values")                                     |
+| [observations](#observations)                       | `object` | Optional | cannot be null | [profile](_profile-properties-observations.md "/observations#/properties/observations")                               |
 
 ## profile\_info
 
@@ -41,7 +41,7 @@ Object for basic information on the profile.
 
 *   cannot be null
 
-*   defined in: [profile](_profile-properties-profile_info.md "profile/profile_info#/properties/profile_info")
+*   defined in: [profile](_profile-properties-profile_info.md "/profile_info#/properties/profile_info")
 
 ### profile\_info Type
 
@@ -59,7 +59,7 @@ Object containing information about the source document. See [properties](#refer
 
 *   cannot be null
 
-*   defined in: [profile](_profile-properties-reference_info.md "profile/reference_info#/properties/reference_info")
+*   defined in: [profile](_profile-properties-reference_info.md "/reference_info#/properties/reference_info")
 
 ### reference\_info Type
 
@@ -77,7 +77,7 @@ Array of all compounds and analytes for a given profile.
 
 *   cannot be null
 
-*   defined in: [profile](_profile-properties-compounds_and_analytes.md "profile/compounds_and_analytes#/properties/compounds_and_analytes")
+*   defined in: [profile](_profile-properties-compounds_and_analytes.md "/compounds_and_analytes#/properties/compounds_and_analytes")
 
 ### compounds\_and\_analytes Type
 
@@ -93,13 +93,17 @@ Array of all demographic parameters for the profile.
 
 *   Type: `object[]` ([demographic\_parameter](demographics-demographic_parameter.md))
 
-*   cannot be null
+*   can be null
 
-*   defined in: [profile](_profile-properties-demographics.md "profile/demographics#/properties/demographics")
+*   defined in: [profile](_profile-properties-demographics.md "/demographics#/properties/demographics")
 
 ### demographics Type
 
 `object[]` ([demographic\_parameter](demographics-demographic_parameter.md))
+
+### demographics Constraints
+
+**minimum number of items**: the minimum number of items for this array is: `1`
 
 ## genetic\_info
 
@@ -113,7 +117,7 @@ Array of genetic information for the respective study population.
 
 *   can be null
 
-*   defined in: [profile](_profile-properties-genetic_info.md "profile/genetic_info#/properties/genetic_info")
+*   defined in: [profile](_profile-properties-genetic_info.md "/genetic_info#/properties/genetic_info")
 
 ### genetic\_info Type
 
@@ -135,7 +139,7 @@ Array of all drug administration protocol of a given profile. Contains one [obje
 
 *   cannot be null
 
-*   defined in: [profile](_profile-properties-drug_administrations.md "profile/drug_administrations#/properties/drug_administrations")
+*   defined in: [profile](_profile-properties-drug_administrations.md "/drug_administrations#/properties/drug_administrations")
 
 ### drug\_administrations Type
 
@@ -155,9 +159,9 @@ Array containing all meal administrations for a given protocol.
 
 *   Type: `object[]` ([meal\_administration](meal_administrations-meal_administration.md))
 
-*   cannot be null
+*   can be null
 
-*   defined in: [profile](_profile-properties-meal_administration.md "profile/meal_administrations#/properties/meal_administrations")
+*   defined in: [profile](_profile-properties-meal_administrations.md "/meal_administrations#/properties/meal_administrations")
 
 ### meal\_administrations Type
 
@@ -175,7 +179,7 @@ Array of interaction ratios for the given profile.
 
 *   can be null
 
-*   defined in: [profile](_profile-properties-interaction_ratios.md "profile/interaction_ratios#/properties/interaction_ratios")
+*   defined in: [profile](_profile-properties-interaction_ratios.md "/interaction_ratios#/properties/interaction_ratios")
 
 ### interaction\_ratios Type
 
@@ -193,7 +197,7 @@ Array of NCA values for the given profile.
 
 *   can be null
 
-*   defined in: [profile](_profile-properties-nca_values.md "profile/nca_values#/properties/nca_values")
+*   defined in: [profile](_profile-properties-nca_values.md "/nca_values#/properties/nca_values")
 
 ### nca\_values Type
 
@@ -211,7 +215,7 @@ Array of all observations of the given profile.
 
 *   cannot be null
 
-*   defined in: [profile](_profile-properties-observations.md "profile/observations#/properties/observations")
+*   defined in: [profile](_profile-properties-observations.md "/observations#/properties/observations")
 
 ### observations Type
 

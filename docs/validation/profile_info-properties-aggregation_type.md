@@ -1,7 +1,7 @@
 # Untitled string in profile\_info Schema
 
 ```txt
-profile/profile_info#/properties/aggregation_type
+/profile_info#/properties/aggregation_type
 ```
 
 Type of aggregation, i.e. individual, typical or aggregated.

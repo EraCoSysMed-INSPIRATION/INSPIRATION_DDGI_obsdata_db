@@ -1,7 +1,7 @@
 # meal\_composition Schema
 
 ```txt
-profile/meal_administrations#/items/properties/meal_composition
+/meal_administrations#/items/properties/meal_composition
 ```
 
 Composition of the meal in percentages.
@@ -16,13 +16,13 @@ Composition of the meal in percentages.
 
 # meal\_composition Properties
 
-| Property                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                          |
-| :------------------------------ | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [carbohydrates](#carbohydrates) | `number` | Optional | cannot be null | [meal\_administration](meal_administrations-meal_administration-properties-meal_composition-properties-carbohydrates.md "profile/meal_administrations#/items/properties/meal_composition/properties/carbohydrates") |
-| [protein](#protein)             | `number` | Optional | cannot be null | [meal\_administration](meal_administrations-meal_administration-properties-meal_composition-properties-protein.md "profile/meal_administrations#/items/properties/meal_composition/properties/protein")             |
-| [fat](#fat)                     | `number` | Optional | cannot be null | [meal\_administration](meal_administrations-meal_administration-properties-meal_composition-properties-fat.md "profile/meal_administrations#/items/properties/meal_composition/properties/fat")                     |
-| [fiber](#fiber)                 | `number` | Optional | cannot be null | [meal\_administration](meal_administrations-meal_administration-properties-meal_composition-properties-fiber.md "profile/meal_administrations#/items/properties/meal_composition/properties/fiber")                 |
-| Additional Properties           | Any      | Optional | can be null    |                                                                                                                                                                                                                     |
+| Property                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                    |
+| :------------------------------ | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [carbohydrates](#carbohydrates) | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-carbohydrates.md "/meal_administrations#/items/properties/meal_composition/properties/carbohydrates") |
+| [protein](#protein)             | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-protein.md "/meal_administrations#/items/properties/meal_composition/properties/protein")             |
+| [fat](#fat)                     | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-fat.md "/meal_administrations#/items/properties/meal_composition/properties/fat")                     |
+| [fiber](#fiber)                 | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-fiber.md "/meal_administrations#/items/properties/meal_composition/properties/fiber")                 |
+| Additional Properties           | Any      | Optional | can be null    |                                                                                                                                                                                                               |
 
 ## carbohydrates
 
@@ -36,7 +36,7 @@ Percentage of carbohydrates.
 
 *   cannot be null
 
-*   defined in: [meal\_administration](meal_administrations-meal_administration-properties-meal_composition-properties-carbohydrates.md "profile/meal_administrations#/items/properties/meal_composition/properties/carbohydrates")
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-carbohydrates.md "/meal_administrations#/items/properties/meal_composition/properties/carbohydrates")
 
 ### carbohydrates Type
 
@@ -54,7 +54,7 @@ Percentage of protein.
 
 *   cannot be null
 
-*   defined in: [meal\_administration](meal_administrations-meal_administration-properties-meal_composition-properties-protein.md "profile/meal_administrations#/items/properties/meal_composition/properties/protein")
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-protein.md "/meal_administrations#/items/properties/meal_composition/properties/protein")
 
 ### protein Type
 
@@ -72,7 +72,7 @@ Percentage of fat.
 
 *   cannot be null
 
-*   defined in: [meal\_administration](meal_administrations-meal_administration-properties-meal_composition-properties-fat.md "profile/meal_administrations#/items/properties/meal_composition/properties/fat")
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-fat.md "/meal_administrations#/items/properties/meal_composition/properties/fat")
 
 ### fat Type
 
@@ -90,7 +90,7 @@ Percentage of fiber.
 
 *   cannot be null
 
-*   defined in: [meal\_administration](meal_administrations-meal_administration-properties-meal_composition-properties-fiber.md "profile/meal_administrations#/items/properties/meal_composition/properties/fiber")
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-fiber.md "/meal_administrations#/items/properties/meal_composition/properties/fiber")
 
 ### fiber Type
 

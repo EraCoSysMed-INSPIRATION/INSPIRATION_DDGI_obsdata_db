@@ -1,7 +1,7 @@
 # Untitled undefined type in demographics Schema
 
 ```txt
-profile/demographics#/items/properties/unit
+/demographics#/items/properties/unit
 ```
 
 Unit of the parameter value, e.g., 'years'.

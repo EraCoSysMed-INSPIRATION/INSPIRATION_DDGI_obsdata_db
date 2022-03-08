@@ -1,7 +1,7 @@
 # Untitled undefined type in profile\_info Schema
 
 ```txt
-profile/profile_info#/properties/start_clocktime
+/profile_info#/properties/start_clocktime
 ```
 
 Clocktime of the start of the study, i.e., time of the first drug administration. All time points (e.g., observations, administrations) should be relative to this time point. Given as hh:mm:ss.

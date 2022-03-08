@@ -1,7 +1,7 @@
 # Untitled undefined type in profile\_info Schema
 
 ```txt
-profile/profile_info#/properties/profile_type/meta:enum
+/profile_info#/properties/profile_type/meta:enum
 ```
 
 

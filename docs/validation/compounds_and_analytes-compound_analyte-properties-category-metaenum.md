@@ -1,7 +1,7 @@
 # Untitled undefined type in compounds\_and\_analytes Schema
 
 ```txt
-profile/compounds_and_analytes#/items/properties/category/meta:enum
+/compounds_and_analytes#/items/properties/category/meta:enum
 ```
 
 

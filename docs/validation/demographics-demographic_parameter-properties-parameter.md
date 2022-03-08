@@ -1,7 +1,7 @@
 # Untitled string in demographics Schema
 
 ```txt
-profile/demographics#/items/properties/parameter
+/demographics#/items/properties/parameter
 ```
 
 Name of the parameter, e.g., 'age'.

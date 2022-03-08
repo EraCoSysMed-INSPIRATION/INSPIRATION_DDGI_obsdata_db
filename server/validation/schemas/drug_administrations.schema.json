@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "drug_administrations",
   "description": "Array of all drug administration protocol of a given profile. Contains one [object per administration protocol](./drug_administrations-drug_administration.md) ",
-  "$id": "profile/drug_administrations",
+  "$id": "/drug_administrations",
   "type": "array",
   "minItems": 0,
   "items": {

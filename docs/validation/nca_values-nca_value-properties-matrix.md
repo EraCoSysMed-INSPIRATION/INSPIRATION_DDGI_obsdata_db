@@ -1,7 +1,7 @@
 # Untitled undefined type in nca\_values Schema
 
 ```txt
-profile/nca_values#/items/properties/matrix
+/nca_values#/items/properties/matrix
 ```
 
 Matrix where observations were made.

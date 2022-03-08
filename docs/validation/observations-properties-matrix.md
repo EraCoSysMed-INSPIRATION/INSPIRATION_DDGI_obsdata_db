@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/matrix
+/observations#/properties/matrix
 ```
 
 Matrix where observations were made.

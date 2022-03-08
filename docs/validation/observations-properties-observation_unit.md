@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/observation_unit
+/observations#/properties/observation_unit
 ```
 
 Unit of  the observations.

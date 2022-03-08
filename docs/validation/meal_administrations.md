@@ -1,7 +1,7 @@
-# meal\_administration Schema
+# meal\_administrations Schema
 
 ```txt
-profile/meal_administrations
+/meal_administrations
 ```
 
 Array containing all meal administrations for a given protocol.
@@ -10,6 +10,6 @@ Array containing all meal administrations for a given protocol.
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [meal\_administrations.schema.json](../../out/meal_administrations.schema.json "open original schema") |
 
-## meal\_administration Type
+## meal\_administrations Type
 
 `object[]` ([meal\_administration](meal_administrations-meal_administration.md))

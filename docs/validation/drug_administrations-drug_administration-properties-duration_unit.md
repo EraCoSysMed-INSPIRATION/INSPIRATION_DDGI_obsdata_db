@@ -1,7 +1,7 @@
 # Untitled undefined type in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/duration_unit
+/drug_administrations#/items/properties/duration_unit
 ```
 
 Unit of the dosing duration.

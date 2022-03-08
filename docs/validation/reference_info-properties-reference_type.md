@@ -1,7 +1,7 @@
 # Untitled string in reference\_info Schema
 
 ```txt
-profile/reference_info#/properties/reference_type
+/reference_info#/properties/reference_type
 ```
 
 Type of the document, e.g., journal article.

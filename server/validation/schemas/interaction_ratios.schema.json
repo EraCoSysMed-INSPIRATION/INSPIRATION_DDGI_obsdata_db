@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "type": ["array", "null"],
   "title": "interaction_ratios",
-  "$id": "profile/interaction_ratios",
+  "$id": "/interaction_ratios",
   "description": "Array of interaction ratios for the given profile.",
   "items": {
     "type": "object",
@@ -66,8 +66,9 @@
       }
     },
     "required": [
-      "parameter",
-      "value_numeric",
+      "ratio_type",
+      "interaction_type",
+      "value",
       "error_type",
       "error_value",
       "compartment",

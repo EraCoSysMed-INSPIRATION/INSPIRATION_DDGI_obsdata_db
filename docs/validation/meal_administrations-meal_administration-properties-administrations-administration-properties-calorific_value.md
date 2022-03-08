@@ -1,7 +1,7 @@
-# Untitled number in meal\_administration Schema
+# Untitled number in meal\_administrations Schema
 
 ```txt
-profile/meal_administrations#/items/properties/administrations/items/properties/calorific_value
+/meal_administrations#/items/properties/administrations/items/properties/calorific_value
 ```
 
 Dose of the drug administration.

@@ -1,15 +1,15 @@
-# Untitled boolean in profile\_info Schema
+# Untitled string in profile\_info Schema
 
 ```txt
-/profile_info#/properties/is_DGI
+/profile_info#/properties/analyte
 ```
 
-The profile is a DGI-profile (i.e., the effect of a variant phenotype or genotype on the PK or PD of a compound is analyzed).
+Name of the analyte. Can be a compound, covariate or pharmacodynamic parameter. Must be defined in [compounds\_and\_analytes](compounds_and_analytes.md)
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                               |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [profile\_info.schema.json\*](../../out/profile_info.schema.json "open original schema") |
 
-## is\_DGI Type
+## analyte Type
 
-`boolean`
+`string`

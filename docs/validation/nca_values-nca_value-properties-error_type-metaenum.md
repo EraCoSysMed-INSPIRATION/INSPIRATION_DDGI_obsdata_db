@@ -1,7 +1,7 @@
 # Untitled undefined type in nca\_values Schema
 
 ```txt
-profile/nca_values#/items/properties/error_type/meta:enum
+/nca_values#/items/properties/error_type/meta:enum
 ```
 
 

@@ -1,7 +1,7 @@
 # Untitled undefined type in nca\_values Schema
 
 ```txt
-profile/nca_values#/items/properties/compartment
+/nca_values#/items/properties/compartment
 ```
 
 Compartment, where observations were made.

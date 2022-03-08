@@ -1,7 +1,7 @@
 # Untitled boolean in profile\_info Schema
 
 ```txt
-profile/profile_info#/properties/is_DDI
+/profile_info#/properties/is_DDI
 ```
 
 The profile is a DDI-profile (i.e., a perpetrator is administered).

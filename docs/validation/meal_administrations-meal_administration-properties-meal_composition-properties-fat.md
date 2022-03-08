@@ -1,7 +1,7 @@
-# Untitled number in meal\_administration Schema
+# Untitled number in meal\_administrations Schema
 
 ```txt
-profile/meal_administrations#/items/properties/meal_composition/properties/fat
+/meal_administrations#/items/properties/meal_composition/properties/fat
 ```
 
 Percentage of fat.

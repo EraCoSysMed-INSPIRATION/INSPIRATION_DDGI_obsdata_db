@@ -1,7 +1,7 @@
 # Untitled number in drug\_administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/administrations/items/properties/dose
+/drug_administrations#/items/properties/administrations/items/properties/dose
 ```
 
 Dose of the drug administration.

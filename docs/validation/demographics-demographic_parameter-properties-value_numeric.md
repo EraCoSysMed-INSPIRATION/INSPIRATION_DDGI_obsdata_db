@@ -1,7 +1,7 @@
 # Untitled undefined type in demographics Schema
 
 ```txt
-profile/demographics#/items/properties/value_numeric
+/demographics#/items/properties/value_numeric
 ```
 
 Numeric value of the parameter value, e.g., 'mean'.

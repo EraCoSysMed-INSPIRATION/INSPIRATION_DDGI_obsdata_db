@@ -1,7 +1,7 @@
 # Untitled undefined type in interaction\_ratios Schema
 
 ```txt
-profile/interaction_ratios#/items/properties/value
+/interaction_ratios#/items/properties/value
 ```
 
 Value of the NCA-parameter.

@@ -1,7 +1,7 @@
 # Untitled undefined type in genetic\_info Schema
 
 ```txt
-profile/genetic_info#/items/properties/parameter/meta:enum
+/genetic_info#/items/properties/parameter/meta:enum
 ```
 
 

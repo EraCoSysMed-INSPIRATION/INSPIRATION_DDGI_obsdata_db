@@ -1,7 +1,7 @@
 # Untitled number in genetic\_info Schema
 
 ```txt
-profile/genetic_info#/items/properties/percentage
+/genetic_info#/items/properties/percentage
 ```
 
 Percentage of the population possessing the respective genotype or phenotype.

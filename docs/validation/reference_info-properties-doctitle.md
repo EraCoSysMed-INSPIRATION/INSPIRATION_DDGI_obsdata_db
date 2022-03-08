@@ -1,7 +1,7 @@
 # Untitled string in reference\_info Schema
 
 ```txt
-profile/reference_info#/properties/doctitle
+/reference_info#/properties/doctitle
 ```
 
 Title of the document

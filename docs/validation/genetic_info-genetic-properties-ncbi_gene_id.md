@@ -1,7 +1,7 @@
 # Untitled undefined type in genetic\_info Schema
 
 ```txt
-profile/genetic_info#/items/properties/ncbi_gene_id
+/genetic_info#/items/properties/ncbi_gene_id
 ```
 
 NCBI gene identifier
@@ -16,6 +16,6 @@ NCBI gene identifier
 
 ## ncbi\_gene\_id Constraints
 
-**maximum**: the value of this number must smaller than or equal to: `20`
+**maximum**: the value of this number must smaller than or equal to: `100000000`
 
 **minimum**: the value of this number must greater than or equal to: `1`

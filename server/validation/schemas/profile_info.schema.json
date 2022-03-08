@@ -1,12 +1,16 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "profile_info",
-  "$id": "profile/profile_info",
+  "$id": "/profile_info",
   "description": "Object for basic information on the profile.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["is_DDI", "is_DGI", "is_DFI", "profile_type", "start_clocktime", "aggregation_type"],
+  "required": ["is_DDI", "is_DGI", "is_DFI", "profile_type", "start_clocktime", "aggregation_type", "analyte"],
   "properties": {
+    "analyte": {
+      "description": "Name of the analyte. Can be a compound, covariate or pharmacodynamic parameter. Must be defined in [compounds_and_analytes](compounds_and_analytes.md)",
+      "type": "string"
+    },
     "is_DDI": {
       "description": "The profile is a DDI-profile (i.e., a perpetrator is administered).",
       "type": "boolean"

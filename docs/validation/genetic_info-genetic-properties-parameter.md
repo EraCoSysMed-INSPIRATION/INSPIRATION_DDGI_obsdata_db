@@ -1,7 +1,7 @@
 # Untitled string in genetic\_info Schema
 
 ```txt
-profile/genetic_info#/items/properties/parameter
+/genetic_info#/items/properties/parameter
 ```
 
 Parameter: phenotype, diplotype or haplotype

@@ -1,7 +1,7 @@
 # Untitled undefined type in interaction\_ratios Schema
 
 ```txt
-profile/interaction_ratios#/items/properties/interaction_type/meta:enum
+/interaction_ratios#/items/properties/interaction_type/meta:enum
 ```
 
 

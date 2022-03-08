@@ -1,6 +1,6 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "$id": "profile/observations",
+  "$id": "/observations",
   "description": "Array of all observations of the given profile.",
   "type": "object",
   "title": "observations",

@@ -1,7 +1,7 @@
 # Untitled undefined type in nca\_values Schema
 
 ```txt
-profile/nca_values#/items/properties/value_unit
+/nca_values#/items/properties/value_unit
 ```
 
 Unit of the NCA-parameter.

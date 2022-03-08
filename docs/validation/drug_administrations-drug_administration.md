@@ -1,7 +1,7 @@
 # drug\_administration Schema
 
 ```txt
-profile/drug_administrations#/items
+/drug_administrations#/items
 ```
 
 Drug administration protocol. One per administered compound and respective formulation.
@@ -16,16 +16,16 @@ Drug administration protocol. One per administered compound and respective formu
 
 # items Properties
 
-| Property                                         | Type     | Required | Nullable       | Defined by                                                                                                                                                                   |
-| :----------------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [administrations](#administrations)              | `array`  | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-administrations.md "profile/drug_administrations#/items/properties/administrations")             |
-| [time\_unit](#time_unit)                         | `string` | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-time_unit.md "profile/drug_administrations#/items/properties/time_unit")                         |
-| [dose\_unit](#dose_unit)                         | `string` | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-dose_unit.md "profile/drug_administrations#/items/properties/dose_unit")                         |
-| [duration\_unit](#duration_unit)                 | `string` | Required | can be null    | [drug\_administrations](drug_administrations-drug_administration-properties-duration_unit.md "profile/drug_administrations#/items/properties/duration_unit")                 |
-| [administered\_compound](#administered_compound) | `string` | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-administered_compound.md "profile/drug_administrations#/items/properties/administered_compound") |
-| [formulation](#formulation)                      | `string` | Required | can be null    | [drug\_administrations](drug_administrations-drug_administration-properties-formulation.md "profile/drug_administrations#/items/properties/formulation")                     |
-| [formulation\_comment](#formulation_comment)     | `string` | Required | can be null    | [drug\_administrations](drug_administrations-drug_administration-properties-formulation_comment.md "profile/drug_administrations#/items/properties/formulation_comment")     |
-| [administration\_route](#administration_route)   | `string` | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-administration_route.md "profile/drug_administrations#/items/properties/administration_route")   |
+| Property                                         | Type     | Required | Nullable       | Defined by                                                                                                                                                            |
+| :----------------------------------------------- | :------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [administrations](#administrations)              | `array`  | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-administrations.md "/drug_administrations#/items/properties/administrations")             |
+| [time\_unit](#time_unit)                         | `string` | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-time_unit.md "/drug_administrations#/items/properties/time_unit")                         |
+| [dose\_unit](#dose_unit)                         | `string` | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-dose_unit.md "/drug_administrations#/items/properties/dose_unit")                         |
+| [duration\_unit](#duration_unit)                 | `string` | Required | can be null    | [drug\_administrations](drug_administrations-drug_administration-properties-duration_unit.md "/drug_administrations#/items/properties/duration_unit")                 |
+| [administered\_compound](#administered_compound) | `string` | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-administered_compound.md "/drug_administrations#/items/properties/administered_compound") |
+| [formulation](#formulation)                      | `string` | Required | can be null    | [drug\_administrations](drug_administrations-drug_administration-properties-formulation.md "/drug_administrations#/items/properties/formulation")                     |
+| [formulation\_comment](#formulation_comment)     | `string` | Required | can be null    | [drug\_administrations](drug_administrations-drug_administration-properties-formulation_comment.md "/drug_administrations#/items/properties/formulation_comment")     |
+| [administration\_route](#administration_route)   | `string` | Required | cannot be null | [drug\_administrations](drug_administrations-drug_administration-properties-administration_route.md "/drug_administrations#/items/properties/administration_route")   |
 
 ## administrations
 
@@ -39,7 +39,7 @@ Array of drug administrations per administration protocol. One per administered 
 
 *   cannot be null
 
-*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-administrations.md "profile/drug_administrations#/items/properties/administrations")
+*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-administrations.md "/drug_administrations#/items/properties/administrations")
 
 ### administrations Type
 
@@ -57,7 +57,7 @@ Unit of the time.
 
 *   cannot be null
 
-*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-time_unit.md "profile/drug_administrations#/items/properties/time_unit")
+*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-time_unit.md "/drug_administrations#/items/properties/time_unit")
 
 ### time\_unit Type
 
@@ -75,7 +75,7 @@ Unit of the administered dose.
 
 *   cannot be null
 
-*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-dose_unit.md "profile/drug_administrations#/items/properties/dose_unit")
+*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-dose_unit.md "/drug_administrations#/items/properties/dose_unit")
 
 ### dose\_unit Type
 
@@ -93,7 +93,7 @@ Unit of the dosing duration.
 
 *   can be null
 
-*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-duration_unit.md "profile/drug_administrations#/items/properties/duration_unit")
+*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-duration_unit.md "/drug_administrations#/items/properties/duration_unit")
 
 ### duration\_unit Type
 
@@ -111,7 +111,7 @@ Compound name of the administered compound. Must match compound\_name or compoun
 
 *   cannot be null
 
-*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-administered_compound.md "profile/drug_administrations#/items/properties/administered_compound")
+*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-administered_compound.md "/drug_administrations#/items/properties/administered_compound")
 
 ### administered\_compound Type
 
@@ -129,7 +129,7 @@ Formulation of the administered doses, e.g., immediate release tablet
 
 *   can be null
 
-*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-formulation.md "profile/drug_administrations#/items/properties/formulation")
+*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-formulation.md "/drug_administrations#/items/properties/formulation")
 
 ### formulation Type
 
@@ -147,7 +147,7 @@ Additional information about the formulation, e.g., brand name.
 
 *   can be null
 
-*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-formulation_comment.md "profile/drug_administrations#/items/properties/formulation_comment")
+*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-formulation_comment.md "/drug_administrations#/items/properties/formulation_comment")
 
 ### formulation\_comment Type
 
@@ -165,7 +165,7 @@ Route of the administration, e.g., oral.
 
 *   cannot be null
 
-*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-administration_route.md "profile/drug_administrations#/items/properties/administration_route")
+*   defined in: [drug\_administrations](drug_administrations-drug_administration-properties-administration_route.md "/drug_administrations#/items/properties/administration_route")
 
 ### administration\_route Type
 

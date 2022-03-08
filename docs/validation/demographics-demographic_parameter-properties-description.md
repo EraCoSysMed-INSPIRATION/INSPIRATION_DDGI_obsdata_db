@@ -1,7 +1,7 @@
 # Untitled undefined type in demographics Schema
 
 ```txt
-profile/demographics#/items/properties/description
+/demographics#/items/properties/description
 ```
 
 Additional information about the parameter.

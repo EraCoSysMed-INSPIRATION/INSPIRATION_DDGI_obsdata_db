@@ -1,7 +1,7 @@
 # Untitled boolean in profile\_info Schema
 
 ```txt
-profile/profile_info#/properties/is_DFI
+/profile_info#/properties/is_DFI
 ```
 
 The profile is a DFI-profile (i.e., the effect of food administration is analyzed).

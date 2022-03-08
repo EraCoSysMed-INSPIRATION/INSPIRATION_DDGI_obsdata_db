@@ -1,7 +1,7 @@
 # compound\_analyte Schema
 
 ```txt
-profile/compounds_and_analytes#/items
+/compounds_and_analytes#/items
 ```
 
 Object describing all analytes and administered compounds for a given profile. Includes pharmacodynamic parameters and covariates
@@ -16,13 +16,13 @@ Object describing all analytes and administered compounds for a given profile. I
 
 # items Properties
 
-| Property                               | Type      | Required | Nullable       | Defined by                                                                                                                                                             |
-| :------------------------------------- | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [name](#name)                          | `string`  | Required | can be null    | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-name.md "profile/compounds_and_analytes#/items/properties/name")                         |
-| [alias](#alias)                        | `string`  | Required | can be null    | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-alias.md "profile/compounds_and_analytes#/items/properties/alias")                       |
-| [category](#category)                  | `string`  | Required | cannot be null | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-category.md "profile/compounds_and_analytes#/items/properties/category")                 |
-| [molecular\_weight](#molecular_weight) | `number`  | Required | cannot be null | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-molecular_weight.md "profile/compounds_and_analytes#/items/properties/molecular_weight") |
-| [pubchem\_id](#pubchem_id)             | `integer` | Required | can be null    | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-pubchem_id.md "profile/compounds_and_analytes#/items/properties/pubchem_id")             |
+| Property                               | Type      | Required | Nullable       | Defined by                                                                                                                                                      |
+| :------------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [name](#name)                          | `string`  | Required | can be null    | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-name.md "/compounds_and_analytes#/items/properties/name")                         |
+| [alias](#alias)                        | `string`  | Required | can be null    | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-alias.md "/compounds_and_analytes#/items/properties/alias")                       |
+| [category](#category)                  | `string`  | Required | cannot be null | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-category.md "/compounds_and_analytes#/items/properties/category")                 |
+| [molecular\_weight](#molecular_weight) | `number`  | Required | cannot be null | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-molecular_weight.md "/compounds_and_analytes#/items/properties/molecular_weight") |
+| [pubchem\_id](#pubchem_id)             | `integer` | Required | can be null    | [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-pubchem_id.md "/compounds_and_analytes#/items/properties/pubchem_id")             |
 
 ## name
 
@@ -36,7 +36,7 @@ Name of the analyte or administered compound, use INN where available
 
 *   can be null
 
-*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-name.md "profile/compounds_and_analytes#/items/properties/name")
+*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-name.md "/compounds_and_analytes#/items/properties/name")
 
 ### name Type
 
@@ -60,7 +60,7 @@ Alias of the analyte or administered compound. Enter when compound name is confi
 
 *   can be null
 
-*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-alias.md "profile/compounds_and_analytes#/items/properties/alias")
+*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-alias.md "/compounds_and_analytes#/items/properties/alias")
 
 ### alias Type
 
@@ -84,7 +84,7 @@ Category of the analyte.
 
 *   cannot be null
 
-*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-category.md "profile/compounds_and_analytes#/items/properties/category")
+*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-category.md "/compounds_and_analytes#/items/properties/category")
 
 ### category Type
 
@@ -113,7 +113,7 @@ Molecular weight in case the analyte is a compound.
 
 *   cannot be null
 
-*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-molecular_weight.md "profile/compounds_and_analytes#/items/properties/molecular_weight")
+*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-molecular_weight.md "/compounds_and_analytes#/items/properties/molecular_weight")
 
 ### molecular\_weight Type
 
@@ -135,7 +135,7 @@ Pubchem identifier in case the analyte is a compound.
 
 *   can be null
 
-*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-pubchem_id.md "profile/compounds_and_analytes#/items/properties/pubchem_id")
+*   defined in: [compounds\_and\_analytes](compounds_and_analytes-compound_analyte-properties-pubchem_id.md "/compounds_and_analytes#/items/properties/pubchem_id")
 
 ### pubchem\_id Type
 

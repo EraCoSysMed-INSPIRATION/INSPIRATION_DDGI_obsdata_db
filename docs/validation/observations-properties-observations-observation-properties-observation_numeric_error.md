@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/observations/items/properties/observation_numeric_error
+/observations#/properties/observations/items/properties/observation_numeric_error
 ```
 
 Error of the value of the observation.

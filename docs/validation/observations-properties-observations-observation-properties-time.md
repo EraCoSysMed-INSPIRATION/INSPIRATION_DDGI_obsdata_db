@@ -1,7 +1,7 @@
 # Untitled number in observations Schema
 
 ```txt
-profile/observations#/properties/observations/items/properties/time
+/observations#/properties/observations/items/properties/time
 ```
 
 Time point of the observation.

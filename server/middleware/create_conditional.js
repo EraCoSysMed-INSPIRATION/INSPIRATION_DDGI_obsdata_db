@@ -20,7 +20,7 @@ async function createConditional(
   switch (allEntries.fullResults.length) {
     case 0:
       messages.push(
-        `No entry for '${allEntries.current.tableName}' found, staging new entry.`
+        `No matching entry for '${allEntries.current.tableName}' found, staging new entry.`
       );
       model = await database[allEntries.current.tableName].build(obj);
       isNew = true;

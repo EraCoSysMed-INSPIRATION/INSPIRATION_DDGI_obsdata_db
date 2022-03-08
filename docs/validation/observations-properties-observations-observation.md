@@ -1,7 +1,7 @@
 # observation Schema
 
 ```txt
-profile/observations#/properties/observations/items
+/observations#/properties/observations/items
 ```
 
 Object describing a single observation.
@@ -16,13 +16,13 @@ Object describing a single observation.
 
 # items Properties
 
-| Property                                                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                                          |
-| :-------------------------------------------------------- | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [time](#time)                                             | `number`  | Optional | cannot be null | [observations](observations-properties-observations-observation-properties-time.md "profile/observations#/properties/observations/items/properties/time")                                           |
-| [observation\_numeric](#observation_numeric)              | `number`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_numeric.md "profile/observations#/properties/observations/items/properties/observation_numeric")             |
-| [observation\_numeric\_error](#observation_numeric_error) | `number`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_numeric_error.md "profile/observations#/properties/observations/items/properties/observation_numeric_error") |
-| [observation\_blq](#observation_blq)                      | `boolean` | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_blq.md "profile/observations#/properties/observations/items/properties/observation_blq")                     |
-| [observation\_string](#observation_string)                | `string`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_string.md "profile/observations#/properties/observations/items/properties/observation_string")               |
+| Property                                                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                                   |
+| :-------------------------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [time](#time)                                             | `number`  | Optional | cannot be null | [observations](observations-properties-observations-observation-properties-time.md "/observations#/properties/observations/items/properties/time")                                           |
+| [observation\_numeric](#observation_numeric)              | `number`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_numeric.md "/observations#/properties/observations/items/properties/observation_numeric")             |
+| [observation\_numeric\_error](#observation_numeric_error) | `number`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_numeric_error.md "/observations#/properties/observations/items/properties/observation_numeric_error") |
+| [observation\_blq](#observation_blq)                      | `boolean` | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_blq.md "/observations#/properties/observations/items/properties/observation_blq")                     |
+| [observation\_string](#observation_string)                | `string`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_string.md "/observations#/properties/observations/items/properties/observation_string")               |
 
 ## time
 
@@ -36,7 +36,7 @@ Time point of the observation.
 
 *   cannot be null
 
-*   defined in: [observations](observations-properties-observations-observation-properties-time.md "profile/observations#/properties/observations/items/properties/time")
+*   defined in: [observations](observations-properties-observations-observation-properties-time.md "/observations#/properties/observations/items/properties/time")
 
 ### time Type
 
@@ -54,7 +54,7 @@ Numeric value of the observation.
 
 *   can be null
 
-*   defined in: [observations](observations-properties-observations-observation-properties-observation_numeric.md "profile/observations#/properties/observations/items/properties/observation_numeric")
+*   defined in: [observations](observations-properties-observations-observation-properties-observation_numeric.md "/observations#/properties/observations/items/properties/observation_numeric")
 
 ### observation\_numeric Type
 
@@ -72,7 +72,7 @@ Error of the value of the observation.
 
 *   can be null
 
-*   defined in: [observations](observations-properties-observations-observation-properties-observation_numeric_error.md "profile/observations#/properties/observations/items/properties/observation_numeric_error")
+*   defined in: [observations](observations-properties-observations-observation-properties-observation_numeric_error.md "/observations#/properties/observations/items/properties/observation_numeric_error")
 
 ### observation\_numeric\_error Type
 
@@ -90,7 +90,7 @@ Observation is below the LLOQ.
 
 *   can be null
 
-*   defined in: [observations](observations-properties-observations-observation-properties-observation_blq.md "profile/observations#/properties/observations/items/properties/observation_blq")
+*   defined in: [observations](observations-properties-observations-observation-properties-observation_blq.md "/observations#/properties/observations/items/properties/observation_blq")
 
 ### observation\_blq Type
 
@@ -108,7 +108,7 @@ Non-numeric value of the observation.
 
 *   can be null
 
-*   defined in: [observations](observations-properties-observations-observation-properties-observation_string.md "profile/observations#/properties/observations/items/properties/observation_string")
+*   defined in: [observations](observations-properties-observations-observation-properties-observation_string.md "/observations#/properties/observations/items/properties/observation_string")
 
 ### observation\_string Type
 

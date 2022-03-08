@@ -1,7 +1,7 @@
 # Untitled undefined type in compounds\_and\_analytes Schema
 
 ```txt
-profile/compounds_and_analytes#/items/properties/alias
+/compounds_and_analytes#/items/properties/alias
 ```
 
 Alias of the analyte or administered compound. Enter when compound name is confidential.

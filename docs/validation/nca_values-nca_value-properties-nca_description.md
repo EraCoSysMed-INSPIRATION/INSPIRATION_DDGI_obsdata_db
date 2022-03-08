@@ -1,7 +1,7 @@
 # Untitled undefined type in nca\_values Schema
 
 ```txt
-profile/nca_values#/items/properties/nca_description
+/nca_values#/items/properties/nca_description
 ```
 
 Description of the nca value.

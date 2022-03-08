@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/compartment
+/observations#/properties/compartment
 ```
 
 Compartment, where observations were made.

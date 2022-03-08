@@ -1,7 +1,7 @@
 # administrations Schema
 
 ```txt
-profile/drug_administrations#/items/properties/administrations
+/drug_administrations#/items/properties/administrations
 ```
 
 Array of drug administrations per administration protocol. One per administered dose.

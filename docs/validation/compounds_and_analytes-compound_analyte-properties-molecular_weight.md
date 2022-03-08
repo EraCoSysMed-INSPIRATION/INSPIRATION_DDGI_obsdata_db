@@ -1,7 +1,7 @@
 # Untitled number in compounds\_and\_analytes Schema
 
 ```txt
-profile/compounds_and_analytes#/items/properties/molecular_weight
+/compounds_and_analytes#/items/properties/molecular_weight
 ```
 
 Molecular weight in case the analyte is a compound.

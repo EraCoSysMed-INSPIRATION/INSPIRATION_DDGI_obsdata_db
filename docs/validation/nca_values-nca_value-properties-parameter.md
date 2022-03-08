@@ -1,7 +1,7 @@
 # Untitled string in nca\_values Schema
 
 ```txt
-profile/nca_values#/items/properties/parameter
+/nca_values#/items/properties/parameter
 ```
 
 NCA parameter name such as AUC.

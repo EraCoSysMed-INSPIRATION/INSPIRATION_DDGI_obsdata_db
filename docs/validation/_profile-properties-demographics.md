@@ -1,7 +1,7 @@
 # demographics Schema
 
 ```txt
-profile/demographics#/properties/demographics
+/demographics#/properties/demographics
 ```
 
 Array of all demographic parameters for the profile.
@@ -13,3 +13,7 @@ Array of all demographic parameters for the profile.
 ## demographics Type
 
 `object[]` ([demographic\_parameter](demographics-demographic_parameter.md))
+
+## demographics Constraints
+
+**minimum number of items**: the minimum number of items for this array is: `1`

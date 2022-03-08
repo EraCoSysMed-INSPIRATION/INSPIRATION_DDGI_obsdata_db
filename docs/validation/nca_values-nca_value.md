@@ -1,7 +1,7 @@
 # nca\_value Schema
 
 ```txt
-profile/nca_values#/items
+/nca_values#/items
 ```
 
 
@@ -16,17 +16,17 @@ profile/nca_values#/items
 
 # items Properties
 
-| Property                             | Type     | Required | Nullable       | Defined by                                                                                                               |
-| :----------------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------- |
-| [parameter](#parameter)              | `string` | Required | cannot be null | [nca\_values](nca_values-nca_value-properties-parameter.md "profile/nca_values#/items/properties/parameter")             |
-| [value\_numeric](#value_numeric)     | `number` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-value_numeric.md "profile/nca_values#/items/properties/value_numeric")     |
-| [error\_value](#error_value)         | `number` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-error_value.md "profile/nca_values#/items/properties/error_value")         |
-| [value\_unit](#value_unit)           | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-value_unit.md "profile/nca_values#/items/properties/value_unit")           |
-| [error\_type](#error_type)           | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-error_type.md "profile/nca_values#/items/properties/error_type")           |
-| [compartment](#compartment)          | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-compartment.md "profile/nca_values#/items/properties/compartment")         |
-| [organ](#organ)                      | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-organ.md "profile/nca_values#/items/properties/organ")                     |
-| [matrix](#matrix)                    | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-matrix.md "profile/nca_values#/items/properties/matrix")                   |
-| [nca\_description](#nca_description) | `string` | Optional | can be null    | [nca\_values](nca_values-nca_value-properties-nca_description.md "profile/nca_values#/items/properties/nca_description") |
+| Property                             | Type     | Required | Nullable       | Defined by                                                                                                        |
+| :----------------------------------- | :------- | :------- | :------------- | :---------------------------------------------------------------------------------------------------------------- |
+| [parameter](#parameter)              | `string` | Required | cannot be null | [nca\_values](nca_values-nca_value-properties-parameter.md "/nca_values#/items/properties/parameter")             |
+| [value\_numeric](#value_numeric)     | `number` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-value_numeric.md "/nca_values#/items/properties/value_numeric")     |
+| [error\_value](#error_value)         | `number` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-error_value.md "/nca_values#/items/properties/error_value")         |
+| [value\_unit](#value_unit)           | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-value_unit.md "/nca_values#/items/properties/value_unit")           |
+| [error\_type](#error_type)           | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-error_type.md "/nca_values#/items/properties/error_type")           |
+| [compartment](#compartment)          | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-compartment.md "/nca_values#/items/properties/compartment")         |
+| [organ](#organ)                      | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-organ.md "/nca_values#/items/properties/organ")                     |
+| [matrix](#matrix)                    | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-matrix.md "/nca_values#/items/properties/matrix")                   |
+| [nca\_description](#nca_description) | `string` | Optional | can be null    | [nca\_values](nca_values-nca_value-properties-nca_description.md "/nca_values#/items/properties/nca_description") |
 
 ## parameter
 
@@ -40,7 +40,7 @@ NCA parameter name such as AUC.
 
 *   cannot be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-parameter.md "profile/nca_values#/items/properties/parameter")
+*   defined in: [nca\_values](nca_values-nca_value-properties-parameter.md "/nca_values#/items/properties/parameter")
 
 ### parameter Type
 
@@ -58,7 +58,7 @@ Value of the NCA-parameter.
 
 *   can be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-value_numeric.md "profile/nca_values#/items/properties/value_numeric")
+*   defined in: [nca\_values](nca_values-nca_value-properties-value_numeric.md "/nca_values#/items/properties/value_numeric")
 
 ### value\_numeric Type
 
@@ -76,7 +76,7 @@ Error of the NCA-parameter value.
 
 *   can be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-error_value.md "profile/nca_values#/items/properties/error_value")
+*   defined in: [nca\_values](nca_values-nca_value-properties-error_value.md "/nca_values#/items/properties/error_value")
 
 ### error\_value Type
 
@@ -94,7 +94,7 @@ Unit of the NCA-parameter.
 
 *   can be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-value_unit.md "profile/nca_values#/items/properties/value_unit")
+*   defined in: [nca\_values](nca_values-nca_value-properties-value_unit.md "/nca_values#/items/properties/value_unit")
 
 ### value\_unit Type
 
@@ -114,7 +114,7 @@ Type of the error..
 
 *   can be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-error_type.md "profile/nca_values#/items/properties/error_type")
+*   defined in: [nca\_values](nca_values-nca_value-properties-error_type.md "/nca_values#/items/properties/error_type")
 
 ### error\_type Type
 
@@ -144,7 +144,7 @@ Compartment, where observations were made.
 
 *   can be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-compartment.md "profile/nca_values#/items/properties/compartment")
+*   defined in: [nca\_values](nca_values-nca_value-properties-compartment.md "/nca_values#/items/properties/compartment")
 
 ### compartment Type
 
@@ -162,7 +162,7 @@ Organ or tissue, where observations were made.
 
 *   can be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-organ.md "profile/nca_values#/items/properties/organ")
+*   defined in: [nca\_values](nca_values-nca_value-properties-organ.md "/nca_values#/items/properties/organ")
 
 ### organ Type
 
@@ -180,7 +180,7 @@ Matrix where observations were made.
 
 *   can be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-matrix.md "profile/nca_values#/items/properties/matrix")
+*   defined in: [nca\_values](nca_values-nca_value-properties-matrix.md "/nca_values#/items/properties/matrix")
 
 ### matrix Type
 
@@ -198,7 +198,7 @@ Description of the nca value.
 
 *   can be null
 
-*   defined in: [nca\_values](nca_values-nca_value-properties-nca_description.md "profile/nca_values#/items/properties/nca_description")
+*   defined in: [nca\_values](nca_values-nca_value-properties-nca_description.md "/nca_values#/items/properties/nca_description")
 
 ### nca\_description Type
 

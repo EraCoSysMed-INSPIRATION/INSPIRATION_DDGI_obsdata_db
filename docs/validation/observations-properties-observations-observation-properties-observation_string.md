@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/observations/items/properties/observation_string
+/observations#/properties/observations/items/properties/observation_string
 ```
 
 Non-numeric value of the observation.

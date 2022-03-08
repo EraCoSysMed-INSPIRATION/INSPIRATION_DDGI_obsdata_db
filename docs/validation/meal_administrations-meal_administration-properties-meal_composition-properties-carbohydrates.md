@@ -1,7 +1,7 @@
-# Untitled number in meal\_administration Schema
+# Untitled number in meal\_administrations Schema
 
 ```txt
-profile/meal_administrations#/items/properties/meal_composition/properties/carbohydrates
+/meal_administrations#/items/properties/meal_composition/properties/carbohydrates
 ```
 
 Percentage of carbohydrates.

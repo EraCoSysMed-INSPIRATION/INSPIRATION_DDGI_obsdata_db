@@ -1,7 +1,7 @@
 # administration Schema
 
 ```txt
-profile/meal_administrations#/items/properties/administrations/items
+/meal_administrations#/items/properties/administrations/items
 ```
 
 Object describing a single meal administration.
@@ -16,10 +16,10 @@ Object describing a single meal administration.
 
 # items Properties
 
-| Property                             | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                                 |
-| :----------------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [time](#time)                        | `number` | Optional | cannot be null | [meal\_administration](meal_administrations-meal_administration-properties-administrations-administration-properties-time.md "profile/meal_administrations#/items/properties/administrations/items/properties/time")                       |
-| [calorific\_value](#calorific_value) | `number` | Optional | cannot be null | [meal\_administration](meal_administrations-meal_administration-properties-administrations-administration-properties-calorific_value.md "profile/meal_administrations#/items/properties/administrations/items/properties/calorific_value") |
+| Property                             | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                           |
+| :----------------------------------- | :------- | :------- | :------------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [time](#time)                        | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-administrations-administration-properties-time.md "/meal_administrations#/items/properties/administrations/items/properties/time")                       |
+| [calorific\_value](#calorific_value) | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-administrations-administration-properties-calorific_value.md "/meal_administrations#/items/properties/administrations/items/properties/calorific_value") |
 
 ## time
 
@@ -33,7 +33,7 @@ Time point of the drug administration.
 
 *   cannot be null
 
-*   defined in: [meal\_administration](meal_administrations-meal_administration-properties-administrations-administration-properties-time.md "profile/meal_administrations#/items/properties/administrations/items/properties/time")
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-administrations-administration-properties-time.md "/meal_administrations#/items/properties/administrations/items/properties/time")
 
 ### time Type
 
@@ -51,7 +51,7 @@ Dose of the drug administration.
 
 *   cannot be null
 
-*   defined in: [meal\_administration](meal_administrations-meal_administration-properties-administrations-administration-properties-calorific_value.md "profile/meal_administrations#/items/properties/administrations/items/properties/calorific_value")
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-administrations-administration-properties-calorific_value.md "/meal_administrations#/items/properties/administrations/items/properties/calorific_value")
 
 ### calorific\_value Type
 

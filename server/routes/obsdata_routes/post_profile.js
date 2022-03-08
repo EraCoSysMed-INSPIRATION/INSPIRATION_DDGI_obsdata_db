@@ -14,6 +14,7 @@ const createReferenceIfNotExists = require("../../middleware/create_reference");
 const createCompoundsIfNotExists = require("../../middleware/create_compound");
 const createAdministrationProtocols = require("../../middleware/create_administration_protocol");
 const createDemographics = require("../../middleware/create_demographics");
+const createGenetics = require("../../middleware/create_genetics");
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
@@ -43,7 +44,6 @@ module.exports = function (app) {
             mapper,
             req.body
           );
-          output.warnings.push(reference.warnings);
           let compounds = await createCompoundsIfNotExists(
             obs_db,
             mapper,
@@ -56,19 +56,26 @@ module.exports = function (app) {
             }
           }
           output.messages.push(reference.messages);
+          output.warnings.push(reference.warnings);
           let administration_protocols = await createAdministrationProtocols(
             obs_db,
             req.body
           );
           for (c of administration_protocols) {
-            output.messages.push(c);
+            output.messages.push(c.messages);
           }
-          let demographics = await createDemographics(
-            obs_db,
-            req.body
-          );
-          for (c of demographics) {
-            output.messages.push(c);
+          if (req.body.demographics !== null) {
+            let demographics = await createDemographics(obs_db, req.body);
+            for (c of demographics) {
+              output.messages.push(c.messages);
+            }
+          }
+
+          if (req.body.genetic_info !== null) {
+            let genetics = await createGenetics(obs_db, req.body);
+            for (c of genetics) {
+              output.messages.push(c.messages);
+            }
           }
         } catch (err) {
           console.log(err);

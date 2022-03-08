@@ -1,7 +1,7 @@
 # Untitled string in observations Schema
 
 ```txt
-profile/observations#/properties/time_unit
+/observations#/properties/time_unit
 ```
 
 Unit of time point for the observations.

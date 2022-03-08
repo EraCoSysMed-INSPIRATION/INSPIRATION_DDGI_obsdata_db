@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "compounds_and_analytes",
   "description": "Array of all compounds and analytes for a given profile.",
-  "$id": "profile/compounds_and_analytes",
+  "$id": "/compounds_and_analytes",
   "type": "array",
   "items": {
     "type": "object",

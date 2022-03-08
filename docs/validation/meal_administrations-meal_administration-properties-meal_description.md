@@ -1,7 +1,7 @@
-# Untitled string in meal\_administration Schema
+# Untitled string in meal\_administrations Schema
 
 ```txt
-profile/meal_administrations#/items/properties/meal_description
+/meal_administrations#/items/properties/meal_description
 ```
 
 Description of the meal, i.e. 'light meal'.

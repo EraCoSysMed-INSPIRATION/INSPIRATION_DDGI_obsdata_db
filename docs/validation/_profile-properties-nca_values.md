@@ -1,7 +1,7 @@
 # nca\_values Schema
 
 ```txt
-profile/nca_values#/properties/nca_values
+/nca_values#/properties/nca_values
 ```
 
 Array of NCA values for the given profile.

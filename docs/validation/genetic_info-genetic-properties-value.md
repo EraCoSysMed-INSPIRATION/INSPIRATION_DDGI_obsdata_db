@@ -1,7 +1,7 @@
 # Untitled string in genetic\_info Schema
 
 ```txt
-profile/genetic_info#/items/properties/value
+/genetic_info#/items/properties/value
 ```
 
 Value of the parameter. E.g., 'PM', '\*1/\*2' or 'rs4244285'.

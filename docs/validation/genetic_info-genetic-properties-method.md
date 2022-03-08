@@ -1,7 +1,7 @@
 # Untitled undefined type in genetic\_info Schema
 
 ```txt
-profile/genetic_info#/items/properties/method
+/genetic_info#/items/properties/method
 ```
 
 Method of determination for the genetic parameter. E.g., 'dextromethorphan/dextrorphan urinary metabolic ratio' or 'PCR-RFLP'.

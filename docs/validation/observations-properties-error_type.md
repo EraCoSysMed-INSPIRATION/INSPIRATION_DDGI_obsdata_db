@@ -1,7 +1,7 @@
 # Untitled undefined type in observations Schema
 
 ```txt
-profile/observations#/properties/error_type
+/observations#/properties/error_type
 ```
 
 Type of the error..

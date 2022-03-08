@@ -1,7 +1,7 @@
 # genetic Schema
 
 ```txt
-profile/genetic_info#/items
+/genetic_info#/items
 ```
 
 Compound information block. Create one for all compounds (analytes and administered compounds).
@@ -16,15 +16,15 @@ Compound information block. Create one for all compounds (analytes and administe
 
 # items Properties
 
-| Property                        | Type      | Required | Nullable       | Defined by                                                                                                             |
-| :------------------------------ | :-------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| [ncbi\_gene\_id](#ncbi_gene_id) | `integer` | Required | can be null    | [genetic\_info](genetic_info-genetic-properties-ncbi_gene_id.md "profile/genetic_info#/items/properties/ncbi_gene_id") |
-| [gene\_name](#gene_name)        | `string`  | Required | cannot be null | [genetic\_info](genetic_info-genetic-properties-gene_name.md "profile/genetic_info#/items/properties/gene_name")       |
-| [parameter](#parameter)         | `string`  | Required | cannot be null | [genetic\_info](genetic_info-genetic-properties-parameter.md "profile/genetic_info#/items/properties/parameter")       |
-| [value](#value)                 | `string`  | Required | cannot be null | [genetic\_info](genetic_info-genetic-properties-value.md "profile/genetic_info#/items/properties/value")               |
-| [percentage](#percentage)       | `number`  | Required | cannot be null | [genetic\_info](genetic_info-genetic-properties-percentage.md "profile/genetic_info#/items/properties/percentage")     |
-| [method](#method)               | `string`  | Required | can be null    | [genetic\_info](genetic_info-genetic-properties-method.md "profile/genetic_info#/items/properties/method")             |
-| [comment](#comment)             | `string`  | Required | can be null    | [genetic\_info](genetic_info-genetic-properties-comment.md "profile/genetic_info#/items/properties/comment")           |
+| Property                        | Type      | Required | Nullable       | Defined by                                                                                                      |
+| :------------------------------ | :-------- | :------- | :------------- | :-------------------------------------------------------------------------------------------------------------- |
+| [ncbi\_gene\_id](#ncbi_gene_id) | `integer` | Required | can be null    | [genetic\_info](genetic_info-genetic-properties-ncbi_gene_id.md "/genetic_info#/items/properties/ncbi_gene_id") |
+| [gene\_name](#gene_name)        | `string`  | Required | cannot be null | [genetic\_info](genetic_info-genetic-properties-gene_name.md "/genetic_info#/items/properties/gene_name")       |
+| [parameter](#parameter)         | `string`  | Required | cannot be null | [genetic\_info](genetic_info-genetic-properties-parameter.md "/genetic_info#/items/properties/parameter")       |
+| [value](#value)                 | `string`  | Required | cannot be null | [genetic\_info](genetic_info-genetic-properties-value.md "/genetic_info#/items/properties/value")               |
+| [percentage](#percentage)       | `number`  | Required | cannot be null | [genetic\_info](genetic_info-genetic-properties-percentage.md "/genetic_info#/items/properties/percentage")     |
+| [method](#method)               | `string`  | Required | can be null    | [genetic\_info](genetic_info-genetic-properties-method.md "/genetic_info#/items/properties/method")             |
+| [comment](#comment)             | `string`  | Required | can be null    | [genetic\_info](genetic_info-genetic-properties-comment.md "/genetic_info#/items/properties/comment")           |
 
 ## ncbi\_gene\_id
 
@@ -38,7 +38,7 @@ NCBI gene identifier
 
 *   can be null
 
-*   defined in: [genetic\_info](genetic_info-genetic-properties-ncbi_gene_id.md "profile/genetic_info#/items/properties/ncbi_gene_id")
+*   defined in: [genetic\_info](genetic_info-genetic-properties-ncbi_gene_id.md "/genetic_info#/items/properties/ncbi_gene_id")
 
 ### ncbi\_gene\_id Type
 
@@ -46,7 +46,7 @@ NCBI gene identifier
 
 ### ncbi\_gene\_id Constraints
 
-**maximum**: the value of this number must smaller than or equal to: `20`
+**maximum**: the value of this number must smaller than or equal to: `100000000`
 
 **minimum**: the value of this number must greater than or equal to: `1`
 
@@ -62,7 +62,7 @@ Conventional gene name, e.g., CYP2D6.
 
 *   cannot be null
 
-*   defined in: [genetic\_info](genetic_info-genetic-properties-gene_name.md "profile/genetic_info#/items/properties/gene_name")
+*   defined in: [genetic\_info](genetic_info-genetic-properties-gene_name.md "/genetic_info#/items/properties/gene_name")
 
 ### gene\_name Type
 
@@ -86,7 +86,7 @@ Parameter: phenotype, diplotype or haplotype
 
 *   cannot be null
 
-*   defined in: [genetic\_info](genetic_info-genetic-properties-parameter.md "profile/genetic_info#/items/properties/parameter")
+*   defined in: [genetic\_info](genetic_info-genetic-properties-parameter.md "/genetic_info#/items/properties/parameter")
 
 ### parameter Type
 
@@ -114,7 +114,7 @@ Value of the parameter. E.g., 'PM', '\*1/\*2' or 'rs4244285'.
 
 *   cannot be null
 
-*   defined in: [genetic\_info](genetic_info-genetic-properties-value.md "profile/genetic_info#/items/properties/value")
+*   defined in: [genetic\_info](genetic_info-genetic-properties-value.md "/genetic_info#/items/properties/value")
 
 ### value Type
 
@@ -132,7 +132,7 @@ Percentage of the population possessing the respective genotype or phenotype.
 
 *   cannot be null
 
-*   defined in: [genetic\_info](genetic_info-genetic-properties-percentage.md "profile/genetic_info#/items/properties/percentage")
+*   defined in: [genetic\_info](genetic_info-genetic-properties-percentage.md "/genetic_info#/items/properties/percentage")
 
 ### percentage Type
 
@@ -150,7 +150,7 @@ Method of determination for the genetic parameter. E.g., 'dextromethorphan/dextr
 
 *   can be null
 
-*   defined in: [genetic\_info](genetic_info-genetic-properties-method.md "profile/genetic_info#/items/properties/method")
+*   defined in: [genetic\_info](genetic_info-genetic-properties-method.md "/genetic_info#/items/properties/method")
 
 ### method Type
 
@@ -168,7 +168,7 @@ Comment regarding the provided value.
 
 *   can be null
 
-*   defined in: [genetic\_info](genetic_info-genetic-properties-comment.md "profile/genetic_info#/items/properties/comment")
+*   defined in: [genetic\_info](genetic_info-genetic-properties-comment.md "/genetic_info#/items/properties/comment")
 
 ### comment Type
 

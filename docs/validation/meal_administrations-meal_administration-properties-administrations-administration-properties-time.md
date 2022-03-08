@@ -1,7 +1,7 @@
-# Untitled number in meal\_administration Schema
+# Untitled number in meal\_administrations Schema
 
 ```txt
-profile/meal_administrations#/items/properties/administrations/items/properties/time
+/meal_administrations#/items/properties/administrations/items/properties/time
 ```
 
 Time point of the drug administration.

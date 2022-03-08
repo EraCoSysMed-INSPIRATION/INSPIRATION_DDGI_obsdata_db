@@ -1,7 +1,7 @@
 # Untitled undefined type in compounds\_and\_analytes Schema
 
 ```txt
-profile/compounds_and_analytes#/items/properties/pubchem_id
+/compounds_and_analytes#/items/properties/pubchem_id
 ```
 
 Pubchem identifier in case the analyte is a compound.

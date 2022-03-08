@@ -1,7 +1,7 @@
 # interaction\_ratios Schema
 
 ```txt
-profile/interaction_ratios
+/interaction_ratios
 ```
 
 Array of interaction ratios for the given profile.

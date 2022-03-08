@@ -1,7 +1,7 @@
 # genetic\_info Schema
 
 ```txt
-profile/genetic_info#/properties/genetic_info
+/genetic_info#/properties/genetic_info
 ```
 
 Array of genetic information for the respective study population.

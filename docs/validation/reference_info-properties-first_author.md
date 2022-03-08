@@ -1,7 +1,7 @@
 # Untitled undefined type in reference\_info Schema
 
 ```txt
-profile/reference_info#/properties/first_author
+/reference_info#/properties/first_author
 ```
 
 First author of the document

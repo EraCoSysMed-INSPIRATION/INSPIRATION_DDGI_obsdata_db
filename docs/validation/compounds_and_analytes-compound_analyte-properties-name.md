@@ -1,7 +1,7 @@
 # Untitled undefined type in compounds\_and\_analytes Schema
 
 ```txt
-profile/compounds_and_analytes#/items/properties/name
+/compounds_and_analytes#/items/properties/name
 ```
 
 Name of the analyte or administered compound, use INN where available

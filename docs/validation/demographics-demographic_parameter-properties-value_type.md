@@ -1,7 +1,7 @@
 # Untitled string in demographics Schema
 
 ```txt
-profile/demographics#/items/properties/value_type
+/demographics#/items/properties/value_type
 ```
 
 Type of the parameter value, e.g., 'mean'.

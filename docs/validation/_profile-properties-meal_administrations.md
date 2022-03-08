@@ -1,15 +1,15 @@
-# interaction\_ratios Schema
+# meal\_administrations Schema
 
 ```txt
-/interaction_ratios#/properties/interaction_ratios
+/meal_administrations#/properties/meal_administrations
 ```
 
-Array of interaction ratios for the given profile.
+Array containing all meal administrations for a given protocol.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                       |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------- |
 | Can be instantiated | No         | Unknown status | Unknown identifiability | Forbidden         | Allowed               | none                | [\_profile.schema.json\*](../../out/_profile.schema.json "open original schema") |
 
-## interaction\_ratios Type
+## meal\_administrations Type
 
-`object[]` ([interaction\_ratio](interaction_ratios-interaction_ratio.md))
+`object[]` ([meal\_administration](meal_administrations-meal_administration.md))
