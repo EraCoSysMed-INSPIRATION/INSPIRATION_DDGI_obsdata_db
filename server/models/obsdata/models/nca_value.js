@@ -26,6 +26,9 @@ module.exports = (sequelize, Sequelize) => {
       matrix: {
         type: Sequelize.STRING,
       },
+      comment: {
+        type: Sequelize.STRING,
+      }
     },
     { tableName: "nca_value" }
   );

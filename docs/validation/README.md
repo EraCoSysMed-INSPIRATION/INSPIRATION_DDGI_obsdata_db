@@ -12,7 +12,7 @@
 
 *   [interaction\_ratios](./interaction_ratios.md "Array of interaction ratios for the given profile") – `/interaction_ratios`
 
-*   [meal\_administrations](./meal_administrations.md "Array containing all meal administrations for a given protocol") – `/meal_administrations`
+*   [meal\_administrations](./meal_administrations.md "Array containing all meal administrations for a given profile") – `/meal_administrations`
 
 *   [nca\_values](./nca_values.md "Array of NCA values for the given profile") – `/nca_values`
 

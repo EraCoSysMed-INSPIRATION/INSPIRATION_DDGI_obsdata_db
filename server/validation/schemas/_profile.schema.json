@@ -2,7 +2,7 @@
   "$schema": "http://json-schema.org/draft-07/schema",
   "title": "profile",
   "$id": "profile",
-  "description": "JSON Object for a single profile. A profile is defined as a series of measurements for a single analyte for a given study population. Measurements of multiple analytes require separate profiles. The structureof a profile is defined below.",
+  "description": "JSON Object for a single profile. A profile is defined as a series of measurements for a single analyte for a given study population. Measurements of multiple analytes require separate profiles. The structure of a profile is defined below.",
   "type": "object",
   "additionalProperties": false,
   "required": ["profile_info", "reference_info"],

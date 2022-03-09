@@ -15,6 +15,7 @@ const createCompoundsIfNotExists = require("../../middleware/create_compound");
 const createAdministrationProtocols = require("../../middleware/create_administration_protocol");
 const createDemographics = require("../../middleware/create_demographics");
 const createGenetics = require("../../middleware/create_genetics");
+const createNCAValues = require("../../middleware/create_nca_values")
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
@@ -70,13 +71,25 @@ module.exports = function (app) {
               output.messages.push(c.messages);
             }
           }
-
           if (req.body.genetic_info !== null) {
             let genetics = await createGenetics(obs_db, req.body);
             for (c of genetics) {
               output.messages.push(c.messages);
             }
           }
+          if (req.body.nca_values !== null) {
+            let nca_values = await createNCAValues(obs_db, req.body);
+            for (c of nca_values) {
+              output.messages.push(c.messages);
+            }
+          }
+          if (req.body.interaction_ratios !== null) {
+            let interaction_ratios = await createInteractionRatios(obs_db, req.body);
+            for (c of interaction_ratios) {
+              output.messages.push(c.messages);
+            }
+          }
+          
         } catch (err) {
           console.log(err);
         }

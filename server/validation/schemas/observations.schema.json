@@ -5,10 +5,6 @@
   "type": "object",
   "title": "observations",
   "properties": {
-    "analyte": {
-      "description": "Name of the analyte. Must be part of compound_info as [compound_name](https://github.com/EraCoSysMed-INSPIRATION/INSPIRATION_DDGI_obsdata_db/blob/master/docs/compound_info-compound_info.md#compound_name) or compound_alias.",
-      "type": ["string", "null"]
-    },
     "observations": {
       "title": "observations",
       "description": "Array of all observations of the given profile.",
@@ -85,13 +81,12 @@
       "type": ["null", "number"],
       "description": "Lower limit of quantification in the same unit as the observations."
     },
-    "observation_description": {
+    "comment": {
       "type": ["string", "null"],
       "description": "Description of the observation. I.e., Measurements of heart rate."
     }
   },
   "required": [
-    "analyte",
     "observations",
     "time_unit",
     "observation_unit",
@@ -100,6 +95,6 @@
     "organ",
     "matrix",
     "lloq",
-    "observation_description"
+    "comment"
   ]
 }

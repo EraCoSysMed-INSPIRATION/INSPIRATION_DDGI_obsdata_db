@@ -1,18 +1,17 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "meal_administrations",
-  "description": "Array containing all meal administrations for a given protocol.",
+  "description": "Array containing all meal administrations for a given profile.",
   "$id": "/meal_administrations",
-  "required": ["administrations", "time_unit", "calorific_value_unit"],
   "type": ["array", "null"],
   "items": {
     "type": "object",
     "title": "meal_administration",
-    "description": "Meal administration protocol. One object per type of meal.",
+    "description": "Meal administration protocol. One per type of meal.",
     "properties": {
       "administrations": {
         "title": "administrations",
-        "description": "Array of meal administrations per administration protocol. One per type of administered meal.",
+        "description": "Array of meal administrations per administration protocol. One per administered meal.",
         "type": "array",
         "items": {
           "type": "object",
@@ -78,6 +77,9 @@
       "calorific_value_unit": {
         "type": "string",
         "description": "Unit of the administered caloric."
+      },
+      "comment": {
+        "type": "string"
       }
     }
   }

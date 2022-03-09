@@ -4,7 +4,7 @@
 /meal_administrations#/items
 ```
 
-Meal administration protocol. One object per type of meal.
+Meal administration protocol. One per type of meal.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                               |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------------- |
@@ -26,10 +26,11 @@ Meal administration protocol. One object per type of meal.
 | [fraction\_solid](#fraction_solid)              | `number` | Optional | can be null    | [meal\_administrations](meal_administrations-meal_administration-properties-fraction_solid.md "/meal_administrations#/items/properties/fraction_solid")             |
 | [time\_unit](#time_unit)                        | `string` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-time_unit.md "/meal_administrations#/items/properties/time_unit")                       |
 | [calorific\_value\_unit](#calorific_value_unit) | `string` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-calorific_value_unit.md "/meal_administrations#/items/properties/calorific_value_unit") |
+| [comment](#comment)                             | `string` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-comment.md "/meal_administrations#/items/properties/comment")                           |
 
 ## administrations
 
-Array of meal administrations per administration protocol. One per type of administered meal.
+Array of meal administrations per administration protocol. One per administered meal.
 
 `administrations`
 
@@ -168,5 +169,23 @@ Unit of the administered caloric.
 *   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-calorific_value_unit.md "/meal_administrations#/items/properties/calorific_value_unit")
 
 ### calorific\_value\_unit Type
+
+`string`
+
+## comment
+
+
+
+`comment`
+
+*   is optional
+
+*   Type: `string`
+
+*   cannot be null
+
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-comment.md "/meal_administrations#/items/properties/comment")
+
+### comment Type
 
 `string`

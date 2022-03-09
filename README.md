@@ -12,7 +12,8 @@ The REST API is developed in NODE.JS using EXPRESS.JS for routing.
 
 # Input validation
 
-For the full documentation of the user input validation [click here](./docs/validation/README.md).
+For the full documentation of the user input validation [start here](./docs/validation/_profile.md).
+
 
 # Running the database locally
 

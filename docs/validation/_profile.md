@@ -4,7 +4,7 @@
 profile
 ```
 
-JSON Object for a single profile. A profile is defined as a series of measurements for a single analyte for a given study population. Measurements of multiple analytes require separate profiles. The structureof a profile is defined below.
+JSON Object for a single profile. A profile is defined as a series of measurements for a single analyte for a given study population. Measurements of multiple analytes require separate profiles. The structure of a profile is defined below.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                     |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------- |
@@ -151,7 +151,7 @@ Array of all drug administration protocol of a given profile. Contains one [obje
 
 ## meal\_administrations
 
-Array containing all meal administrations for a given protocol.
+Array containing all meal administrations for a given profile.
 
 `meal_administrations`
 

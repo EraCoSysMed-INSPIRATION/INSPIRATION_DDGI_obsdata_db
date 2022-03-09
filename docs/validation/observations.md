@@ -16,36 +16,17 @@ Array of all observations of the given profile.
 
 # observations Properties
 
-| Property                                             | Type     | Required | Nullable       | Defined by                                                                                                             |
-| :--------------------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------- |
-| [analyte](#analyte)                                  | `string` | Required | can be null    | [observations](observations-properties-analyte.md "/observations#/properties/analyte")                                 |
-| [observations](#observations)                        | `array`  | Required | cannot be null | [observations](observations-properties-observations.md "/observations#/properties/observations")                       |
-| [time\_unit](#time_unit)                             | `string` | Required | cannot be null | [observations](observations-properties-time_unit.md "/observations#/properties/time_unit")                             |
-| [observation\_unit](#observation_unit)               | `string` | Required | can be null    | [observations](observations-properties-observation_unit.md "/observations#/properties/observation_unit")               |
-| [error\_type](#error_type)                           | `string` | Required | can be null    | [observations](observations-properties-error_type.md "/observations#/properties/error_type")                           |
-| [compartment](#compartment)                          | `string` | Required | can be null    | [observations](observations-properties-compartment.md "/observations#/properties/compartment")                         |
-| [organ](#organ)                                      | `string` | Required | can be null    | [observations](observations-properties-organ.md "/observations#/properties/organ")                                     |
-| [matrix](#matrix)                                    | `string` | Required | can be null    | [observations](observations-properties-matrix.md "/observations#/properties/matrix")                                   |
-| [lloq](#lloq)                                        | `number` | Required | can be null    | [observations](observations-properties-lloq.md "/observations#/properties/lloq")                                       |
-| [observation\_description](#observation_description) | `string` | Required | can be null    | [observations](observations-properties-observation_description.md "/observations#/properties/observation_description") |
-
-## analyte
-
-Name of the analyte. Must be part of compound\_info as [compound\_name](https://github.com/EraCoSysMed-INSPIRATION/INSPIRATION_DDGI_obsdata_db/blob/master/docs/compound_info-compound_info.md#compound_name) or compound\_alias.
-
-`analyte`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [observations](observations-properties-analyte.md "/observations#/properties/analyte")
-
-### analyte Type
-
-`string`
+| Property                               | Type     | Required | Nullable       | Defined by                                                                                               |
+| :------------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------- |
+| [observations](#observations)          | `array`  | Required | cannot be null | [observations](observations-properties-observations.md "/observations#/properties/observations")         |
+| [time\_unit](#time_unit)               | `string` | Required | cannot be null | [observations](observations-properties-time_unit.md "/observations#/properties/time_unit")               |
+| [observation\_unit](#observation_unit) | `string` | Required | can be null    | [observations](observations-properties-observation_unit.md "/observations#/properties/observation_unit") |
+| [error\_type](#error_type)             | `string` | Required | can be null    | [observations](observations-properties-error_type.md "/observations#/properties/error_type")             |
+| [compartment](#compartment)            | `string` | Required | can be null    | [observations](observations-properties-compartment.md "/observations#/properties/compartment")           |
+| [organ](#organ)                        | `string` | Required | can be null    | [observations](observations-properties-organ.md "/observations#/properties/organ")                       |
+| [matrix](#matrix)                      | `string` | Required | can be null    | [observations](observations-properties-matrix.md "/observations#/properties/matrix")                     |
+| [lloq](#lloq)                          | `number` | Required | can be null    | [observations](observations-properties-lloq.md "/observations#/properties/lloq")                         |
+| [comment](#comment)                    | `string` | Required | can be null    | [observations](observations-properties-comment.md "/observations#/properties/comment")                   |
 
 ## observations
 
@@ -217,11 +198,11 @@ Lower limit of quantification in the same unit as the observations.
 
 `number`
 
-## observation\_description
+## comment
 
 Description of the observation. I.e., Measurements of heart rate.
 
-`observation_description`
+`comment`
 
 *   is required
 
@@ -229,8 +210,8 @@ Description of the observation. I.e., Measurements of heart rate.
 
 *   can be null
 
-*   defined in: [observations](observations-properties-observation_description.md "/observations#/properties/observation_description")
+*   defined in: [observations](observations-properties-comment.md "/observations#/properties/comment")
 
-### observation\_description Type
+### comment Type
 
 `string`

@@ -4,7 +4,7 @@
 /meal_administrations
 ```
 
-Array containing all meal administrations for a given protocol.
+Array containing all meal administrations for a given profile.
 
 | Abstract            | Extensible | Status         | Identifiable            | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                             |
 | :------------------ | :--------- | :------------- | :---------------------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------------------------- |
