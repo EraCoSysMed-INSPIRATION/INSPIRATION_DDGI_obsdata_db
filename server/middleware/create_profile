@@ -1,0 +1,18 @@
+async function createProfile(database, body) {
+  let property = "profile_info";
+  let profile = body[property];
+  let obj = {
+    start_clocktime: profile.start_clocktime,
+    is_ddi: profile.is_DDI,
+    is_dgi: profile.is_DGI,
+    is_dfi: profile.is_DFI,
+    profile_type: profile.profile_type,
+    aggregation_type: profile.aggregation_type
+  };
+  let profile_new = {};
+  profile_new.profile = await database["Profile"].build(obj);
+  profile_new.messages = "New profile entry staged.";
+
+  return profile_new;
+}
+module.exports = createProfile;

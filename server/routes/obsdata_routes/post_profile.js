@@ -15,7 +15,9 @@ const createCompoundsIfNotExists = require("../../middleware/create_compound");
 const createAdministrationProtocols = require("../../middleware/create_administration_protocol");
 const createDemographics = require("../../middleware/create_demographics");
 const createGenetics = require("../../middleware/create_genetics");
-const createNCAValues = require("../../middleware/create_nca_values")
+const createNCAValues = require("../../middleware/create_nca_values");
+const createObservations = require("../../middleware/create_observation");
+const createProfile = require("../../middleware/create_profile");
 
 module.exports = function (app) {
   app.use(function (req, res, next) {
@@ -23,6 +25,7 @@ module.exports = function (app) {
       "Access-Control-Allow-Headers",
       "x-access-token, Origin, Content-Type, Accept"
     );
+    res.setHeader("Content-Type", "application/json; charset=utf-8");
     next();
   });
   app.post("/post/profile", async (req, res, next) => {
@@ -53,11 +56,14 @@ module.exports = function (app) {
           for (c of compounds) {
             output.messages.push(c.messages);
             if (c.warnings.length > 0) {
-              output.messages.push(c.warnings);
+              output.warnings.push(c.warnings.length);
             }
           }
           output.messages.push(reference.messages);
-          output.warnings.push(reference.warnings);
+          if (reference.warnings.length > 0) {
+            output.warnings.push(reference.warnings.length)
+          }
+
           let administration_protocols = await createAdministrationProtocols(
             obs_db,
             req.body
@@ -84,12 +90,52 @@ module.exports = function (app) {
             }
           }
           if (req.body.interaction_ratios !== null) {
-            let interaction_ratios = await createInteractionRatios(obs_db, req.body);
+            let interaction_ratios = await createInteractionRatios(
+              obs_db,
+              req.body
+            );
             for (c of interaction_ratios) {
               output.messages.push(c.messages);
             }
           }
-          
+          if (req.body.observations !== null) {
+            let observations = await createObservations(obs_db, req.body);
+            output.messages.push(observations.messages);
+          }
+
+          let profile = await createProfile(obs_db, req.body);
+          output.messages.push(profile.messages);
+
+          // save profile if there are no warnings
+          if (!output.warnings.length > 0) {
+            let profile_saved = await profile.profile.save();
+
+            // check if reference is new or not, extract id
+            if (reference.is_new) {
+              let reference_saved = await reference.model.save();
+              ref_id = reference_saved.id;
+            } else {
+              ref_id = reference.model.id;
+            }
+            // update reference foreign key in profile
+            await profile_saved.update(
+              { reference_id: ref_id },
+              {
+                where: {
+                  id: profile_saved.id,
+                },
+              }
+            );
+            // save compounds if new
+            for (c of compounds) {
+
+              if (c.is_new) {
+                let c_saved = await c.model.save()
+                c.compound_mw.compound_id = c_saved.id 
+                await c.compound_mw.save() 
+              }
+            }
+          }
         } catch (err) {
           console.log(err);
         }

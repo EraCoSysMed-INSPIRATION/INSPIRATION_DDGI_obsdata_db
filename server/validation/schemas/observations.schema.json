@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "$id": "/observations",
-  "description": "Array of all observations of the given profile.",
+  "description": "Object containing observations of the given profile.",
   "type": "object",
   "title": "observations",
   "properties": {
@@ -27,10 +27,6 @@
           "observation_numeric_error": {
             "type": ["number", "null"],
             "description": "Error of the value of the observation."
-          },
-          "observation_blq": {
-            "type": ["boolean", "null"],
-            "description": "Observation is below the LLOQ."
           },
           "observation_string": {
             "type": ["string", "null"],

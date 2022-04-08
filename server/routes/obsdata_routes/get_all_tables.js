@@ -13,6 +13,7 @@ module.exports = function (app) {
       "Access-Control-Allow-Headers",
       "x-access-token, Origin, Content-Type, Accept"
     );
+    res.setHeader("Content-Type", "application/json");
     next();
   });
 

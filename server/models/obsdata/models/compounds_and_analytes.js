@@ -16,13 +16,13 @@ module.exports = (sequelize, Sequelize) => {
       }
     },
     {
+      tableName: "compounds_and_analytes",
       indexes: [
         {
           unique: true,
           fields: ["pubchem_id", "name", "alias"],
         },
       ],
-      tableName: "compounds_and_analytes",
     }
   );
   return CompoundsAndAnalytes;

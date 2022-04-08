@@ -16,13 +16,12 @@ Object describing a single observation.
 
 # items Properties
 
-| Property                                                  | Type      | Required | Nullable       | Defined by                                                                                                                                                                                   |
-| :-------------------------------------------------------- | :-------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [time](#time)                                             | `number`  | Optional | cannot be null | [observations](observations-properties-observations-observation-properties-time.md "/observations#/properties/observations/items/properties/time")                                           |
-| [observation\_numeric](#observation_numeric)              | `number`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_numeric.md "/observations#/properties/observations/items/properties/observation_numeric")             |
-| [observation\_numeric\_error](#observation_numeric_error) | `number`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_numeric_error.md "/observations#/properties/observations/items/properties/observation_numeric_error") |
-| [observation\_blq](#observation_blq)                      | `boolean` | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_blq.md "/observations#/properties/observations/items/properties/observation_blq")                     |
-| [observation\_string](#observation_string)                | `string`  | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_string.md "/observations#/properties/observations/items/properties/observation_string")               |
+| Property                                                  | Type     | Required | Nullable       | Defined by                                                                                                                                                                                   |
+| :-------------------------------------------------------- | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [time](#time)                                             | `number` | Optional | cannot be null | [observations](observations-properties-observations-observation-properties-time.md "/observations#/properties/observations/items/properties/time")                                           |
+| [observation\_numeric](#observation_numeric)              | `number` | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_numeric.md "/observations#/properties/observations/items/properties/observation_numeric")             |
+| [observation\_numeric\_error](#observation_numeric_error) | `number` | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_numeric_error.md "/observations#/properties/observations/items/properties/observation_numeric_error") |
+| [observation\_string](#observation_string)                | `string` | Optional | can be null    | [observations](observations-properties-observations-observation-properties-observation_string.md "/observations#/properties/observations/items/properties/observation_string")               |
 
 ## time
 
@@ -77,24 +76,6 @@ Error of the value of the observation.
 ### observation\_numeric\_error Type
 
 `number`
-
-## observation\_blq
-
-Observation is below the LLOQ.
-
-`observation_blq`
-
-*   is optional
-
-*   Type: `boolean`
-
-*   can be null
-
-*   defined in: [observations](observations-properties-observations-observation-properties-observation_blq.md "/observations#/properties/observations/items/properties/observation_blq")
-
-### observation\_blq Type
-
-`boolean`
 
 ## observation\_string
 

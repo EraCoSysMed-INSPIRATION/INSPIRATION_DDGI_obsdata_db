@@ -16,7 +16,7 @@
 
 *   [nca\_values](./nca_values.md "Array of NCA values for the given profile") – `/nca_values`
 
-*   [observations](./observations.md "Array of all observations of the given profile") – `/observations`
+*   [observations](./observations.md "Object containing observations of the given profile") – `/observations`
 
 *   [profile](./_profile.md "JSON Object for a single profile") – `profile`
 
@@ -30,12 +30,8 @@
 
 *   [administration](./drug_administrations-drug_administration-properties-administrations-administration.md "Object describing a single drug administration") – `/drug_administrations#/items/properties/administrations/items`
 
-*   [administration](./meal_administrations-meal_administration-properties-administrations-administration.md "Object describing a single meal administration") – `/meal_administrations#/items/properties/administrations/items`
-
 *   [administration](./drug_administrations-drug_administration-properties-administrations-administration.md "Object describing a single drug administration") – `/drug_administrations#/items/properties/administrations/items`
 
-*   [administration](./meal_administrations-meal_administration-properties-administrations-administration.md "Object describing a single meal administration") – `/meal_administrations#/items/properties/administrations/items`
-
 *   [compound\_analyte](./compounds_and_analytes-compound_analyte.md "Object describing all analytes and administered compounds for a given profile") – `/compounds_and_analytes#/items`
 
 *   [compound\_analyte](./compounds_and_analytes-compound_analyte.md "Object describing all analytes and administered compounds for a given profile") – `/compounds_and_analytes#/items`
@@ -63,6 +59,14 @@
 *   [meal\_composition](./meal_administrations-meal_administration-properties-meal_composition.md "Composition of the meal in percentages") – `/meal_administrations#/items/properties/meal_composition`
 
 *   [meal\_composition](./meal_administrations-meal_administration-properties-meal_composition.md "Composition of the meal in percentages") – `/meal_administrations#/items/properties/meal_composition`
+
+*   [meal\_composition\_liquid](./meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_liquid.md "Liquid composition of the meal in percentages") – `/meal_administrations#/items/properties/meal_composition/properties/composition_liquid`
+
+*   [meal\_composition\_liquid](./meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_liquid.md "Liquid composition of the meal in percentages") – `/meal_administrations#/items/properties/meal_composition/properties/composition_liquid`
+
+*   [meal\_composition\_solid](./meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_solid.md "Solid composition of the meal in percentages") – `/meal_administrations#/items/properties/meal_composition/properties/composition_solid`
+
+*   [meal\_composition\_solid](./meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_solid.md "Solid composition of the meal in percentages") – `/meal_administrations#/items/properties/meal_composition/properties/composition_solid`
 
 *   [nca\_value](./nca_values-nca_value.md) – `/nca_values#/items`
 
@@ -76,11 +80,7 @@
 
 *   [administrations](./drug_administrations-drug_administration-properties-administrations.md "Array of drug administrations per administration protocol") – `/drug_administrations#/items/properties/administrations`
 
-*   [administrations](./meal_administrations-meal_administration-properties-administrations.md "Array of meal administrations per administration protocol") – `/meal_administrations#/items/properties/administrations`
-
 *   [administrations](./drug_administrations-drug_administration-properties-administrations.md "Array of drug administrations per administration protocol") – `/drug_administrations#/items/properties/administrations`
-
-*   [administrations](./meal_administrations-meal_administration-properties-administrations.md "Array of meal administrations per administration protocol") – `/meal_administrations#/items/properties/administrations`
 
 *   [observations](./observations-properties-observations.md "Array of all observations of the given profile") – `/observations#/properties/observations`
 

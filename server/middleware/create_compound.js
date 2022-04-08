@@ -5,8 +5,8 @@ async function createCompoundsIfNotExists(database, mapper, body) {
   for (let compound of body.compounds_and_analytes) {
     let obj = {
       pubchem_id: compound.pubchem_id,
-      compound_name: compound.name,
-      compound_alias: compound.alias,
+      name: compound.name,
+      alias: compound.alias,
       category: compound.category
     };
     compound_new = await createConditional(

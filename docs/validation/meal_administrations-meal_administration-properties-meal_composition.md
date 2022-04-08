@@ -4,11 +4,11 @@
 /meal_administrations#/items/properties/meal_composition
 ```
 
-Composition of the meal in percentages.
+Composition of the meal in percentages. Broken down by liquid and solid fractions.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                               |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [meal\_administrations.schema.json\*](../../out/meal_administrations.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [meal\_administrations.schema.json\*](../../out/meal_administrations.schema.json "open original schema") |
 
 ## meal\_composition Type
 
@@ -16,86 +16,43 @@ Composition of the meal in percentages.
 
 # meal\_composition Properties
 
-| Property                        | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                    |
-| :------------------------------ | :------- | :------- | :------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| [carbohydrates](#carbohydrates) | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-carbohydrates.md "/meal_administrations#/items/properties/meal_composition/properties/carbohydrates") |
-| [protein](#protein)             | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-protein.md "/meal_administrations#/items/properties/meal_composition/properties/protein")             |
-| [fat](#fat)                     | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-fat.md "/meal_administrations#/items/properties/meal_composition/properties/fat")                     |
-| [fiber](#fiber)                 | `number` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-fiber.md "/meal_administrations#/items/properties/meal_composition/properties/fiber")                 |
-| Additional Properties           | Any      | Optional | can be null    |                                                                                                                                                                                                               |
+| Property                                   | Type     | Required | Nullable       | Defined by                                                                                                                                                                                                                   |
+| :----------------------------------------- | :------- | :------- | :------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [composition\_liquid](#composition_liquid) | `object` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_liquid.md "/meal_administrations#/items/properties/meal_composition/properties/composition_liquid") |
+| [composition\_solid](#composition_solid)   | `object` | Optional | cannot be null | [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_solid.md "/meal_administrations#/items/properties/meal_composition/properties/composition_solid")   |
 
-## carbohydrates
+## composition\_liquid
 
-Percentage of carbohydrates.
+Liquid composition of the meal in percentages.
 
-`carbohydrates`
+`composition_liquid`
 
 *   is optional
 
-*   Type: `number`
+*   Type: `object` ([meal\_composition\_liquid](meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_liquid.md))
 
 *   cannot be null
 
-*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-carbohydrates.md "/meal_administrations#/items/properties/meal_composition/properties/carbohydrates")
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_liquid.md "/meal_administrations#/items/properties/meal_composition/properties/composition_liquid")
 
-### carbohydrates Type
+### composition\_liquid Type
 
-`number`
+`object` ([meal\_composition\_liquid](meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_liquid.md))
 
-## protein
+## composition\_solid
 
-Percentage of protein.
+Solid composition of the meal in percentages.
 
-`protein`
+`composition_solid`
 
 *   is optional
 
-*   Type: `number`
+*   Type: `object` ([meal\_composition\_solid](meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_solid.md))
 
 *   cannot be null
 
-*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-protein.md "/meal_administrations#/items/properties/meal_composition/properties/protein")
+*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_solid.md "/meal_administrations#/items/properties/meal_composition/properties/composition_solid")
 
-### protein Type
+### composition\_solid Type
 
-`number`
-
-## fat
-
-Percentage of fat.
-
-`fat`
-
-*   is optional
-
-*   Type: `number`
-
-*   cannot be null
-
-*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-fat.md "/meal_administrations#/items/properties/meal_composition/properties/fat")
-
-### fat Type
-
-`number`
-
-## fiber
-
-Percentage of fiber.
-
-`fiber`
-
-*   is optional
-
-*   Type: `number`
-
-*   cannot be null
-
-*   defined in: [meal\_administrations](meal_administrations-meal_administration-properties-meal_composition-properties-fiber.md "/meal_administrations#/items/properties/meal_composition/properties/fiber")
-
-### fiber Type
-
-`number`
-
-## Additional Properties
-
-Additional properties are allowed and do not have to follow a specific schema
+`object` ([meal\_composition\_solid](meal_administrations-meal_administration-properties-meal_composition-properties-meal_composition_solid.md))

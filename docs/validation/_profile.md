@@ -205,7 +205,7 @@ Array of NCA values for the given profile.
 
 ## observations
 
-Array of all observations of the given profile.
+Object containing observations of the given profile.
 
 `observations`
 

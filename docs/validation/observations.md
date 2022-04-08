@@ -4,7 +4,7 @@
 /observations
 ```
 
-Array of all observations of the given profile.
+Object containing observations of the given profile.
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                            |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :------------------------------------------------------------------------------------ |

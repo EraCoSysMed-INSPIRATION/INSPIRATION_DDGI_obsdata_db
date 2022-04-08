@@ -7,50 +7,77 @@
   "items": {
     "type": "object",
     "title": "meal_administration",
-    "description": "Meal administration protocol. One per type of meal.",
+    "description": "Meal administration protocol. One per type of meal administration.",
     "properties": {
-      "administrations": {
-        "title": "administrations",
-        "description": "Array of meal administrations per administration protocol. One per administered meal.",
-        "type": "array",
-        "items": {
-          "type": "object",
-          "title": "administration",
-          "description": "Object describing a single meal administration.",
-          "additionalProperties": false,
-          "properties": {
-            "time": {
-              "description": "Time point of the drug administration.",
-              "type": "number"
-            },
-            "calorific_value": {
-              "description": "Dose of the drug administration.",
-              "type": "number"
-            }
-          }
-        }
+      "time_value": {
+          "description": "Time point of the drug administration.",
+          "type": "number"
+        },
+      "time_unit": {
+        "type": "string",
+        "description": "Unit of the time."
+      },
+      "calorific_value": {
+        "description": "Dose of the drug administration.",
+        "type": "number"
+      },
+      "calorific_value_unit": {
+        "type": "string",
+        "description": "Unit of the administered caloric."
       },
       "meal_composition": {
-        "description": "Composition of the meal in percentages.",
+        "description": "Composition of the meal in percentages. Broken down by liquid and solid fractions.",
         "type": "object",
         "title": "meal_composition",
-        "additionalProperties": true,
+        "additionalProperties": false,
         "properties": {
-          "carbohydrates": {
-            "description": "Percentage of carbohydrates.",
-            "type": "number"
+          "composition_liquid": {
+            "description": "Liquid composition of the meal in percentages.",
+            "type": "object",
+            "title": "meal_composition_liquid",
+            "additionalProperties": true,
+            "properties": {
+              "carbohydrates": {
+                "description": "Percentage of carbohydrates.",
+                "type": "number"
+              },
+              "protein": {
+                "description": "Percentage of protein.",
+                "type": "number"
+              },
+              "fat": {
+                "description": "Percentage of fat.",
+                "type": "number"
+              },
+              "fiber": {
+                "description": "Percentage of fiber.",
+                "type": "number"
+              }
+            }
           },
-          "protein": {
-            "description": "Percentage of protein.",
-            "type": "number"
-          },
-          "fat": {
-            "description": "Percentage of fat.",
-            "type": "number"
-          },
-          "fiber": {
-            "description": "Percentage of fiber.",
-            "type": "number"
+          "composition_solid": {
+            "description": "Solid composition of the meal in percentages.",
+            "type": "object",
+            "title": "meal_composition_solid",
+            "additionalProperties": true,
+            "properties": {
+              "carbohydrates": {
+                "description": "Percentage of carbohydrates.",
+                "type": "number"
+              },
+              "protein": {
+                "description": "Percentage of protein.",
+                "type": "number"
+              },
+              "fat": {
+                "description": "Percentage of fat.",
+                "type": "number"
+              },
+              "fiber": {
+                "description": "Percentage of fiber.",
+                "type": "number"
+              }
+            }
           }
         }
       },
@@ -70,13 +97,9 @@
         "description": "Solid fraction of the meal.",
         "type": ["number", "null"]
       },
-      "time_unit": {
-        "type": "string",
-        "description": "Unit of the time."
-      },
-      "calorific_value_unit": {
-        "type": "string",
-        "description": "Unit of the administered caloric."
+      "fraction_liquid": {
+        "description": "Liquid fraction of the meal.",
+        "type": ["number", "null"]
       },
       "comment": {
         "type": "string"
