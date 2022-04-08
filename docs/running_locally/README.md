@@ -19,7 +19,7 @@
    }
    ```
 
-   'userdb_config.json' stores the credentials for the user database, 'config.json' for the observed_data_db.
+   'userdb_config.json' stores the credentials for the user database, 'obsdb_config.json' for the observed_data_db.
 
 4. Add a 'auth_config.js' file to 'config', the file should contain a secret string:
    ```javascript
