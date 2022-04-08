@@ -8,7 +8,7 @@
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                           |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :----------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [nca\_values.schema.json\*](../../out/nca_values.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [nca\_values.schema.json\*](../../out/nca_values.schema.json "open original schema") |
 
 ## items Type
 
@@ -23,9 +23,6 @@
 | [error\_value](#error_value)     | `number` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-error_value.md "/nca_values#/items/properties/error_value")     |
 | [value\_unit](#value_unit)       | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-value_unit.md "/nca_values#/items/properties/value_unit")       |
 | [error\_type](#error_type)       | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-error_type.md "/nca_values#/items/properties/error_type")       |
-| [compartment](#compartment)      | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-compartment.md "/nca_values#/items/properties/compartment")     |
-| [organ](#organ)                  | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-organ.md "/nca_values#/items/properties/organ")                 |
-| [matrix](#matrix)                | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-matrix.md "/nca_values#/items/properties/matrix")               |
 | [comment](#comment)              | `string` | Required | can be null    | [nca\_values](nca_values-nca_value-properties-comment.md "/nca_values#/items/properties/comment")             |
 
 ## parameter
@@ -131,60 +128,6 @@ Type of the error..
 | `"sem"` | standard error of the mean    |
 | `"p95"` | 95th percentile               |
 | `"cv"`  | Coefficient of variation      |
-
-## compartment
-
-Compartment, where observations were made.
-
-`compartment`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [nca\_values](nca_values-nca_value-properties-compartment.md "/nca_values#/items/properties/compartment")
-
-### compartment Type
-
-`string`
-
-## organ
-
-Organ or tissue, where observations were made.
-
-`organ`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [nca\_values](nca_values-nca_value-properties-organ.md "/nca_values#/items/properties/organ")
-
-### organ Type
-
-`string`
-
-## matrix
-
-Matrix where observations were made.
-
-`matrix`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [nca\_values](nca_values-nca_value-properties-matrix.md "/nca_values#/items/properties/matrix")
-
-### matrix Type
-
-`string`
 
 ## comment
 

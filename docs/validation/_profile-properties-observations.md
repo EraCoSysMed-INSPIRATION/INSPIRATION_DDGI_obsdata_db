@@ -22,9 +22,6 @@ Object containing observations of the given profile.
 | [time\_unit](#time_unit)               | `string` | Required | cannot be null | [observations](observations-properties-time_unit.md "/observations#/properties/time_unit")               |
 | [observation\_unit](#observation_unit) | `string` | Required | can be null    | [observations](observations-properties-observation_unit.md "/observations#/properties/observation_unit") |
 | [error\_type](#error_type)             | `string` | Required | can be null    | [observations](observations-properties-error_type.md "/observations#/properties/error_type")             |
-| [compartment](#compartment)            | `string` | Required | can be null    | [observations](observations-properties-compartment.md "/observations#/properties/compartment")           |
-| [organ](#organ)                        | `string` | Required | can be null    | [observations](observations-properties-organ.md "/observations#/properties/organ")                       |
-| [matrix](#matrix)                      | `string` | Required | can be null    | [observations](observations-properties-matrix.md "/observations#/properties/matrix")                     |
 | [lloq](#lloq)                          | `number` | Required | can be null    | [observations](observations-properties-lloq.md "/observations#/properties/lloq")                         |
 | [comment](#comment)                    | `string` | Required | can be null    | [observations](observations-properties-comment.md "/observations#/properties/comment")                   |
 
@@ -125,60 +122,6 @@ Type of the error..
 | :------ | :---------------------------- |
 | `"sd"`  | Arithmetic standard deviation |
 | `"gsd"` | Geometric standard deviation  |
-
-## compartment
-
-Compartment, where observations were made.
-
-`compartment`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [observations](observations-properties-compartment.md "/observations#/properties/compartment")
-
-### compartment Type
-
-`string`
-
-## organ
-
-Organ or tissue, where observations were made.
-
-`organ`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [observations](observations-properties-organ.md "/observations#/properties/organ")
-
-### organ Type
-
-`string`
-
-## matrix
-
-Matrix where observations were made.
-
-`matrix`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [observations](observations-properties-matrix.md "/observations#/properties/matrix")
-
-### matrix Type
-
-`string`
 
 ## lloq
 

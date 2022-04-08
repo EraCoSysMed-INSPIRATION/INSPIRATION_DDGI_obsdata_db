@@ -8,7 +8,7 @@
 
 | Abstract            | Extensible | Status         | Identifiable | Custom Properties | Additional Properties | Access Restrictions | Defined In                                                                                           |
 | :------------------ | :--------- | :------------- | :----------- | :---------------- | :-------------------- | :------------------ | :--------------------------------------------------------------------------------------------------- |
-| Can be instantiated | No         | Unknown status | No           | Forbidden         | Allowed               | none                | [interaction\_ratios.schema.json\*](../../out/interaction_ratios.schema.json "open original schema") |
+| Can be instantiated | No         | Unknown status | No           | Forbidden         | Forbidden             | none                | [interaction\_ratios.schema.json\*](../../out/interaction_ratios.schema.json "open original schema") |
 
 ## items Type
 
@@ -23,9 +23,6 @@
 | [value](#value)                        | `number` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-value.md "/interaction_ratios#/items/properties/value")                       |
 | [error\_value](#error_value)           | `number` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_value.md "/interaction_ratios#/items/properties/error_value")           |
 | [error\_type](#error_type)             | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-error_type.md "/interaction_ratios#/items/properties/error_type")             |
-| [compartment](#compartment)            | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-compartment.md "/interaction_ratios#/items/properties/compartment")           |
-| [organ](#organ)                        | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-organ.md "/interaction_ratios#/items/properties/organ")                       |
-| [matrix](#matrix)                      | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-matrix.md "/interaction_ratios#/items/properties/matrix")                     |
 | [description](#description)            | `string` | Required | can be null    | [interaction\_ratios](interaction_ratios-interaction_ratio-properties-description.md "/interaction_ratios#/items/properties/description")           |
 
 ## ratio\_type
@@ -150,60 +147,6 @@ Type of the error.
 | `"sem"` | standard error of the mean    |
 | `"p95"` | 95th percentile               |
 | `"cv"`  | Coefficient of variation      |
-
-## compartment
-
-Compartment, where observations were made.
-
-`compartment`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-compartment.md "/interaction_ratios#/items/properties/compartment")
-
-### compartment Type
-
-`string`
-
-## organ
-
-Organ or tissue, where observations were made.
-
-`organ`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-organ.md "/interaction_ratios#/items/properties/organ")
-
-### organ Type
-
-`string`
-
-## matrix
-
-Matrix where observations were made.
-
-`matrix`
-
-*   is required
-
-*   Type: `string`
-
-*   can be null
-
-*   defined in: [interaction\_ratios](interaction_ratios-interaction_ratio-properties-matrix.md "/interaction_ratios#/items/properties/matrix")
-
-### matrix Type
-
-`string`
 
 ## description
 

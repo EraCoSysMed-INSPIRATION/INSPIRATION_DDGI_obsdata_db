@@ -61,18 +61,6 @@
         "gsd": "Geometric standard deviation"
       }
     },
-    "compartment": {
-      "description": "Compartment, where observations were made.",
-      "type": ["string", "null"]
-    },
-    "organ": {
-      "description": "Organ or tissue, where observations were made.",
-      "type": ["string", "null"]
-    },
-    "matrix": {
-      "description": "Matrix where observations were made.",
-      "type": ["string", "null"]
-    },
     "lloq": {
       "type": ["null", "number"],
       "description": "Lower limit of quantification in the same unit as the observations."
@@ -87,9 +75,6 @@
     "time_unit",
     "observation_unit",
     "error_type",
-    "compartment",
-    "organ",
-    "matrix",
     "lloq",
     "comment"
   ]

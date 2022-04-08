@@ -5,7 +5,18 @@
   "description": "Object for basic information on the profile.",
   "type": "object",
   "additionalProperties": false,
-  "required": ["is_DDI", "is_DGI", "is_DFI", "profile_type", "start_clocktime", "aggregation_type", "analyte"],
+  "required": [
+    "is_DDI",
+    "is_DGI",
+    "is_DFI",
+    "profile_type",
+    "start_clocktime",
+    "aggregation_type",
+    "compartment",
+    "organ",
+    "matrix",
+    "analyte"
+  ],
   "properties": {
     "analyte": {
       "description": "Name of the analyte. Can be a compound, covariate or pharmacodynamic parameter. Must be defined in [compounds_and_analytes](compounds_and_analytes.md)",
@@ -35,6 +46,18 @@
       "type": "string",
       "enum": ["pk", "pd"],
       "meta:enum": { "pk": "pharmacokinetic", "pd": "pharmacodynamic" }
+    },
+    "compartment": {
+      "description": "Compartment, where observations were made.",
+      "type": ["string", "null"]
+    },
+    "organ": {
+      "description": "Organ or tissue, where observations were made.",
+      "type": ["string", "null"]
+    },
+    "matrix": {
+      "description": "Matrix where observations were made.",
+      "type": ["string", "null"]
     },
     "aggregation_type": {
       "description": "Type of aggregation, i.e. individual, typical or aggregated.",

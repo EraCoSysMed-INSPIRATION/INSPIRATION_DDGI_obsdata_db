@@ -17,15 +17,6 @@ module.exports = (sequelize, Sequelize) => {
       error_type: {
         type: Sequelize.STRING,
       },
-      organ: {
-        type: Sequelize.STRING,
-      },
-      compartment: {
-        type: Sequelize.STRING,
-      },
-      matrix: {
-        type: Sequelize.STRING,
-      },
       comment: {
         type: Sequelize.STRING,
       }

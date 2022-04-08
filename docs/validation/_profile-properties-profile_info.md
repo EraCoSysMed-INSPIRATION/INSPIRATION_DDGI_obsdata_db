@@ -24,6 +24,9 @@ Object for basic information on the profile.
 | [is\_DFI](#is_dfi)                     | `boolean` | Required | cannot be null | [profile\_info](profile_info-properties-is_dfi.md "/profile_info#/properties/is_DFI")                     |
 | [start\_clocktime](#start_clocktime)   | `string`  | Required | can be null    | [profile\_info](profile_info-properties-start_clocktime.md "/profile_info#/properties/start_clocktime")   |
 | [profile\_type](#profile_type)         | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-profile_type.md "/profile_info#/properties/profile_type")         |
+| [compartment](#compartment)            | `string`  | Required | can be null    | [profile\_info](profile_info-properties-compartment.md "/profile_info#/properties/compartment")           |
+| [organ](#organ)                        | `string`  | Required | can be null    | [profile\_info](profile_info-properties-organ.md "/profile_info#/properties/organ")                       |
+| [matrix](#matrix)                      | `string`  | Required | can be null    | [profile\_info](profile_info-properties-matrix.md "/profile_info#/properties/matrix")                     |
 | [aggregation\_type](#aggregation_type) | `string`  | Required | cannot be null | [profile\_info](profile_info-properties-aggregation_type.md "/profile_info#/properties/aggregation_type") |
 
 ## analyte
@@ -150,6 +153,60 @@ Type of the profile, i.e., 'PK' or 'PD'
 | :----- | :-------------- |
 | `"pk"` | pharmacokinetic |
 | `"pd"` | pharmacodynamic |
+
+## compartment
+
+Compartment, where observations were made.
+
+`compartment`
+
+*   is required
+
+*   Type: `string`
+
+*   can be null
+
+*   defined in: [profile\_info](profile_info-properties-compartment.md "/profile_info#/properties/compartment")
+
+### compartment Type
+
+`string`
+
+## organ
+
+Organ or tissue, where observations were made.
+
+`organ`
+
+*   is required
+
+*   Type: `string`
+
+*   can be null
+
+*   defined in: [profile\_info](profile_info-properties-organ.md "/profile_info#/properties/organ")
+
+### organ Type
+
+`string`
+
+## matrix
+
+Matrix where observations were made.
+
+`matrix`
+
+*   is required
+
+*   Type: `string`
+
+*   can be null
+
+*   defined in: [profile\_info](profile_info-properties-matrix.md "/profile_info#/properties/matrix")
+
+### matrix Type
+
+`string`
 
 ## aggregation\_type
 
