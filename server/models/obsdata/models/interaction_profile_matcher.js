@@ -5,6 +5,7 @@ module.exports = (sequelize, Sequelize) => {
       ddi: { type: Sequelize.BOOLEAN, comment: "Profile is DDI profile" },
       dgi: { type: Sequelize.BOOLEAN, comment: "Profile is DGI profile" },
       dfi: { type: Sequelize.BOOLEAN, comment: "Profile is DFI profile" },
+      interaction_description: { type: Sequelize.STRING },
     },
     { tableName: "interaction_profile_matcher" }
   );

@@ -14,9 +14,6 @@ module.exports = (sequelize, Sequelize) => {
       value_numeric: {
         type: Sequelize.STRING,
       },
-      value_string: {
-        type: Sequelize.STRING,
-      },
       value_comment: {
         type: Sequelize.STRING,
       },

@@ -1,6 +1,6 @@
 module.exports = (sequelize, Sequelize) => {
   const Observation = sequelize.define(
-    "Observation",
+    "Observations",
     {
       observations: {
         type: Sequelize.JSON,

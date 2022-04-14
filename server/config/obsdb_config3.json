@@ -1,0 +1,9 @@
+{
+  "development": {
+      "host": "134.96.59.164",
+      "database": "observed_data_db",
+      "user": "simeon",
+      "password": "RWycxny5",
+      "port": 3306
+  }
+}

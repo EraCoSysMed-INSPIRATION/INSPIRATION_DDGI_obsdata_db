@@ -53,6 +53,13 @@ obs_db.CompoundsAndAnalytes.hasOne(obs_db.MolecularWeight, {
     onUpdate: "cascade",
   },
 });
+obs_db.CompoundsAndAnalytes.hasOne(obs_db.Profile, {
+  foreignKey: {
+    name: "analyte_id",
+    onDelete: "cascade",
+    onUpdate: "cascade",
+  },
+});
 obs_db.Reference.hasMany(obs_db.Profile, {
   foreignKey: {
     name: "reference_id",
@@ -60,37 +67,23 @@ obs_db.Reference.hasMany(obs_db.Profile, {
     onUpdate: "cascade",
   },
 });
-obs_db.CompoundsAndAnalytes.hasMany(obs_db.DDICompoundMatcher, {
+obs_db.Profile.hasMany(obs_db.InteractionProfileMatcher, {
   foreignKey: {
-    name: "compound_id",
-    onDelete: "cascade",
-    onUpdate: "cascade",
-  },
-});
-obs_db.Profile.hasMany(obs_db.DDICompoundMatcher, {
-  foreignKey: {
-    name: "profile_id",
+    name: "effect_profile_id",
     onDelete: "cascade",
     onUpdate: "cascade",
   },
 });
 obs_db.Profile.hasMany(obs_db.InteractionProfileMatcher, {
   foreignKey: {
-    name: "effect_profile",
+    name: "reference",
     onDelete: "cascade",
     onUpdate: "cascade",
   },
 });
 obs_db.InteractionProfileMatcher.hasMany(obs_db.InteractionRatio, {
   foreignKey: {
-    name: "interaction_id",
-    onDelete: "cascade",
-    onUpdate: "cascade",
-  },
-});
-obs_db.CompoundsAndAnalytes.hasMany(obs_db.InteractionRatio, {
-  foreignKey: {
-    name: "analyte_id",
+    name: "interaction_ratio_id",
     onDelete: "cascade",
     onUpdate: "cascade",
   },
@@ -158,13 +151,6 @@ obs_db.MealProtocol.hasMany(obs_db.MealProtocolMatcher, {
     onUpdate: "cascade",
   },
 });
-obs_db.CompoundsAndAnalytes.hasMany(obs_db.Observation, {
-  foreignKey: {
-    name: "compound_id",
-    onDelete: "cascade",
-    onUpdate: "cascade",
-  },
-});
 obs_db.Profile.hasMany(obs_db.ObservationMatcher, {
   foreignKey: {
     name: "profile_id",
@@ -172,16 +158,9 @@ obs_db.Profile.hasMany(obs_db.ObservationMatcher, {
     onUpdate: "cascade",
   },
 });
-obs_db.Observation.hasMany(obs_db.ObservationMatcher, {
+obs_db.Observations.hasMany(obs_db.ObservationMatcher, {
   foreignKey: {
-    name: "compound_observation_id",
-    onDelete: "cascade",
-    onUpdate: "cascade",
-  },
-});
-obs_db.CompoundsAndAnalytes.hasMany(obs_db.NCAValue, {
-  foreignKey: {
-    name: "compound_id",
+    name: "observation_id",
     onDelete: "cascade",
     onUpdate: "cascade",
   },

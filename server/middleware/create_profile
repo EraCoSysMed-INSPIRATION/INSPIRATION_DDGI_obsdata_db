@@ -7,6 +7,9 @@ async function createProfile(database, body) {
     is_dgi: profile.is_DGI,
     is_dfi: profile.is_DFI,
     profile_type: profile.profile_type,
+    organ: profile.organ,
+    compartment: profile.compartment,
+    matrix: profile.matrix,
     aggregation_type: profile.aggregation_type
   };
   let profile_new = {};

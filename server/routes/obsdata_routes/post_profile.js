@@ -40,6 +40,17 @@ module.exports = function (app) {
         let validateRequest = await validateAllSchemas(req);
         if (validateRequest.warnings.length !== 0)
           output.warnings.push(validateRequest.warnings);
+
+        // Lookup if profile-analyte and administered compounds are in compounds
+        for (a of req.body.drug_administrations) {
+          let name_match = req.body.compounds_and_analytes.find(obj => obj.name === a.administered_compound) 
+          let alias_match = req.body.compounds_and_analytes.find(obj => obj.alias === a.administered_compound) 
+          if (name_match === undefined && alias_match === undefined) {
+            output.warnings.push(`Administered compound '${a.administered_compound}' not defined in compounds_and_analytes`)
+          }
+        }
+        
+        // let name_match_analyte = req.body.compounds_and_analytes.find(obj => obj.name === )
       }
       if (!output.warnings.length > 0) {
         try {
@@ -128,13 +139,14 @@ module.exports = function (app) {
             );
             // save compounds if new
             for (c of compounds) {
-
               if (c.is_new) {
                 let c_saved = await c.model.save()
                 c.compound_mw.compound_id = c_saved.id 
                 await c.compound_mw.save() 
               }
             }
+            
+            
           }
         } catch (err) {
           console.log(err);

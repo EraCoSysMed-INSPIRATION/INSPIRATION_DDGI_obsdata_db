@@ -8,9 +8,6 @@ module.exports = (sequelize, Sequelize) => {
       name: {
         type: Sequelize.STRING,
       },
-      alias: {
-        type: Sequelize.STRING,
-      },
       category: {
         type: Sequelize.STRING,
       }
@@ -20,7 +17,7 @@ module.exports = (sequelize, Sequelize) => {
       indexes: [
         {
           unique: true,
-          fields: ["pubchem_id", "name", "alias"],
+          fields: ["pubchem_id", "name"],
         },
       ],
     }
