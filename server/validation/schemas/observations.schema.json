@@ -1,0 +1,81 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "/observations",
+  "description": "Object containing observations of the given profile.",
+  "type": "object",
+  "title": "observations",
+  "properties": {
+    "observations": {
+      "title": "observations",
+      "description": "Array of all observations of the given profile.",
+      "minItems": 1,
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "Object describing a single observation.",
+        "title": "observation",
+        "additionalProperties": false,
+        "properties": {
+          "time": {
+            "type": "number",
+            "description": "Time point of the observation."
+          },
+          "observation_numeric": {
+            "type": ["number", "null"],
+            "description": "Numeric value of the observation."
+          },
+          "observation_numeric_error": {
+            "type": ["number", "null"],
+            "description": "Error of the value of the observation."
+          },
+          "observation_string": {
+            "type": ["string", "null"],
+            "description": "Non-numeric value of the observation."
+          }
+        }
+      }
+    },
+    "time_unit": {
+      "type": "string",
+      "description": "Unit of time point for the observations.",
+      "enum": ["s", "min", "h", "d", "m", "y"],
+      "meta:enum": {
+        "s": "seconds",
+        "min": "minutes",
+        "h": "hours",
+        "d": "days",
+        "m": "months",
+        "y": "years"
+      }
+    },
+    "observation_unit": {
+      "type": ["string", "null"],
+      "description": "Unit of  the observations."
+    },
+    "error_type": {
+      "description": "Type of the error..",
+      "type": ["string", "null"],
+      "enum": ["sd", "gsd"],
+      "meta:enum": {
+        "sd": "Arithmetic standard deviation",
+        "gsd": "Geometric standard deviation"
+      }
+    },
+    "lloq": {
+      "type": ["null", "number"],
+      "description": "Lower limit of quantification in the same unit as the observations."
+    },
+    "comment": {
+      "type": ["string", "null"],
+      "description": "Description of the observation. I.e., Measurements of heart rate."
+    }
+  },
+  "required": [
+    "observations",
+    "time_unit",
+    "observation_unit",
+    "error_type",
+    "lloq",
+    "comment"
+  ]
+}

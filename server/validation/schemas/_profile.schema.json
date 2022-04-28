@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema",
+  "title": "profile",
+  "$id": "profile",
+  "description": "JSON Object for a single profile. A profile is defined as a series of measurements for a single analyte for a given study population. Measurements of multiple analytes require separate profiles. The structure of a profile is defined below.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["profile_info", "reference_info"],
+  "properties": {
+    "profile_info": {
+      "$ref": "/profile_info"
+    },
+    "reference_info": {
+      "$ref": "/reference_info"
+    },
+    "compounds_and_analytes": {
+      "$ref": "/compounds_and_analytes"
+    },
+    "demographics": {
+      "$ref": "/demographics"
+    },
+    "genetic_info": {
+      "$ref": "/genetic_info"
+    },
+    "drug_administrations": {
+      "$ref": "/drug_administrations"
+    },
+    "meal_administrations": {
+      "$ref": "/meal_administrations"
+    },
+    "interaction_ratios": {
+      "$ref": "/interaction_ratios"
+    },
+    "nca_values": {
+      "$ref": "/nca_values"
+    },
+    "observations": {
+      "$ref": "/observations"
+    }
+  }
+}

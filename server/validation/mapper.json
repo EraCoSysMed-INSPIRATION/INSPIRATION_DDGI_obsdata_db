@@ -1,0 +1,57 @@
+{
+  "reference_info": {
+    "checkTableName": "Reference",
+    "checkColumns": ["doi", "pmid", "alternative_id"],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "compounds_and_analytes": {
+    "checkTableName": "CompoundsAndAnalytes",
+    "checkColumns": ["name", "alias"],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "drug_administrations": {
+    "checkTableName": "AdministrationProtocol",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "demographics": {
+    "checkTableName": "Demographic",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "observations": {
+    "checkTableName": "Observation",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "profile_info": {
+    "checkTableName": "ProfileInfo",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "genetic_info": {
+    "checkTableName": "Genetic",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "nca_values": {
+    "checkTableName": "NCAValue",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "interaction_ratio": {
+    "checkTableName": "InteractionRatio",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "meal_administrations": {
+    "checkTableName": "InteractionRatio",
+    "checkColumns": [],
+    "hiddenOutputColumns": ["id", "createdAt", "updatedAt"]
+  },
+  "profile": {
+    "checkTableName": "",
+    "checkColumns": [],
+    "hiddenOutputColumns": []
+  }
+}
